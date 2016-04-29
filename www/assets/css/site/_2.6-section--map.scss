@@ -1,0 +1,147 @@
+// 2. SECTION [ 2.5. SERVICES ]  ######################################################################################
+
+// A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// A.1. HOME ----------------------------------------------------------------------------------------------------------
+	
+.section-map {
+    
+    // A.1.2. Details
+    
+    .map__details {
+        
+        @extend .tablet--one-whole;
+        background: url('../images/speckle-slant.png') bottom left no-repeat $kd-red;
+        background-size: 100% auto;
+    
+        .wrapper {
+        
+            h3 { color: $kd-cyan; margin-bottom: $baseline;  margin-top: 0; }
+            p { color: $white; }
+            
+        }
+    }
+    
+    // A.1.2. Map
+    
+    .map {  @extend .tablet--one-whole; }
+    
+    // A.1.3. Interaction 
+    
+    .interaction {
+        
+        margin: $baseline 0;
+    
+        .one-half { @extend .tablet--one-whole; vertical-align: middle; }
+        .field-item { margin: 0;  @extend .tablet--one-half; vertical-align: middle; }
+        .one-sixth { @extend .tablet--one-half; }
+    }
+
+
+}
+
+// A.2. END -----------------------------------------------------------------------------------------------------------
+
+// A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// B. MOBILE STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(feature) {
+    
+    // A.1.2. Details
+    
+    .map__details {
+        
+        .wrapper { padding: $baseline;
+        
+            h3 {}
+            p { font-size: $small; }
+            .address { font-size: $normal; }
+            
+        }
+    }
+}
+
+// B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// C. TABLET STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(mobile) {
+    
+    // A.1.2. Details
+    
+    .map__details {
+        
+        .wrapper { padding: $baseline;
+        
+            h3 {}
+            p { font-size: $small; }
+            .address { font-size: $normal; }
+            
+        }
+    }
+}
+
+// C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// D. DESKTOP STYLES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(tablet) {
+    
+    // A.1.2. Details
+    
+    .map__details {
+        
+        .wrapper { padding: $baseline;
+        
+            h3 {}
+            p { font-size: $small; }
+            .address { font-size: $normal; }
+            
+        }
+    }
+}
+
+// D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(desk) {
+    
+    // A.1.2. Details
+    
+    .map__details {
+        
+        .wrapper { padding: $baseline;
+        
+            h3 {}
+            p { font-size: $small; }
+            .address { font-size: $normal; }
+            
+        }
+    }
+}
+
+// E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(desk-wide) {
+    
+    // A.1.2. Details
+    
+    .map__details {
+        
+        .wrapper { padding: $baseline;
+        
+            h3 {}
+            p { font-size: $small; }
+            .address { font-size: $normal; }
+            
+        }
+    }
+}
+
+// E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// END OF FILE ########################################################################################################

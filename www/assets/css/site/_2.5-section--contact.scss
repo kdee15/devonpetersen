@@ -1,0 +1,142 @@
+// 2. SECTION [ 2.7. CONTACT ]  #######################################################################################
+
+// A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// A.1. HOME -----------------------------------------------------------------------------------------------------
+
+.section-contact {
+    
+    // A.1.1. Contact Side Buttons
+    
+    .form__contact {
+    
+        .single {
+            
+            &.button { display: inline-block; margin: $baseline 0; }
+        
+        }
+    }
+    
+    // A.1.1. Contact Side Buttons
+    
+    .contact__aside {
+    
+        .grid {
+            
+            .one-half { @extend .tablet--one-whole; margin: $baseline-small 0; }
+        
+            .button { font-size: $small; }
+        
+        }
+    }
+
+
+
+// A.2. END -----------------------------------------------------------------------------------------------------------
+
+// A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// B. MOBILE STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(feature) {
+    
+    margin-top: 0;
+    
+    .form__contact { padding-top: $baseline-medium; background: $kd-grey10; 
+    
+        h3, ul { margin: 0 $baseline; margin-bottom: $baseline; color: $kd-blueNavy; }
+        p { font-size: $small; margin: 0 $baseline; margin-bottom: $baseline; }
+        .field-item { margin-left: $baseline; margin-right: $baseline; }
+        .single {
+         &.button { margin-left: $baseline; margin-right: $baseline; }
+        }
+    }
+
+    .figure-pic {
+    
+        @include aspect-ratio (100%, 120%);
+        overflow: hidden;
+        
+        .figure__img { @include position ( absolute, 0 ); margin-top: -70px; }
+        
+    }
+
+}
+
+// B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// C. TABLET STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(mobile) {
+    
+    margin-top: 0;
+    
+    .form__contact { padding-top: $baseline-medium; background: $kd-grey10; 
+    
+        h3, ul { margin: 0 $baseline; margin-bottom: $baseline; color: $kd-blueNavy; }
+        p { font-size: $small; margin: 0 $baseline; margin-bottom: $baseline; }
+        .field-item { margin-left: $baseline; margin-right: $baseline; }
+        .single {
+         &.button { margin-left: $baseline; margin-right: $baseline; }
+        }
+    }
+
+    .figure-pic {
+    
+        @include aspect-ratio (100%, 120%);
+        overflow: hidden;
+        
+        .figure__img { @include position ( absolute, 0 ); margin-top: -70px; }
+        
+    }
+
+}
+
+// C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// D. DESKTOP STYLES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(tablet) {
+
+    margin-top: 0;
+    
+    .form__contact { 
+    
+        h3, ul { margin: 0 $baseline; margin-bottom: $baseline; color: $kd-blueNavy; }
+        p { font-size: $small; margin: 0 $baseline; margin-bottom: $baseline; }
+        .field-item { margin-left: $baseline; margin-right: $baseline; }
+        .single {
+         &.button { margin-left: $baseline; margin-right: $baseline; }
+        }
+    
+    }
+    
+    
+
+}
+
+// D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(desk) {
+
+    margin-top: $baseline;
+
+}
+
+// E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(desk-wide) {
+
+    margin-top: $baseline;
+
+}
+
+// E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    
+}
+
+// END OF FILE ########################################################################################################

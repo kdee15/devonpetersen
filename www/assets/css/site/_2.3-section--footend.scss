@@ -1,0 +1,159 @@
+// 2. SECTION [ 2.3. FOOTEND ]  #######################################################################################
+
+// A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// A.1. FOOTEND -------------------------------------------------------------------------------------------------------
+
+#footend {
+
+    background: $kd-grey90; 
+    padding: 60px 0;
+    
+    .links {
+        
+        @extend .tablet--one-whole;
+        
+        .half { display: inline-block; color: $white; padding: 0; margin: 0 $baseline-small; 
+        
+            .header { color: $kd-grey40;}
+            li { list-style-type: none; font-size: $small; }
+        }
+        
+        span { font-size: $x-small; color: $white; padding: $baseline-small; display: block; opacity: 0.7;}
+        p { font-size: $small; color: $white; padding: $baseline-small; display: block; opacity: 0.4;}
+        
+    }
+    
+    .social-media {
+        
+        position: relative;
+        @extend .tablet--one-whole;
+        
+    }
+    
+    .logo {
+        
+        position: relative;
+        @extend .tablet--one-whole;
+        
+    }
+
+// A.1. END -----------------------------------------------------------------------------------------------------------
+
+// A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// B. MOBILE STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(feature) { 
+    
+    .social-media {
+        
+        margin: $baseline-medium 0;
+        
+        .figure__img { 
+            
+            width: 40%; margin: 0 auto;
+        }
+    }    
+    
+    .logo {
+        
+        .figure__img { 
+            
+            width: 60%; margin: 0 auto;
+        }
+    }
+}
+
+// B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// C. TABLET STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(mobile) { 
+    
+    .social-media {
+        
+        margin: $baseline-medium 0;
+        
+        .figure__img { 
+            
+            width: 40%; margin: 0 auto;
+        }
+    }    
+    
+    .logo {
+        
+        .figure__img { 
+            
+            width: 60%; margin: 0 auto;
+        }
+    }
+}
+
+// C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// D. DESKTOP STYLES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(tablet) { 
+    
+    .social-media {
+        
+        margin: $baseline-large 0;
+        
+        .figure__img { 
+            
+            width: 30%; margin: 0 auto;
+        }
+    }    
+    
+    .logo {
+        
+        .figure__img { 
+            
+            width: 30%; margin: 0 auto;
+        }
+    }
+}
+
+// D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(desk) { 
+    
+    .social-media,
+    .logo {
+        
+        .figure__img { 
+            
+            @include vertical-align(absolute); 
+            width: 80%;
+            left: 5%;
+            
+        }
+    }
+}
+
+// E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(desk-wide) { 
+    
+    .links { .half { width: 45%; }}
+
+    .social-media,
+    .logo {
+        
+        .figure__img { 
+            
+            @include vertical-align(absolute); 
+        }
+    }
+}
+
+// E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+}
+
+// END OF FILE ########################################################################################################

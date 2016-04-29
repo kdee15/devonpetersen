@@ -1,0 +1,165 @@
+// 1. OBJECT [ 1.0. GENERAL ]  ########################################################################################
+
+// A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// A.1. STRUCTURE -----------------------------------------------------------------------------------------------------
+
+html { font-weight: 300; }
+
+// A.1. GENERAL SETUP
+
+body {
+    
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    position: relative;
+    
+}
+
+figure { margin: 0;
+    
+    img { width: 100%; height: auto; }
+    
+}
+
+// A.1. END
+
+// A.2. TYPOGRAPHY SETUP
+
+h4, h6, ul, li, p { @include source-light(); }
+p { font-size: $medium; }
+
+h1 { font-size: $xx-large; font-family: "GOW", helvetica, "arial black"; line-height: normal; color: $white; }
+h2 { font-size: $x-large; font-family: "GOW", helvetica, "arial black"; line-height: normal;}
+
+// A.2. END
+
+// A.1.1 LINKS
+
+a { cursor: pointer; }
+
+// A.1.1. END
+
+// A.1.2. SECTIONS
+
+.section { padding: 0; margin: 0; }
+
+.page-wrapper { position: relative; margin-top: 100%;}
+
+// A.1.2. END
+
+
+// A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// B. MOBILE STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(feature) {
+
+    // A.1.5. HIDE ON PHONES
+
+    .no-mobile, .no-mobile-inline { display: none; }
+
+    // A.1.5. END
+    
+    // A.1.6. HEADERS
+
+    h1, h2 { font-size: 33px; }
+
+    h1 { margin: 0 0 0 0; }
+    
+    // A.1.6. END
+}
+
+// B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// C. TABLET STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(mobile) {
+
+    .container {
+        
+        padding: 0;
+        
+    }
+
+    // A.1.5. HIDE ON PHONES
+
+    .no-mobile, .no-mobile-inline { display: none; }
+
+    // A.1.5. END
+    
+    // A.1.6. HEADERS
+
+    h1, h2 { font-size: 33px; }
+
+    h1 { margin: 0 0 0 0; }
+    
+    // A.1.6. END
+
+}
+
+// C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// D. DESKTOP STYLES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(tablet) {
+
+    // A.1.5. HIDE ON PHONES
+
+    .no-mobile { display: block; }
+    .no-mobile-inline { display: flex; }
+
+    // A.1.5. END
+    
+    // A.1.6. HEADERS
+
+    h1, h2 { font-size: 45px; }
+    
+    // A.1.6. END
+}
+
+// D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(desk) {
+
+    // A.1.5. HIDE ON PHONES
+
+    .no-mobile { display: block; }
+    .no-mobile-inline { display: flex; }
+
+    // A.1.5. END
+    
+    // A.1.6. HEADERS
+
+    h1, h2 { font-size: 45px; }
+    
+    // A.1.6. END
+}
+
+// E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(desk-wide) {
+
+    // A.1.5. HIDE ON PHONES
+
+    .no-mobile { display: block; }
+    .no-mobile-inline { display: flex; }
+
+    // A.1.5. END
+    
+    // A.1.6. HEADERS
+
+    h1, h2 { font-size: 45px; }
+    
+    // A.1.6. END
+}
+
+// E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// END OF FILE ########################################################################################################

@@ -1,0 +1,15 @@
+// CONFIGURATION LAYER [MEDIA QUERIES] ################################################################################
+
+// DESCRIPTION: Configuration to add/remove break points.
+
+// USAGE: Set up your break points within the variable set below if they differ from the ones we already provide.
+
+$breakpoints: (
+    'feature' '(max-width: 320px)',
+    'mobile' '(min-width: 321px) and (max-width: 480px)',
+    'tablet' '(min-width: 481px) and (max-width: 1023px)',
+    'desk' '(min-width: 1024px)',
+    'desk-wide' '(min-width: 1200px)'
+)!default;
+
+// END OF FILE  #######################################################################################################
