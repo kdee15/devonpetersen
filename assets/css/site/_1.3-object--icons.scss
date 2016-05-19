@@ -4,7 +4,7 @@
 
 .icon {
     
-    @include icon (auto, 100%, $ia-grey30);
+    @include icon (auto, 100%, $kd-grey30);
     
 }
 
@@ -46,12 +46,12 @@
     margin: 0;
     
     span {
-        color: $ia-grey50;
+        color: $kd-grey50;
     }
     
     .icon {
         
-        @include icon (100%, 100%, $ia-grey50);   
+        @include icon (100%, 100%, $kd-grey50);   
         
     }
 }

@@ -1,18 +1,51 @@
-// 2. SECTION [ 2.2. MAST ]  ##########################################################################################
+// 1. OBJECT [ 1.0. GENERAL ]  ########################################################################################
 
 // A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-// A.1. MAST ----------------------------------------------------------------------------------------------------------
+// A.1. STRUCTURE -----------------------------------------------------------------------------------------------------
 
-#mast {
+.parallax {
 
-    .wrapper {
+    perspective: 1px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
 
-        position: relative;
-        top: 100%;
-        //display: none;
-    }
 }
+
+.parallax__group {
+
+    position: relative;
+    height: 100vh;
+    transform-style: preserve-3d;
+
+}
+
+.parallax__layer {
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+}
+
+.parallax__layer--base { transform: translateZ(0); }
+
+.parallax__layer--back { transform: translateZ(-1px) scale(2); }
+
+.parallax__layer--deep { transform: translateZ(-2px) scale(3); }
+
+.parallax__layer--front { transform: translateZ(1px) scale(3); }
+
+//.parallax__group { transform: translate3d(700px, 0, -800px) rotateY(30deg); }
+
+.group1 { background: $red; }
+.group2 { background: $blue; }
+.group3 { background: $gray; }
+.group4 { background: $yellow; }
+
 
 // A.1. END -----------------------------------------------------------------------------------------------------------
 
@@ -26,16 +59,7 @@
 
 // C. TABLET STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@include media-query(mobile) { 
-	
-    #mast {
-
-        .section {
-            padding: 60px 0;
-        }
-
-    }
-}
+@include media-query(mobile) { }
 
 // C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

@@ -24,21 +24,18 @@ html, body {
     width: 1200px;
     margin: 0 auto; } }
 
-.grid, .grid-group, .tabs .tabs__header, .modal__grid, #section-different .attributes-group {
+.grid, .grid-group, .tabs .tabs__header, .modal__grid {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0; }
 
-.grid__item, .grid .one-whole, .grid-group .one-whole, .tabs .tabs__header .one-whole, .modal__grid .one-whole, #section-different .attributes-group .one-whole, .grid .two-quarters, .grid-group .two-quarters, .tabs .tabs__header .two-quarters, .modal__grid .two-quarters, #section-different .attributes-group .two-quarters, .grid .three-sixths, .grid-group .three-sixths, .tabs .tabs__header .three-sixths, .modal__grid .three-sixths, #section-different .attributes-group .three-sixths, .grid .four-eighths, .grid-group .four-eighths, .tabs .tabs__header .four-eighths, .modal__grid .four-eighths, #section-different .attributes-group .four-eighths, .grid .five-tenths, .grid-group .five-tenths, .tabs .tabs__header .five-tenths, .modal__grid .five-tenths, #section-different .attributes-group .five-tenths, .grid .six-twelfths, .grid-group .six-twelfths, .tabs .tabs__header .six-twelfths, .modal__grid .six-twelfths, #section-different .attributes-group .six-twelfths, .grid .one-half, .grid-group .one-half, .tabs .tabs__header .one-half, .modal__grid .one-half, #section-different .attributes-group .one-half, .tabs .tabs__header li, #section-different .attributes-group .tabs .tabs__header li, .tabs .tabs__header #section-different .attributes-group li, .grid #section-services .services-group .services-item, #section-services .services-group .grid .services-item, .grid-group #section-services .services-group .services-item, #section-services .services-group .grid-group .services-item, .tabs .tabs__header #section-services .services-group .services-item, #section-services .services-group .tabs .tabs__header .services-item, .modal__grid #section-services .services-group .services-item, #section-services .services-group .modal__grid .services-item, #section-different .attributes-group #section-services .services-group .services-item, #section-services .services-group #section-different .attributes-group .services-item, .grid #section-casestudies .casestudies-group .casestudies-item, #section-casestudies .casestudies-group .grid .casestudies-item, .grid-group #section-casestudies .casestudies-group .casestudies-item, #section-casestudies .casestudies-group .grid-group .casestudies-item, .tabs .tabs__header #section-casestudies .casestudies-group .casestudies-item, #section-casestudies .casestudies-group .tabs .tabs__header .casestudies-item, .modal__grid #section-casestudies .casestudies-group .casestudies-item, #section-casestudies .casestudies-group .modal__grid .casestudies-item, #section-different .attributes-group #section-casestudies .casestudies-group .casestudies-item, #section-casestudies .casestudies-group #section-different .attributes-group .casestudies-item, .grid-group .grid-item, .card.long .card__header .lesson-detail {
+.grid__item, .grid .one-whole, .grid-group .one-whole, .tabs .tabs__header .one-whole, .modal__grid .one-whole, .grid .two-quarters, .grid-group .two-quarters, .tabs .tabs__header .two-quarters, .modal__grid .two-quarters, .grid .three-sixths, .grid-group .three-sixths, .tabs .tabs__header .three-sixths, .modal__grid .three-sixths, .grid .four-eighths, .grid-group .four-eighths, .tabs .tabs__header .four-eighths, .modal__grid .four-eighths, .grid .five-tenths, .grid-group .five-tenths, .tabs .tabs__header .five-tenths, .modal__grid .five-tenths, .grid .six-twelfths, .grid-group .six-twelfths, .tabs .tabs__header .six-twelfths, .modal__grid .six-twelfths, .grid .one-half, .grid-group .one-half, .tabs .tabs__header .one-half, .modal__grid .one-half, .tabs .tabs__header li, .grid .two-sixths, .grid-group .two-sixths, .tabs .tabs__header .two-sixths, .modal__grid .two-sixths, .grid .four-twelfths, .grid-group .four-twelfths, .tabs .tabs__header .four-twelfths, .modal__grid .four-twelfths, .grid .one-third, .grid-group .one-third, .tabs .tabs__header .one-third, .modal__grid .one-third, .grid .two-eighths, .grid-group .two-eighths, .tabs .tabs__header .two-eighths, .modal__grid .two-eighths, .grid .three-twelfths, .grid-group .three-twelfths, .tabs .tabs__header .three-twelfths, .modal__grid .three-twelfths, .grid .one-quarter, .grid-group .one-quarter, .tabs .tabs__header .one-quarter, .modal__grid .one-quarter, .grid-group .grid-item, .card.long .card__header .lesson-detail {
   -webkit-box-flex: 1;
-  -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
   -webkit-box-sizing: border-box;
@@ -48,739 +45,601 @@ html, body {
 
 .grid__gutter {
   margin-left: -20px; }
-  .grid__gutter .grid__item, .grid__gutter .grid .one-whole, .grid .grid__gutter .one-whole, .grid__gutter .grid-group .one-whole, .grid-group .grid__gutter .one-whole, .grid__gutter .tabs .tabs__header .one-whole, .tabs .tabs__header .grid__gutter .one-whole, .grid__gutter .modal__grid .one-whole, .modal__grid .grid__gutter .one-whole, .grid__gutter #section-different .attributes-group .one-whole, #section-different .attributes-group .grid__gutter .one-whole, .grid__gutter .grid .two-quarters, .grid .grid__gutter .two-quarters, .grid__gutter .grid-group .two-quarters, .grid-group .grid__gutter .two-quarters, .grid__gutter .tabs .tabs__header .two-quarters, .tabs .tabs__header .grid__gutter .two-quarters, .grid__gutter .modal__grid .two-quarters, .modal__grid .grid__gutter .two-quarters, .grid__gutter #section-different .attributes-group .two-quarters, #section-different .attributes-group .grid__gutter .two-quarters, .grid__gutter .grid .three-sixths, .grid .grid__gutter .three-sixths, .grid__gutter .grid-group .three-sixths, .grid-group .grid__gutter .three-sixths, .grid__gutter .tabs .tabs__header .three-sixths, .tabs .tabs__header .grid__gutter .three-sixths, .grid__gutter .modal__grid .three-sixths, .modal__grid .grid__gutter .three-sixths, .grid__gutter #section-different .attributes-group .three-sixths, #section-different .attributes-group .grid__gutter .three-sixths, .grid__gutter .grid .four-eighths, .grid .grid__gutter .four-eighths, .grid__gutter .grid-group .four-eighths, .grid-group .grid__gutter .four-eighths, .grid__gutter .tabs .tabs__header .four-eighths, .tabs .tabs__header .grid__gutter .four-eighths, .grid__gutter .modal__grid .four-eighths, .modal__grid .grid__gutter .four-eighths, .grid__gutter #section-different .attributes-group .four-eighths, #section-different .attributes-group .grid__gutter .four-eighths, .grid__gutter .grid .five-tenths, .grid .grid__gutter .five-tenths, .grid__gutter .grid-group .five-tenths, .grid-group .grid__gutter .five-tenths, .grid__gutter .tabs .tabs__header .five-tenths, .tabs .tabs__header .grid__gutter .five-tenths, .grid__gutter .modal__grid .five-tenths, .modal__grid .grid__gutter .five-tenths, .grid__gutter #section-different .attributes-group .five-tenths, #section-different .attributes-group .grid__gutter .five-tenths, .grid__gutter .grid .six-twelfths, .grid .grid__gutter .six-twelfths, .grid__gutter .grid-group .six-twelfths, .grid-group .grid__gutter .six-twelfths, .grid__gutter .tabs .tabs__header .six-twelfths, .tabs .tabs__header .grid__gutter .six-twelfths, .grid__gutter .modal__grid .six-twelfths, .modal__grid .grid__gutter .six-twelfths, .grid__gutter #section-different .attributes-group .six-twelfths, #section-different .attributes-group .grid__gutter .six-twelfths, .grid__gutter .grid .one-half, .grid .grid__gutter .one-half, .grid__gutter .grid-group .one-half, .grid-group .grid__gutter .one-half, .grid__gutter .tabs .tabs__header .one-half, .tabs .tabs__header .grid__gutter .one-half, .grid__gutter .modal__grid .one-half, .modal__grid .grid__gutter .one-half, .grid__gutter #section-different .attributes-group .one-half, #section-different .attributes-group .grid__gutter .one-half, .grid__gutter .tabs .tabs__header li, .tabs .tabs__header .grid__gutter li, .grid__gutter #section-different .attributes-group .tabs .tabs__header li, #section-different .attributes-group .tabs .tabs__header .grid__gutter li, .grid__gutter .tabs .tabs__header #section-different .attributes-group li, .tabs .tabs__header #section-different .attributes-group .grid__gutter li, .grid__gutter .grid #section-services .services-group .services-item, .grid #section-services .services-group .grid__gutter .services-item, .grid__gutter #section-services .services-group .grid .services-item, #section-services .services-group .grid .grid__gutter .services-item, .grid__gutter .grid-group #section-services .services-group .services-item, .grid-group #section-services .services-group .grid__gutter .services-item, .grid__gutter #section-services .services-group .grid-group .services-item, #section-services .services-group .grid-group .grid__gutter .services-item, .grid__gutter .tabs .tabs__header #section-services .services-group .services-item, .tabs .tabs__header #section-services .services-group .grid__gutter .services-item, .grid__gutter #section-services .services-group .tabs .tabs__header .services-item, #section-services .services-group .tabs .tabs__header .grid__gutter .services-item, .grid__gutter .modal__grid #section-services .services-group .services-item, .modal__grid #section-services .services-group .grid__gutter .services-item, .grid__gutter #section-services .services-group .modal__grid .services-item, #section-services .services-group .modal__grid .grid__gutter .services-item, .grid__gutter #section-different .attributes-group #section-services .services-group .services-item, #section-different .attributes-group #section-services .services-group .grid__gutter .services-item, .grid__gutter #section-services .services-group #section-different .attributes-group .services-item, #section-services .services-group #section-different .attributes-group .grid__gutter .services-item, .grid__gutter .grid #section-casestudies .casestudies-group .casestudies-item, .grid #section-casestudies .casestudies-group .grid__gutter .casestudies-item, .grid__gutter #section-casestudies .casestudies-group .grid .casestudies-item, #section-casestudies .casestudies-group .grid .grid__gutter .casestudies-item, .grid__gutter .grid-group #section-casestudies .casestudies-group .casestudies-item, .grid-group #section-casestudies .casestudies-group .grid__gutter .casestudies-item, .grid__gutter #section-casestudies .casestudies-group .grid-group .casestudies-item, #section-casestudies .casestudies-group .grid-group .grid__gutter .casestudies-item, .grid__gutter .tabs .tabs__header #section-casestudies .casestudies-group .casestudies-item, .tabs .tabs__header #section-casestudies .casestudies-group .grid__gutter .casestudies-item, .grid__gutter #section-casestudies .casestudies-group .tabs .tabs__header .casestudies-item, #section-casestudies .casestudies-group .tabs .tabs__header .grid__gutter .casestudies-item, .grid__gutter .modal__grid #section-casestudies .casestudies-group .casestudies-item, .modal__grid #section-casestudies .casestudies-group .grid__gutter .casestudies-item, .grid__gutter #section-casestudies .casestudies-group .modal__grid .casestudies-item, #section-casestudies .casestudies-group .modal__grid .grid__gutter .casestudies-item, .grid__gutter #section-different .attributes-group #section-casestudies .casestudies-group .casestudies-item, #section-different .attributes-group #section-casestudies .casestudies-group .grid__gutter .casestudies-item, .grid__gutter #section-casestudies .casestudies-group #section-different .attributes-group .casestudies-item, #section-casestudies .casestudies-group #section-different .attributes-group .grid__gutter .casestudies-item, .grid__gutter .grid-group .grid-item, .grid-group .grid__gutter .grid-item, .grid__gutter .card.long .card__header .lesson-detail, .card.long .card__header .grid__gutter .lesson-detail {
+  .grid__gutter .grid__item, .grid__gutter .grid .one-whole, .grid .grid__gutter .one-whole, .grid__gutter .grid-group .one-whole, .grid-group .grid__gutter .one-whole, .grid__gutter .tabs .tabs__header .one-whole, .tabs .tabs__header .grid__gutter .one-whole, .grid__gutter .modal__grid .one-whole, .modal__grid .grid__gutter .one-whole, .grid__gutter .grid .two-quarters, .grid .grid__gutter .two-quarters, .grid__gutter .grid-group .two-quarters, .grid-group .grid__gutter .two-quarters, .grid__gutter .tabs .tabs__header .two-quarters, .tabs .tabs__header .grid__gutter .two-quarters, .grid__gutter .modal__grid .two-quarters, .modal__grid .grid__gutter .two-quarters, .grid__gutter .grid .three-sixths, .grid .grid__gutter .three-sixths, .grid__gutter .grid-group .three-sixths, .grid-group .grid__gutter .three-sixths, .grid__gutter .tabs .tabs__header .three-sixths, .tabs .tabs__header .grid__gutter .three-sixths, .grid__gutter .modal__grid .three-sixths, .modal__grid .grid__gutter .three-sixths, .grid__gutter .grid .four-eighths, .grid .grid__gutter .four-eighths, .grid__gutter .grid-group .four-eighths, .grid-group .grid__gutter .four-eighths, .grid__gutter .tabs .tabs__header .four-eighths, .tabs .tabs__header .grid__gutter .four-eighths, .grid__gutter .modal__grid .four-eighths, .modal__grid .grid__gutter .four-eighths, .grid__gutter .grid .five-tenths, .grid .grid__gutter .five-tenths, .grid__gutter .grid-group .five-tenths, .grid-group .grid__gutter .five-tenths, .grid__gutter .tabs .tabs__header .five-tenths, .tabs .tabs__header .grid__gutter .five-tenths, .grid__gutter .modal__grid .five-tenths, .modal__grid .grid__gutter .five-tenths, .grid__gutter .grid .six-twelfths, .grid .grid__gutter .six-twelfths, .grid__gutter .grid-group .six-twelfths, .grid-group .grid__gutter .six-twelfths, .grid__gutter .tabs .tabs__header .six-twelfths, .tabs .tabs__header .grid__gutter .six-twelfths, .grid__gutter .modal__grid .six-twelfths, .modal__grid .grid__gutter .six-twelfths, .grid__gutter .grid .one-half, .grid .grid__gutter .one-half, .grid__gutter .grid-group .one-half, .grid-group .grid__gutter .one-half, .grid__gutter .tabs .tabs__header .one-half, .tabs .tabs__header .grid__gutter .one-half, .grid__gutter .modal__grid .one-half, .modal__grid .grid__gutter .one-half, .grid__gutter .tabs .tabs__header li, .tabs .tabs__header .grid__gutter li, .grid__gutter .grid .two-sixths, .grid .grid__gutter .two-sixths, .grid__gutter .grid-group .two-sixths, .grid-group .grid__gutter .two-sixths, .grid__gutter .tabs .tabs__header .two-sixths, .tabs .tabs__header .grid__gutter .two-sixths, .grid__gutter .modal__grid .two-sixths, .modal__grid .grid__gutter .two-sixths, .grid__gutter .grid .four-twelfths, .grid .grid__gutter .four-twelfths, .grid__gutter .grid-group .four-twelfths, .grid-group .grid__gutter .four-twelfths, .grid__gutter .tabs .tabs__header .four-twelfths, .tabs .tabs__header .grid__gutter .four-twelfths, .grid__gutter .modal__grid .four-twelfths, .modal__grid .grid__gutter .four-twelfths, .grid__gutter .grid .one-third, .grid .grid__gutter .one-third, .grid__gutter .grid-group .one-third, .grid-group .grid__gutter .one-third, .grid__gutter .tabs .tabs__header .one-third, .tabs .tabs__header .grid__gutter .one-third, .grid__gutter .modal__grid .one-third, .modal__grid .grid__gutter .one-third, .grid__gutter .grid .two-eighths, .grid .grid__gutter .two-eighths, .grid__gutter .grid-group .two-eighths, .grid-group .grid__gutter .two-eighths, .grid__gutter .tabs .tabs__header .two-eighths, .tabs .tabs__header .grid__gutter .two-eighths, .grid__gutter .modal__grid .two-eighths, .modal__grid .grid__gutter .two-eighths, .grid__gutter .grid .three-twelfths, .grid .grid__gutter .three-twelfths, .grid__gutter .grid-group .three-twelfths, .grid-group .grid__gutter .three-twelfths, .grid__gutter .tabs .tabs__header .three-twelfths, .tabs .tabs__header .grid__gutter .three-twelfths, .grid__gutter .modal__grid .three-twelfths, .modal__grid .grid__gutter .three-twelfths, .grid__gutter .grid .one-quarter, .grid .grid__gutter .one-quarter, .grid__gutter .grid-group .one-quarter, .grid-group .grid__gutter .one-quarter, .grid__gutter .tabs .tabs__header .one-quarter, .tabs .tabs__header .grid__gutter .one-quarter, .grid__gutter .modal__grid .one-quarter, .modal__grid .grid__gutter .one-quarter, .grid__gutter .grid-group .grid-item, .grid-group .grid__gutter .grid-item, .grid__gutter .card.long .card__header .lesson-detail, .card.long .card__header .grid__gutter .lesson-detail {
     padding-left: 20px; }
 
 .grid__gutter-large {
   margin-left: -40px; }
-  .grid__gutter-large .grid__item, .grid__gutter-large .grid .one-whole, .grid .grid__gutter-large .one-whole, .grid__gutter-large .grid-group .one-whole, .grid-group .grid__gutter-large .one-whole, .grid__gutter-large .tabs .tabs__header .one-whole, .tabs .tabs__header .grid__gutter-large .one-whole, .grid__gutter-large .modal__grid .one-whole, .modal__grid .grid__gutter-large .one-whole, .grid__gutter-large #section-different .attributes-group .one-whole, #section-different .attributes-group .grid__gutter-large .one-whole, .grid__gutter-large .grid .two-quarters, .grid .grid__gutter-large .two-quarters, .grid__gutter-large .grid-group .two-quarters, .grid-group .grid__gutter-large .two-quarters, .grid__gutter-large .tabs .tabs__header .two-quarters, .tabs .tabs__header .grid__gutter-large .two-quarters, .grid__gutter-large .modal__grid .two-quarters, .modal__grid .grid__gutter-large .two-quarters, .grid__gutter-large #section-different .attributes-group .two-quarters, #section-different .attributes-group .grid__gutter-large .two-quarters, .grid__gutter-large .grid .three-sixths, .grid .grid__gutter-large .three-sixths, .grid__gutter-large .grid-group .three-sixths, .grid-group .grid__gutter-large .three-sixths, .grid__gutter-large .tabs .tabs__header .three-sixths, .tabs .tabs__header .grid__gutter-large .three-sixths, .grid__gutter-large .modal__grid .three-sixths, .modal__grid .grid__gutter-large .three-sixths, .grid__gutter-large #section-different .attributes-group .three-sixths, #section-different .attributes-group .grid__gutter-large .three-sixths, .grid__gutter-large .grid .four-eighths, .grid .grid__gutter-large .four-eighths, .grid__gutter-large .grid-group .four-eighths, .grid-group .grid__gutter-large .four-eighths, .grid__gutter-large .tabs .tabs__header .four-eighths, .tabs .tabs__header .grid__gutter-large .four-eighths, .grid__gutter-large .modal__grid .four-eighths, .modal__grid .grid__gutter-large .four-eighths, .grid__gutter-large #section-different .attributes-group .four-eighths, #section-different .attributes-group .grid__gutter-large .four-eighths, .grid__gutter-large .grid .five-tenths, .grid .grid__gutter-large .five-tenths, .grid__gutter-large .grid-group .five-tenths, .grid-group .grid__gutter-large .five-tenths, .grid__gutter-large .tabs .tabs__header .five-tenths, .tabs .tabs__header .grid__gutter-large .five-tenths, .grid__gutter-large .modal__grid .five-tenths, .modal__grid .grid__gutter-large .five-tenths, .grid__gutter-large #section-different .attributes-group .five-tenths, #section-different .attributes-group .grid__gutter-large .five-tenths, .grid__gutter-large .grid .six-twelfths, .grid .grid__gutter-large .six-twelfths, .grid__gutter-large .grid-group .six-twelfths, .grid-group .grid__gutter-large .six-twelfths, .grid__gutter-large .tabs .tabs__header .six-twelfths, .tabs .tabs__header .grid__gutter-large .six-twelfths, .grid__gutter-large .modal__grid .six-twelfths, .modal__grid .grid__gutter-large .six-twelfths, .grid__gutter-large #section-different .attributes-group .six-twelfths, #section-different .attributes-group .grid__gutter-large .six-twelfths, .grid__gutter-large .grid .one-half, .grid .grid__gutter-large .one-half, .grid__gutter-large .grid-group .one-half, .grid-group .grid__gutter-large .one-half, .grid__gutter-large .tabs .tabs__header .one-half, .tabs .tabs__header .grid__gutter-large .one-half, .grid__gutter-large .modal__grid .one-half, .modal__grid .grid__gutter-large .one-half, .grid__gutter-large #section-different .attributes-group .one-half, #section-different .attributes-group .grid__gutter-large .one-half, .grid__gutter-large .tabs .tabs__header li, .tabs .tabs__header .grid__gutter-large li, .grid__gutter-large #section-different .attributes-group .tabs .tabs__header li, #section-different .attributes-group .tabs .tabs__header .grid__gutter-large li, .grid__gutter-large .tabs .tabs__header #section-different .attributes-group li, .tabs .tabs__header #section-different .attributes-group .grid__gutter-large li, .grid__gutter-large .grid #section-services .services-group .services-item, .grid #section-services .services-group .grid__gutter-large .services-item, .grid__gutter-large #section-services .services-group .grid .services-item, #section-services .services-group .grid .grid__gutter-large .services-item, .grid__gutter-large .grid-group #section-services .services-group .services-item, .grid-group #section-services .services-group .grid__gutter-large .services-item, .grid__gutter-large #section-services .services-group .grid-group .services-item, #section-services .services-group .grid-group .grid__gutter-large .services-item, .grid__gutter-large .tabs .tabs__header #section-services .services-group .services-item, .tabs .tabs__header #section-services .services-group .grid__gutter-large .services-item, .grid__gutter-large #section-services .services-group .tabs .tabs__header .services-item, #section-services .services-group .tabs .tabs__header .grid__gutter-large .services-item, .grid__gutter-large .modal__grid #section-services .services-group .services-item, .modal__grid #section-services .services-group .grid__gutter-large .services-item, .grid__gutter-large #section-services .services-group .modal__grid .services-item, #section-services .services-group .modal__grid .grid__gutter-large .services-item, .grid__gutter-large #section-different .attributes-group #section-services .services-group .services-item, #section-different .attributes-group #section-services .services-group .grid__gutter-large .services-item, .grid__gutter-large #section-services .services-group #section-different .attributes-group .services-item, #section-services .services-group #section-different .attributes-group .grid__gutter-large .services-item, .grid__gutter-large .grid #section-casestudies .casestudies-group .casestudies-item, .grid #section-casestudies .casestudies-group .grid__gutter-large .casestudies-item, .grid__gutter-large #section-casestudies .casestudies-group .grid .casestudies-item, #section-casestudies .casestudies-group .grid .grid__gutter-large .casestudies-item, .grid__gutter-large .grid-group #section-casestudies .casestudies-group .casestudies-item, .grid-group #section-casestudies .casestudies-group .grid__gutter-large .casestudies-item, .grid__gutter-large #section-casestudies .casestudies-group .grid-group .casestudies-item, #section-casestudies .casestudies-group .grid-group .grid__gutter-large .casestudies-item, .grid__gutter-large .tabs .tabs__header #section-casestudies .casestudies-group .casestudies-item, .tabs .tabs__header #section-casestudies .casestudies-group .grid__gutter-large .casestudies-item, .grid__gutter-large #section-casestudies .casestudies-group .tabs .tabs__header .casestudies-item, #section-casestudies .casestudies-group .tabs .tabs__header .grid__gutter-large .casestudies-item, .grid__gutter-large .modal__grid #section-casestudies .casestudies-group .casestudies-item, .modal__grid #section-casestudies .casestudies-group .grid__gutter-large .casestudies-item, .grid__gutter-large #section-casestudies .casestudies-group .modal__grid .casestudies-item, #section-casestudies .casestudies-group .modal__grid .grid__gutter-large .casestudies-item, .grid__gutter-large #section-different .attributes-group #section-casestudies .casestudies-group .casestudies-item, #section-different .attributes-group #section-casestudies .casestudies-group .grid__gutter-large .casestudies-item, .grid__gutter-large #section-casestudies .casestudies-group #section-different .attributes-group .casestudies-item, #section-casestudies .casestudies-group #section-different .attributes-group .grid__gutter-large .casestudies-item, .grid__gutter-large .grid-group .grid-item, .grid-group .grid__gutter-large .grid-item, .grid__gutter-large .card.long .card__header .lesson-detail, .card.long .card__header .grid__gutter-large .lesson-detail {
+  .grid__gutter-large .grid__item, .grid__gutter-large .grid .one-whole, .grid .grid__gutter-large .one-whole, .grid__gutter-large .grid-group .one-whole, .grid-group .grid__gutter-large .one-whole, .grid__gutter-large .tabs .tabs__header .one-whole, .tabs .tabs__header .grid__gutter-large .one-whole, .grid__gutter-large .modal__grid .one-whole, .modal__grid .grid__gutter-large .one-whole, .grid__gutter-large .grid .two-quarters, .grid .grid__gutter-large .two-quarters, .grid__gutter-large .grid-group .two-quarters, .grid-group .grid__gutter-large .two-quarters, .grid__gutter-large .tabs .tabs__header .two-quarters, .tabs .tabs__header .grid__gutter-large .two-quarters, .grid__gutter-large .modal__grid .two-quarters, .modal__grid .grid__gutter-large .two-quarters, .grid__gutter-large .grid .three-sixths, .grid .grid__gutter-large .three-sixths, .grid__gutter-large .grid-group .three-sixths, .grid-group .grid__gutter-large .three-sixths, .grid__gutter-large .tabs .tabs__header .three-sixths, .tabs .tabs__header .grid__gutter-large .three-sixths, .grid__gutter-large .modal__grid .three-sixths, .modal__grid .grid__gutter-large .three-sixths, .grid__gutter-large .grid .four-eighths, .grid .grid__gutter-large .four-eighths, .grid__gutter-large .grid-group .four-eighths, .grid-group .grid__gutter-large .four-eighths, .grid__gutter-large .tabs .tabs__header .four-eighths, .tabs .tabs__header .grid__gutter-large .four-eighths, .grid__gutter-large .modal__grid .four-eighths, .modal__grid .grid__gutter-large .four-eighths, .grid__gutter-large .grid .five-tenths, .grid .grid__gutter-large .five-tenths, .grid__gutter-large .grid-group .five-tenths, .grid-group .grid__gutter-large .five-tenths, .grid__gutter-large .tabs .tabs__header .five-tenths, .tabs .tabs__header .grid__gutter-large .five-tenths, .grid__gutter-large .modal__grid .five-tenths, .modal__grid .grid__gutter-large .five-tenths, .grid__gutter-large .grid .six-twelfths, .grid .grid__gutter-large .six-twelfths, .grid__gutter-large .grid-group .six-twelfths, .grid-group .grid__gutter-large .six-twelfths, .grid__gutter-large .tabs .tabs__header .six-twelfths, .tabs .tabs__header .grid__gutter-large .six-twelfths, .grid__gutter-large .modal__grid .six-twelfths, .modal__grid .grid__gutter-large .six-twelfths, .grid__gutter-large .grid .one-half, .grid .grid__gutter-large .one-half, .grid__gutter-large .grid-group .one-half, .grid-group .grid__gutter-large .one-half, .grid__gutter-large .tabs .tabs__header .one-half, .tabs .tabs__header .grid__gutter-large .one-half, .grid__gutter-large .modal__grid .one-half, .modal__grid .grid__gutter-large .one-half, .grid__gutter-large .tabs .tabs__header li, .tabs .tabs__header .grid__gutter-large li, .grid__gutter-large .grid .two-sixths, .grid .grid__gutter-large .two-sixths, .grid__gutter-large .grid-group .two-sixths, .grid-group .grid__gutter-large .two-sixths, .grid__gutter-large .tabs .tabs__header .two-sixths, .tabs .tabs__header .grid__gutter-large .two-sixths, .grid__gutter-large .modal__grid .two-sixths, .modal__grid .grid__gutter-large .two-sixths, .grid__gutter-large .grid .four-twelfths, .grid .grid__gutter-large .four-twelfths, .grid__gutter-large .grid-group .four-twelfths, .grid-group .grid__gutter-large .four-twelfths, .grid__gutter-large .tabs .tabs__header .four-twelfths, .tabs .tabs__header .grid__gutter-large .four-twelfths, .grid__gutter-large .modal__grid .four-twelfths, .modal__grid .grid__gutter-large .four-twelfths, .grid__gutter-large .grid .one-third, .grid .grid__gutter-large .one-third, .grid__gutter-large .grid-group .one-third, .grid-group .grid__gutter-large .one-third, .grid__gutter-large .tabs .tabs__header .one-third, .tabs .tabs__header .grid__gutter-large .one-third, .grid__gutter-large .modal__grid .one-third, .modal__grid .grid__gutter-large .one-third, .grid__gutter-large .grid .two-eighths, .grid .grid__gutter-large .two-eighths, .grid__gutter-large .grid-group .two-eighths, .grid-group .grid__gutter-large .two-eighths, .grid__gutter-large .tabs .tabs__header .two-eighths, .tabs .tabs__header .grid__gutter-large .two-eighths, .grid__gutter-large .modal__grid .two-eighths, .modal__grid .grid__gutter-large .two-eighths, .grid__gutter-large .grid .three-twelfths, .grid .grid__gutter-large .three-twelfths, .grid__gutter-large .grid-group .three-twelfths, .grid-group .grid__gutter-large .three-twelfths, .grid__gutter-large .tabs .tabs__header .three-twelfths, .tabs .tabs__header .grid__gutter-large .three-twelfths, .grid__gutter-large .modal__grid .three-twelfths, .modal__grid .grid__gutter-large .three-twelfths, .grid__gutter-large .grid .one-quarter, .grid .grid__gutter-large .one-quarter, .grid__gutter-large .grid-group .one-quarter, .grid-group .grid__gutter-large .one-quarter, .grid__gutter-large .tabs .tabs__header .one-quarter, .tabs .tabs__header .grid__gutter-large .one-quarter, .grid__gutter-large .modal__grid .one-quarter, .modal__grid .grid__gutter-large .one-quarter, .grid__gutter-large .grid-group .grid-item, .grid-group .grid__gutter-large .grid-item, .grid__gutter-large .card.long .card__header .lesson-detail, .card.long .card__header .grid__gutter-large .lesson-detail {
     padding-left: 40px; }
 
 .grid__gutter-small {
   margin-left: -10px; }
-  .grid__gutter-small .grid__item, .grid__gutter-small .grid .one-whole, .grid .grid__gutter-small .one-whole, .grid__gutter-small .grid-group .one-whole, .grid-group .grid__gutter-small .one-whole, .grid__gutter-small .tabs .tabs__header .one-whole, .tabs .tabs__header .grid__gutter-small .one-whole, .grid__gutter-small .modal__grid .one-whole, .modal__grid .grid__gutter-small .one-whole, .grid__gutter-small #section-different .attributes-group .one-whole, #section-different .attributes-group .grid__gutter-small .one-whole, .grid__gutter-small .grid .two-quarters, .grid .grid__gutter-small .two-quarters, .grid__gutter-small .grid-group .two-quarters, .grid-group .grid__gutter-small .two-quarters, .grid__gutter-small .tabs .tabs__header .two-quarters, .tabs .tabs__header .grid__gutter-small .two-quarters, .grid__gutter-small .modal__grid .two-quarters, .modal__grid .grid__gutter-small .two-quarters, .grid__gutter-small #section-different .attributes-group .two-quarters, #section-different .attributes-group .grid__gutter-small .two-quarters, .grid__gutter-small .grid .three-sixths, .grid .grid__gutter-small .three-sixths, .grid__gutter-small .grid-group .three-sixths, .grid-group .grid__gutter-small .three-sixths, .grid__gutter-small .tabs .tabs__header .three-sixths, .tabs .tabs__header .grid__gutter-small .three-sixths, .grid__gutter-small .modal__grid .three-sixths, .modal__grid .grid__gutter-small .three-sixths, .grid__gutter-small #section-different .attributes-group .three-sixths, #section-different .attributes-group .grid__gutter-small .three-sixths, .grid__gutter-small .grid .four-eighths, .grid .grid__gutter-small .four-eighths, .grid__gutter-small .grid-group .four-eighths, .grid-group .grid__gutter-small .four-eighths, .grid__gutter-small .tabs .tabs__header .four-eighths, .tabs .tabs__header .grid__gutter-small .four-eighths, .grid__gutter-small .modal__grid .four-eighths, .modal__grid .grid__gutter-small .four-eighths, .grid__gutter-small #section-different .attributes-group .four-eighths, #section-different .attributes-group .grid__gutter-small .four-eighths, .grid__gutter-small .grid .five-tenths, .grid .grid__gutter-small .five-tenths, .grid__gutter-small .grid-group .five-tenths, .grid-group .grid__gutter-small .five-tenths, .grid__gutter-small .tabs .tabs__header .five-tenths, .tabs .tabs__header .grid__gutter-small .five-tenths, .grid__gutter-small .modal__grid .five-tenths, .modal__grid .grid__gutter-small .five-tenths, .grid__gutter-small #section-different .attributes-group .five-tenths, #section-different .attributes-group .grid__gutter-small .five-tenths, .grid__gutter-small .grid .six-twelfths, .grid .grid__gutter-small .six-twelfths, .grid__gutter-small .grid-group .six-twelfths, .grid-group .grid__gutter-small .six-twelfths, .grid__gutter-small .tabs .tabs__header .six-twelfths, .tabs .tabs__header .grid__gutter-small .six-twelfths, .grid__gutter-small .modal__grid .six-twelfths, .modal__grid .grid__gutter-small .six-twelfths, .grid__gutter-small #section-different .attributes-group .six-twelfths, #section-different .attributes-group .grid__gutter-small .six-twelfths, .grid__gutter-small .grid .one-half, .grid .grid__gutter-small .one-half, .grid__gutter-small .grid-group .one-half, .grid-group .grid__gutter-small .one-half, .grid__gutter-small .tabs .tabs__header .one-half, .tabs .tabs__header .grid__gutter-small .one-half, .grid__gutter-small .modal__grid .one-half, .modal__grid .grid__gutter-small .one-half, .grid__gutter-small #section-different .attributes-group .one-half, #section-different .attributes-group .grid__gutter-small .one-half, .grid__gutter-small .tabs .tabs__header li, .tabs .tabs__header .grid__gutter-small li, .grid__gutter-small #section-different .attributes-group .tabs .tabs__header li, #section-different .attributes-group .tabs .tabs__header .grid__gutter-small li, .grid__gutter-small .tabs .tabs__header #section-different .attributes-group li, .tabs .tabs__header #section-different .attributes-group .grid__gutter-small li, .grid__gutter-small .grid #section-services .services-group .services-item, .grid #section-services .services-group .grid__gutter-small .services-item, .grid__gutter-small #section-services .services-group .grid .services-item, #section-services .services-group .grid .grid__gutter-small .services-item, .grid__gutter-small .grid-group #section-services .services-group .services-item, .grid-group #section-services .services-group .grid__gutter-small .services-item, .grid__gutter-small #section-services .services-group .grid-group .services-item, #section-services .services-group .grid-group .grid__gutter-small .services-item, .grid__gutter-small .tabs .tabs__header #section-services .services-group .services-item, .tabs .tabs__header #section-services .services-group .grid__gutter-small .services-item, .grid__gutter-small #section-services .services-group .tabs .tabs__header .services-item, #section-services .services-group .tabs .tabs__header .grid__gutter-small .services-item, .grid__gutter-small .modal__grid #section-services .services-group .services-item, .modal__grid #section-services .services-group .grid__gutter-small .services-item, .grid__gutter-small #section-services .services-group .modal__grid .services-item, #section-services .services-group .modal__grid .grid__gutter-small .services-item, .grid__gutter-small #section-different .attributes-group #section-services .services-group .services-item, #section-different .attributes-group #section-services .services-group .grid__gutter-small .services-item, .grid__gutter-small #section-services .services-group #section-different .attributes-group .services-item, #section-services .services-group #section-different .attributes-group .grid__gutter-small .services-item, .grid__gutter-small .grid #section-casestudies .casestudies-group .casestudies-item, .grid #section-casestudies .casestudies-group .grid__gutter-small .casestudies-item, .grid__gutter-small #section-casestudies .casestudies-group .grid .casestudies-item, #section-casestudies .casestudies-group .grid .grid__gutter-small .casestudies-item, .grid__gutter-small .grid-group #section-casestudies .casestudies-group .casestudies-item, .grid-group #section-casestudies .casestudies-group .grid__gutter-small .casestudies-item, .grid__gutter-small #section-casestudies .casestudies-group .grid-group .casestudies-item, #section-casestudies .casestudies-group .grid-group .grid__gutter-small .casestudies-item, .grid__gutter-small .tabs .tabs__header #section-casestudies .casestudies-group .casestudies-item, .tabs .tabs__header #section-casestudies .casestudies-group .grid__gutter-small .casestudies-item, .grid__gutter-small #section-casestudies .casestudies-group .tabs .tabs__header .casestudies-item, #section-casestudies .casestudies-group .tabs .tabs__header .grid__gutter-small .casestudies-item, .grid__gutter-small .modal__grid #section-casestudies .casestudies-group .casestudies-item, .modal__grid #section-casestudies .casestudies-group .grid__gutter-small .casestudies-item, .grid__gutter-small #section-casestudies .casestudies-group .modal__grid .casestudies-item, #section-casestudies .casestudies-group .modal__grid .grid__gutter-small .casestudies-item, .grid__gutter-small #section-different .attributes-group #section-casestudies .casestudies-group .casestudies-item, #section-different .attributes-group #section-casestudies .casestudies-group .grid__gutter-small .casestudies-item, .grid__gutter-small #section-casestudies .casestudies-group #section-different .attributes-group .casestudies-item, #section-casestudies .casestudies-group #section-different .attributes-group .grid__gutter-small .casestudies-item, .grid__gutter-small .grid-group .grid-item, .grid-group .grid__gutter-small .grid-item, .grid__gutter-small .card.long .card__header .lesson-detail, .card.long .card__header .grid__gutter-small .lesson-detail {
+  .grid__gutter-small .grid__item, .grid__gutter-small .grid .one-whole, .grid .grid__gutter-small .one-whole, .grid__gutter-small .grid-group .one-whole, .grid-group .grid__gutter-small .one-whole, .grid__gutter-small .tabs .tabs__header .one-whole, .tabs .tabs__header .grid__gutter-small .one-whole, .grid__gutter-small .modal__grid .one-whole, .modal__grid .grid__gutter-small .one-whole, .grid__gutter-small .grid .two-quarters, .grid .grid__gutter-small .two-quarters, .grid__gutter-small .grid-group .two-quarters, .grid-group .grid__gutter-small .two-quarters, .grid__gutter-small .tabs .tabs__header .two-quarters, .tabs .tabs__header .grid__gutter-small .two-quarters, .grid__gutter-small .modal__grid .two-quarters, .modal__grid .grid__gutter-small .two-quarters, .grid__gutter-small .grid .three-sixths, .grid .grid__gutter-small .three-sixths, .grid__gutter-small .grid-group .three-sixths, .grid-group .grid__gutter-small .three-sixths, .grid__gutter-small .tabs .tabs__header .three-sixths, .tabs .tabs__header .grid__gutter-small .three-sixths, .grid__gutter-small .modal__grid .three-sixths, .modal__grid .grid__gutter-small .three-sixths, .grid__gutter-small .grid .four-eighths, .grid .grid__gutter-small .four-eighths, .grid__gutter-small .grid-group .four-eighths, .grid-group .grid__gutter-small .four-eighths, .grid__gutter-small .tabs .tabs__header .four-eighths, .tabs .tabs__header .grid__gutter-small .four-eighths, .grid__gutter-small .modal__grid .four-eighths, .modal__grid .grid__gutter-small .four-eighths, .grid__gutter-small .grid .five-tenths, .grid .grid__gutter-small .five-tenths, .grid__gutter-small .grid-group .five-tenths, .grid-group .grid__gutter-small .five-tenths, .grid__gutter-small .tabs .tabs__header .five-tenths, .tabs .tabs__header .grid__gutter-small .five-tenths, .grid__gutter-small .modal__grid .five-tenths, .modal__grid .grid__gutter-small .five-tenths, .grid__gutter-small .grid .six-twelfths, .grid .grid__gutter-small .six-twelfths, .grid__gutter-small .grid-group .six-twelfths, .grid-group .grid__gutter-small .six-twelfths, .grid__gutter-small .tabs .tabs__header .six-twelfths, .tabs .tabs__header .grid__gutter-small .six-twelfths, .grid__gutter-small .modal__grid .six-twelfths, .modal__grid .grid__gutter-small .six-twelfths, .grid__gutter-small .grid .one-half, .grid .grid__gutter-small .one-half, .grid__gutter-small .grid-group .one-half, .grid-group .grid__gutter-small .one-half, .grid__gutter-small .tabs .tabs__header .one-half, .tabs .tabs__header .grid__gutter-small .one-half, .grid__gutter-small .modal__grid .one-half, .modal__grid .grid__gutter-small .one-half, .grid__gutter-small .tabs .tabs__header li, .tabs .tabs__header .grid__gutter-small li, .grid__gutter-small .grid .two-sixths, .grid .grid__gutter-small .two-sixths, .grid__gutter-small .grid-group .two-sixths, .grid-group .grid__gutter-small .two-sixths, .grid__gutter-small .tabs .tabs__header .two-sixths, .tabs .tabs__header .grid__gutter-small .two-sixths, .grid__gutter-small .modal__grid .two-sixths, .modal__grid .grid__gutter-small .two-sixths, .grid__gutter-small .grid .four-twelfths, .grid .grid__gutter-small .four-twelfths, .grid__gutter-small .grid-group .four-twelfths, .grid-group .grid__gutter-small .four-twelfths, .grid__gutter-small .tabs .tabs__header .four-twelfths, .tabs .tabs__header .grid__gutter-small .four-twelfths, .grid__gutter-small .modal__grid .four-twelfths, .modal__grid .grid__gutter-small .four-twelfths, .grid__gutter-small .grid .one-third, .grid .grid__gutter-small .one-third, .grid__gutter-small .grid-group .one-third, .grid-group .grid__gutter-small .one-third, .grid__gutter-small .tabs .tabs__header .one-third, .tabs .tabs__header .grid__gutter-small .one-third, .grid__gutter-small .modal__grid .one-third, .modal__grid .grid__gutter-small .one-third, .grid__gutter-small .grid .two-eighths, .grid .grid__gutter-small .two-eighths, .grid__gutter-small .grid-group .two-eighths, .grid-group .grid__gutter-small .two-eighths, .grid__gutter-small .tabs .tabs__header .two-eighths, .tabs .tabs__header .grid__gutter-small .two-eighths, .grid__gutter-small .modal__grid .two-eighths, .modal__grid .grid__gutter-small .two-eighths, .grid__gutter-small .grid .three-twelfths, .grid .grid__gutter-small .three-twelfths, .grid__gutter-small .grid-group .three-twelfths, .grid-group .grid__gutter-small .three-twelfths, .grid__gutter-small .tabs .tabs__header .three-twelfths, .tabs .tabs__header .grid__gutter-small .three-twelfths, .grid__gutter-small .modal__grid .three-twelfths, .modal__grid .grid__gutter-small .three-twelfths, .grid__gutter-small .grid .one-quarter, .grid .grid__gutter-small .one-quarter, .grid__gutter-small .grid-group .one-quarter, .grid-group .grid__gutter-small .one-quarter, .grid__gutter-small .tabs .tabs__header .one-quarter, .tabs .tabs__header .grid__gutter-small .one-quarter, .grid__gutter-small .modal__grid .one-quarter, .modal__grid .grid__gutter-small .one-quarter, .grid__gutter-small .grid-group .grid-item, .grid-group .grid__gutter-small .grid-item, .grid__gutter-small .card.long .card__header .lesson-detail, .card.long .card__header .grid__gutter-small .lesson-detail {
     padding-left: 10px; }
 
-.one-whole, .grid .one-whole, .grid-group .one-whole, .tabs .tabs__header .one-whole, .modal__grid .one-whole, #section-different .attributes-group .one-whole {
+.one-whole, .grid .one-whole, .grid-group .one-whole, .tabs .tabs__header .one-whole, .modal__grid .one-whole {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 100%;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%; }
 
-.one-half, .two-quarters, .three-sixths, .four-eighths, .five-tenths, .six-twelfths, .grid .one-half, .grid-group .one-half, .tabs .tabs__header .one-half, .modal__grid .one-half, #section-different .attributes-group .one-half, .tabs .tabs__header li, #section-services .services-group .services-item, #section-casestudies .casestudies-group .casestudies-item {
+.one-half, .two-quarters, .three-sixths, .four-eighths, .five-tenths, .six-twelfths, .grid .one-half, .grid-group .one-half, .tabs .tabs__header .one-half, .modal__grid .one-half, .tabs .tabs__header li {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 50%;
       -ms-flex: 0 0 50%;
           flex: 0 0 50%; }
 
-.one-third, .two-sixths, .four-twelfths, #section-different .attributes-group .attributes-item {
+.one-third, .two-sixths, .four-twelfths, .grid .one-third, .grid-group .one-third, .tabs .tabs__header .one-third, .modal__grid .one-third {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 33.333%;
       -ms-flex: 0 0 33.333%;
           flex: 0 0 33.333%; }
 
 .two-thirds, .four-sixths, .eight-twelfths {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 66.666%;
       -ms-flex: 0 0 66.666%;
           flex: 0 0 66.666%; }
 
-.one-quarter, .two-eighths, .three-twelfths, #section-contact .contact-group .contact-item {
+.one-quarter, .two-eighths, .three-twelfths, .grid .one-quarter, .grid-group .one-quarter, .tabs .tabs__header .one-quarter, .modal__grid .one-quarter {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 25%;
       -ms-flex: 0 0 25%;
           flex: 0 0 25%; }
 
 .three-quarters, .six-eighths, .nine-twelfths {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 75%;
       -ms-flex: 0 0 75%;
           flex: 0 0 75%; }
 
 .one-fifth, .two-tenths {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 20%;
       -ms-flex: 0 0 20%;
           flex: 0 0 20%; }
 
 .two-fifths, .four-tenths {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 40%;
       -ms-flex: 0 0 40%;
           flex: 0 0 40%; }
 
 .three-fifths, .six-tenths {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 60%;
       -ms-flex: 0 0 60%;
           flex: 0 0 60%; }
 
 .four-fifths, .eight-tenths {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 80%;
       -ms-flex: 0 0 80%;
           flex: 0 0 80%; }
 
 .one-sixth, .two-twelfths {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 16.666%;
       -ms-flex: 0 0 16.666%;
           flex: 0 0 16.666%; }
 
 .five-sixths, .ten-twelfths {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 83.333%;
       -ms-flex: 0 0 83.333%;
           flex: 0 0 83.333%; }
 
 .one-eighth {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 12.5%;
       -ms-flex: 0 0 12.5%;
           flex: 0 0 12.5%; }
 
 .three-eighths {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 37.5%;
       -ms-flex: 0 0 37.5%;
           flex: 0 0 37.5%; }
 
 .five-eighths {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 62.5%;
       -ms-flex: 0 0 62.5%;
           flex: 0 0 62.5%; }
 
 .seven-eighths {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 87.5%;
       -ms-flex: 0 0 87.5%;
           flex: 0 0 87.5%; }
 
 .one-tenth {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 10%;
       -ms-flex: 0 0 10%;
           flex: 0 0 10%; }
 
 .three-tenths {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 30%;
       -ms-flex: 0 0 30%;
           flex: 0 0 30%; }
 
 .seven-tenths {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 70%;
       -ms-flex: 0 0 70%;
           flex: 0 0 70%; }
 
 .one-twelfth {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 8.333%;
       -ms-flex: 0 0 8.333%;
           flex: 0 0 8.333%; }
 
 .five-twelfths {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 41.666%;
       -ms-flex: 0 0 41.666%;
           flex: 0 0 41.666%; }
 
 .seven-twelfths {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 58.333%;
       -ms-flex: 0 0 58.333%;
           flex: 0 0 58.333%; }
 
 .eleven-twelfths {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 91.666%;
       -ms-flex: 0 0 91.666%;
           flex: 0 0 91.666%; }
 
 @media only screen and (max-width: 320px) {
-  .feature--one-whole, .modal__grid .grid-item, #section-contact .contact-group .contact-item {
+  .feature--one-whole, .grid .mobi.two-quarters, .grid-group .mobi.two-quarters, .tabs .tabs__header .mobi.two-quarters, .modal__grid .mobi.two-quarters, .grid .mobi.three-sixths, .grid-group .mobi.three-sixths, .tabs .tabs__header .mobi.three-sixths, .modal__grid .mobi.three-sixths, .grid .mobi.four-eighths, .grid-group .mobi.four-eighths, .tabs .tabs__header .mobi.four-eighths, .modal__grid .mobi.four-eighths, .grid .mobi.five-tenths, .grid-group .mobi.five-tenths, .tabs .tabs__header .mobi.five-tenths, .modal__grid .mobi.five-tenths, .grid .mobi.six-twelfths, .grid-group .mobi.six-twelfths, .tabs .tabs__header .mobi.six-twelfths, .modal__grid .mobi.six-twelfths, .grid .mobi.one-half, .grid-group .mobi.one-half, .tabs .tabs__header .mobi.one-half, .modal__grid .mobi.one-half, .tabs .tabs__header li.mobi, .grid .mobi.two-sixths, .grid-group .mobi.two-sixths, .tabs .tabs__header .mobi.two-sixths, .modal__grid .mobi.two-sixths, .grid .mobi.four-twelfths, .grid-group .mobi.four-twelfths, .tabs .tabs__header .mobi.four-twelfths, .modal__grid .mobi.four-twelfths, .grid .mobi.one-third, .grid-group .mobi.one-third, .tabs .tabs__header .mobi.one-third, .modal__grid .mobi.one-third, .grid .mobi.two-eighths, .grid-group .mobi.two-eighths, .tabs .tabs__header .mobi.two-eighths, .modal__grid .mobi.two-eighths, .grid .mobi.three-twelfths, .grid-group .mobi.three-twelfths, .tabs .tabs__header .mobi.three-twelfths, .modal__grid .mobi.three-twelfths, .grid .mobi.one-quarter, .grid-group .mobi.one-quarter, .tabs .tabs__header .mobi.one-quarter, .modal__grid .mobi.one-quarter, .modal__grid .grid-item {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 100%;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%; }
   .feature--one-half, .feature--two-quarters, .feature--three-sixths, .feature--four-eighths, .feature--five-tenths, .feature--six-twelfths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 50%;
         -ms-flex: 0 0 50%;
             flex: 0 0 50%; }
   .feature--one-third, .feature--two-sixths, .feature--four-twelfths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 33.333%;
         -ms-flex: 0 0 33.333%;
             flex: 0 0 33.333%; }
   .feature--two-thirds, .feature--four-sixths, .feature--eight-twelfths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 66.666%;
         -ms-flex: 0 0 66.666%;
             flex: 0 0 66.666%; }
   .feature--one-quarter, .feature--two-eighths, .feature--three-twelfths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 25%;
         -ms-flex: 0 0 25%;
             flex: 0 0 25%; }
   .feature--three-quarters, .feature--six-eighths, .feature--nine-twelfths, .card.long .card__header .lesson-detail {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 75%;
         -ms-flex: 0 0 75%;
             flex: 0 0 75%; }
   .feature--one-fifth, .feature--two-tenths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 20%;
         -ms-flex: 0 0 20%;
             flex: 0 0 20%; }
   .feature--two-fifths, .feature--four-tenths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 40%;
         -ms-flex: 0 0 40%;
             flex: 0 0 40%; }
   .feature--three-fifths, .feature--six-tenths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 60%;
         -ms-flex: 0 0 60%;
             flex: 0 0 60%; }
   .feature--four-fifths, .feature--eight-tenths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 80%;
         -ms-flex: 0 0 80%;
             flex: 0 0 80%; }
   .feature--one-sixth, .feature--two-twelfths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 16.666%;
         -ms-flex: 0 0 16.666%;
             flex: 0 0 16.666%; }
   .feature--five-sixths, .feature--ten-twelfths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 83.333%;
         -ms-flex: 0 0 83.333%;
             flex: 0 0 83.333%; }
   .feature--one-eighth {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 12.5%;
         -ms-flex: 0 0 12.5%;
             flex: 0 0 12.5%; }
   .feature--three-eighths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 37.5%;
         -ms-flex: 0 0 37.5%;
             flex: 0 0 37.5%; }
   .feature--five-eighths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 62.5%;
         -ms-flex: 0 0 62.5%;
             flex: 0 0 62.5%; }
   .feature--seven-eighths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 87.5%;
         -ms-flex: 0 0 87.5%;
             flex: 0 0 87.5%; }
   .feature--one-tenth {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 10%;
         -ms-flex: 0 0 10%;
             flex: 0 0 10%; }
   .feature--three-tenths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 30%;
         -ms-flex: 0 0 30%;
             flex: 0 0 30%; }
   .feature--seven-tenths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 70%;
         -ms-flex: 0 0 70%;
             flex: 0 0 70%; }
   .feature--one-twelfth {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 8.333%;
         -ms-flex: 0 0 8.333%;
             flex: 0 0 8.333%; }
   .feature--five-twelfths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 41.666%;
         -ms-flex: 0 0 41.666%;
             flex: 0 0 41.666%; }
   .feature--seven-twelfths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 58.333%;
         -ms-flex: 0 0 58.333%;
             flex: 0 0 58.333%; }
   .feature--eleven-twelfths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 91.666%;
         -ms-flex: 0 0 91.666%;
             flex: 0 0 91.666%; } }
 
 @media only screen and (min-width: 321px) and (max-width: 480px) {
-  .mobile--one-whole, .modal__grid .grid-item, #section-contact .contact-group .contact-item {
+  .mobile--one-whole, .grid .mobi.two-quarters, .grid-group .mobi.two-quarters, .tabs .tabs__header .mobi.two-quarters, .modal__grid .mobi.two-quarters, .grid .mobi.three-sixths, .grid-group .mobi.three-sixths, .tabs .tabs__header .mobi.three-sixths, .modal__grid .mobi.three-sixths, .grid .mobi.four-eighths, .grid-group .mobi.four-eighths, .tabs .tabs__header .mobi.four-eighths, .modal__grid .mobi.four-eighths, .grid .mobi.five-tenths, .grid-group .mobi.five-tenths, .tabs .tabs__header .mobi.five-tenths, .modal__grid .mobi.five-tenths, .grid .mobi.six-twelfths, .grid-group .mobi.six-twelfths, .tabs .tabs__header .mobi.six-twelfths, .modal__grid .mobi.six-twelfths, .grid .mobi.one-half, .grid-group .mobi.one-half, .tabs .tabs__header .mobi.one-half, .modal__grid .mobi.one-half, .tabs .tabs__header li.mobi, .grid .mobi.two-sixths, .grid-group .mobi.two-sixths, .tabs .tabs__header .mobi.two-sixths, .modal__grid .mobi.two-sixths, .grid .mobi.four-twelfths, .grid-group .mobi.four-twelfths, .tabs .tabs__header .mobi.four-twelfths, .modal__grid .mobi.four-twelfths, .grid .mobi.one-third, .grid-group .mobi.one-third, .tabs .tabs__header .mobi.one-third, .modal__grid .mobi.one-third, .grid .mobi.two-eighths, .grid-group .mobi.two-eighths, .tabs .tabs__header .mobi.two-eighths, .modal__grid .mobi.two-eighths, .grid .mobi.three-twelfths, .grid-group .mobi.three-twelfths, .tabs .tabs__header .mobi.three-twelfths, .modal__grid .mobi.three-twelfths, .grid .mobi.one-quarter, .grid-group .mobi.one-quarter, .tabs .tabs__header .mobi.one-quarter, .modal__grid .mobi.one-quarter, .modal__grid .grid-item {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 100%;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%; }
-  .mobile--one-half, .mobile--two-quarters, .mobile--three-sixths, .mobile--four-eighths, .mobile--five-tenths, .mobile--six-twelfths, #section-different .attributes-group .attributes-item {
+  .mobile--one-half, .mobile--two-quarters, .mobile--three-sixths, .mobile--four-eighths, .mobile--five-tenths, .mobile--six-twelfths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 50%;
         -ms-flex: 0 0 50%;
             flex: 0 0 50%; }
   .mobile--one-third, .mobile--two-sixths, .mobile--four-twelfths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 33.333%;
         -ms-flex: 0 0 33.333%;
             flex: 0 0 33.333%; }
   .mobile--two-thirds, .mobile--four-sixths, .mobile--eight-twelfths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 66.666%;
         -ms-flex: 0 0 66.666%;
             flex: 0 0 66.666%; }
   .mobile--one-quarter, .mobile--two-eighths, .mobile--three-twelfths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 25%;
         -ms-flex: 0 0 25%;
             flex: 0 0 25%; }
   .mobile--three-quarters, .mobile--six-eighths, .mobile--nine-twelfths, .card.long .card__header .lesson-detail {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 75%;
         -ms-flex: 0 0 75%;
             flex: 0 0 75%; }
   .mobile--one-fifth, .mobile--two-tenths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 20%;
         -ms-flex: 0 0 20%;
             flex: 0 0 20%; }
   .mobile--two-fifths, .mobile--four-tenths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 40%;
         -ms-flex: 0 0 40%;
             flex: 0 0 40%; }
   .mobile--three-fifths, .mobile--six-tenths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 60%;
         -ms-flex: 0 0 60%;
             flex: 0 0 60%; }
   .mobile--four-fifths, .mobile--eight-tenths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 80%;
         -ms-flex: 0 0 80%;
             flex: 0 0 80%; }
   .mobile--one-sixth, .mobile--two-twelfths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 16.666%;
         -ms-flex: 0 0 16.666%;
             flex: 0 0 16.666%; }
   .mobile--five-sixths, .mobile--ten-twelfths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 83.333%;
         -ms-flex: 0 0 83.333%;
             flex: 0 0 83.333%; }
   .mobile--one-eighth {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 12.5%;
         -ms-flex: 0 0 12.5%;
             flex: 0 0 12.5%; }
   .mobile--three-eighths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 37.5%;
         -ms-flex: 0 0 37.5%;
             flex: 0 0 37.5%; }
   .mobile--five-eighths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 62.5%;
         -ms-flex: 0 0 62.5%;
             flex: 0 0 62.5%; }
   .mobile--seven-eighths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 87.5%;
         -ms-flex: 0 0 87.5%;
             flex: 0 0 87.5%; }
   .mobile--one-tenth {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 10%;
         -ms-flex: 0 0 10%;
             flex: 0 0 10%; }
   .mobile--three-tenths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 30%;
         -ms-flex: 0 0 30%;
             flex: 0 0 30%; }
   .mobile--seven-tenths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 70%;
         -ms-flex: 0 0 70%;
             flex: 0 0 70%; }
   .mobile--one-twelfth {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 8.333%;
         -ms-flex: 0 0 8.333%;
             flex: 0 0 8.333%; }
   .mobile--five-twelfths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 41.666%;
         -ms-flex: 0 0 41.666%;
             flex: 0 0 41.666%; }
   .mobile--seven-twelfths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 58.333%;
         -ms-flex: 0 0 58.333%;
             flex: 0 0 58.333%; }
   .mobile--eleven-twelfths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 91.666%;
         -ms-flex: 0 0 91.666%;
             flex: 0 0 91.666%; } }
 
 @media only screen and (min-width: 481px) and (max-width: 1023px) {
   .tablet--one-whole {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 100%;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%; }
   .tablet--one-half, .tablet--two-quarters, .tablet--three-sixths, .tablet--four-eighths, .tablet--five-tenths, .tablet--six-twelfths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 50%;
         -ms-flex: 0 0 50%;
             flex: 0 0 50%; }
-  .tablet--one-third, .tablet--two-sixths, .tablet--four-twelfths, #section-services .services-group .services-item {
+  .tablet--one-third, .tablet--two-sixths, .tablet--four-twelfths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 33.333%;
         -ms-flex: 0 0 33.333%;
             flex: 0 0 33.333%; }
   .tablet--two-thirds, .tablet--four-sixths, .tablet--eight-twelfths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 66.666%;
         -ms-flex: 0 0 66.666%;
             flex: 0 0 66.666%; }
   .tablet--one-quarter, .tablet--two-eighths, .tablet--three-twelfths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 25%;
         -ms-flex: 0 0 25%;
             flex: 0 0 25%; }
   .tablet--three-quarters, .tablet--six-eighths, .tablet--nine-twelfths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 75%;
         -ms-flex: 0 0 75%;
             flex: 0 0 75%; }
   .tablet--one-fifth, .tablet--two-tenths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 20%;
         -ms-flex: 0 0 20%;
             flex: 0 0 20%; }
   .tablet--two-fifths, .tablet--four-tenths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 40%;
         -ms-flex: 0 0 40%;
             flex: 0 0 40%; }
   .tablet--three-fifths, .tablet--six-tenths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 60%;
         -ms-flex: 0 0 60%;
             flex: 0 0 60%; }
   .tablet--four-fifths, .tablet--eight-tenths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 80%;
         -ms-flex: 0 0 80%;
             flex: 0 0 80%; }
   .tablet--one-sixth, .tablet--two-twelfths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 16.666%;
         -ms-flex: 0 0 16.666%;
             flex: 0 0 16.666%; }
   .tablet--five-sixths, .tablet--ten-twelfths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 83.333%;
         -ms-flex: 0 0 83.333%;
             flex: 0 0 83.333%; }
   .tablet--one-eighth {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 12.5%;
         -ms-flex: 0 0 12.5%;
             flex: 0 0 12.5%; }
   .tablet--three-eighths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 37.5%;
         -ms-flex: 0 0 37.5%;
             flex: 0 0 37.5%; }
   .tablet--five-eighths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 62.5%;
         -ms-flex: 0 0 62.5%;
             flex: 0 0 62.5%; }
   .tablet--seven-eighths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 87.5%;
         -ms-flex: 0 0 87.5%;
             flex: 0 0 87.5%; }
   .tablet--one-tenth {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 10%;
         -ms-flex: 0 0 10%;
             flex: 0 0 10%; }
   .tablet--three-tenths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 30%;
         -ms-flex: 0 0 30%;
             flex: 0 0 30%; }
   .tablet--seven-tenths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 70%;
         -ms-flex: 0 0 70%;
             flex: 0 0 70%; }
   .tablet--one-twelfth {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 8.333%;
         -ms-flex: 0 0 8.333%;
             flex: 0 0 8.333%; }
   .tablet--five-twelfths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 41.666%;
         -ms-flex: 0 0 41.666%;
             flex: 0 0 41.666%; }
   .tablet--seven-twelfths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 58.333%;
         -ms-flex: 0 0 58.333%;
             flex: 0 0 58.333%; }
   .tablet--eleven-twelfths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 91.666%;
         -ms-flex: 0 0 91.666%;
             flex: 0 0 91.666%; } }
 
 @media only screen and (min-width: 1024px) {
   .desk--one-whole {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 100%;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%; }
-  .desk--one-half, .desk--two-quarters, .desk--three-sixths, .desk--four-eighths, .desk--five-tenths, .desk--six-twelfths {
+  .desk--one-half, .desk--two-quarters, .desk--three-sixths, .desk--four-eighths, .desk--five-tenths, .desk--six-twelfths, .grid .mobi.two-eighths, .grid-group .mobi.two-eighths, .tabs .tabs__header .mobi.two-eighths, .modal__grid .mobi.two-eighths, .grid .mobi.three-twelfths, .grid-group .mobi.three-twelfths, .tabs .tabs__header .mobi.three-twelfths, .modal__grid .mobi.three-twelfths, .grid .mobi.one-quarter, .grid-group .mobi.one-quarter, .tabs .tabs__header .mobi.one-quarter, .modal__grid .mobi.one-quarter {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 50%;
         -ms-flex: 0 0 50%;
             flex: 0 0 50%; }
-  .desk--one-third, .desk--two-sixths, .desk--four-twelfths, #section-services .services-group .services-item {
+  .desk--one-third, .desk--two-sixths, .desk--four-twelfths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 33.333%;
         -ms-flex: 0 0 33.333%;
             flex: 0 0 33.333%; }
   .desk--two-thirds, .desk--four-sixths, .desk--eight-twelfths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 66.666%;
         -ms-flex: 0 0 66.666%;
             flex: 0 0 66.666%; }
-  .desk--one-quarter, .desk--two-eighths, .desk--three-twelfths, #section-casestudies .casestudies-group .casestudies-item {
+  .desk--one-quarter, .desk--two-eighths, .desk--three-twelfths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 25%;
         -ms-flex: 0 0 25%;
             flex: 0 0 25%; }
   .desk--three-quarters, .desk--six-eighths, .desk--nine-twelfths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 75%;
         -ms-flex: 0 0 75%;
             flex: 0 0 75%; }
   .desk--one-fifth, .desk--two-tenths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 20%;
         -ms-flex: 0 0 20%;
             flex: 0 0 20%; }
   .desk--two-fifths, .desk--four-tenths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 40%;
         -ms-flex: 0 0 40%;
             flex: 0 0 40%; }
   .desk--three-fifths, .desk--six-tenths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 60%;
         -ms-flex: 0 0 60%;
             flex: 0 0 60%; }
   .desk--four-fifths, .desk--eight-tenths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 80%;
         -ms-flex: 0 0 80%;
             flex: 0 0 80%; }
   .desk--one-sixth, .desk--two-twelfths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 16.666%;
         -ms-flex: 0 0 16.666%;
             flex: 0 0 16.666%; }
   .desk--five-sixths, .desk--ten-twelfths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 83.333%;
         -ms-flex: 0 0 83.333%;
             flex: 0 0 83.333%; }
   .desk--one-eighth {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 12.5%;
         -ms-flex: 0 0 12.5%;
             flex: 0 0 12.5%; }
   .desk--three-eighths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 37.5%;
         -ms-flex: 0 0 37.5%;
             flex: 0 0 37.5%; }
   .desk--five-eighths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 62.5%;
         -ms-flex: 0 0 62.5%;
             flex: 0 0 62.5%; }
   .desk--seven-eighths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 87.5%;
         -ms-flex: 0 0 87.5%;
             flex: 0 0 87.5%; }
   .desk--one-tenth, .card.long .card__header .icon {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 10%;
         -ms-flex: 0 0 10%;
             flex: 0 0 10%; }
   .desk--three-tenths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 30%;
         -ms-flex: 0 0 30%;
             flex: 0 0 30%; }
   .desk--seven-tenths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 70%;
         -ms-flex: 0 0 70%;
             flex: 0 0 70%; }
   .desk--one-twelfth {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 8.333%;
         -ms-flex: 0 0 8.333%;
             flex: 0 0 8.333%; }
   .desk--five-twelfths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 41.666%;
         -ms-flex: 0 0 41.666%;
             flex: 0 0 41.666%; }
   .desk--seven-twelfths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 58.333%;
         -ms-flex: 0 0 58.333%;
             flex: 0 0 58.333%; }
   .desk--eleven-twelfths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 91.666%;
         -ms-flex: 0 0 91.666%;
             flex: 0 0 91.666%; } }
 
 @media only screen and (min-width: 1200px) {
   .desk-wide--one-whole {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 100%;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%; }
   .desk-wide--one-half, .desk-wide--two-quarters, .desk-wide--three-sixths, .desk-wide--four-eighths, .desk-wide--five-tenths, .desk-wide--six-twelfths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 50%;
         -ms-flex: 0 0 50%;
             flex: 0 0 50%; }
   .desk-wide--one-third, .desk-wide--two-sixths, .desk-wide--four-twelfths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 33.333%;
         -ms-flex: 0 0 33.333%;
             flex: 0 0 33.333%; }
   .desk-wide--two-thirds, .desk-wide--four-sixths, .desk-wide--eight-twelfths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 66.666%;
         -ms-flex: 0 0 66.666%;
             flex: 0 0 66.666%; }
   .desk-wide--one-quarter, .desk-wide--two-eighths, .desk-wide--three-twelfths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 25%;
         -ms-flex: 0 0 25%;
             flex: 0 0 25%; }
   .desk-wide--three-quarters, .desk-wide--six-eighths, .desk-wide--nine-twelfths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 75%;
         -ms-flex: 0 0 75%;
             flex: 0 0 75%; }
   .desk-wide--one-fifth, .desk-wide--two-tenths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 20%;
         -ms-flex: 0 0 20%;
             flex: 0 0 20%; }
   .desk-wide--two-fifths, .desk-wide--four-tenths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 40%;
         -ms-flex: 0 0 40%;
             flex: 0 0 40%; }
   .desk-wide--three-fifths, .desk-wide--six-tenths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 60%;
         -ms-flex: 0 0 60%;
             flex: 0 0 60%; }
   .desk-wide--four-fifths, .desk-wide--eight-tenths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 80%;
         -ms-flex: 0 0 80%;
             flex: 0 0 80%; }
-  .desk-wide--one-sixth, .desk-wide--two-twelfths, #section-casestudies .casestudies-group .casestudies-item {
+  .desk-wide--one-sixth, .desk-wide--two-twelfths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 16.666%;
         -ms-flex: 0 0 16.666%;
             flex: 0 0 16.666%; }
   .desk-wide--five-sixths, .desk-wide--ten-twelfths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 83.333%;
         -ms-flex: 0 0 83.333%;
             flex: 0 0 83.333%; }
   .desk-wide--one-eighth {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 12.5%;
         -ms-flex: 0 0 12.5%;
             flex: 0 0 12.5%; }
   .desk-wide--three-eighths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 37.5%;
         -ms-flex: 0 0 37.5%;
             flex: 0 0 37.5%; }
   .desk-wide--five-eighths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 62.5%;
         -ms-flex: 0 0 62.5%;
             flex: 0 0 62.5%; }
   .desk-wide--seven-eighths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 87.5%;
         -ms-flex: 0 0 87.5%;
             flex: 0 0 87.5%; }
   .desk-wide--one-tenth, .card.long .card__header .icon {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 10%;
         -ms-flex: 0 0 10%;
             flex: 0 0 10%; }
   .desk-wide--three-tenths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 30%;
         -ms-flex: 0 0 30%;
             flex: 0 0 30%; }
   .desk-wide--seven-tenths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 70%;
         -ms-flex: 0 0 70%;
             flex: 0 0 70%; }
   .desk-wide--one-twelfth {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 8.333%;
         -ms-flex: 0 0 8.333%;
             flex: 0 0 8.333%; }
   .desk-wide--five-twelfths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 41.666%;
         -ms-flex: 0 0 41.666%;
             flex: 0 0 41.666%; }
   .desk-wide--seven-twelfths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 58.333%;
         -ms-flex: 0 0 58.333%;
             flex: 0 0 58.333%; }
   .desk-wide--eleven-twelfths {
     -webkit-box-flex: 0;
-    -webkit-flex: 0 0 91.666%;
         -ms-flex: 0 0 91.666%;
             flex: 0 0 91.666%; } }
 
@@ -1163,15 +1022,15 @@ form.inline label {
     color: #099; }
 
 @media only screen and (max-width: 320px) {
-  .grid.half li:first-child a, .half.grid-group li:first-child a, .tabs .half.tabs__header li:first-child a, .half.modal__grid li:first-child a, #section-different .half.attributes-group li:first-child a {
+  .grid.half li:first-child a, .half.grid-group li:first-child a, .tabs .half.tabs__header li:first-child a, .half.modal__grid li:first-child a {
     margin-right: 5px; }
-  .grid.half li:last-child a, .half.grid-group li:last-child a, .tabs .half.tabs__header li:last-child a, .half.modal__grid li:last-child a, #section-different .half.attributes-group li:last-child a {
+  .grid.half li:last-child a, .half.grid-group li:last-child a, .tabs .half.tabs__header li:last-child a, .half.modal__grid li:last-child a {
     margin-left: 5px; } }
 
 @media only screen and (min-width: 321px) and (max-width: 480px) {
-  .grid.half li:first-child a, .half.grid-group li:first-child a, .tabs .half.tabs__header li:first-child a, .half.modal__grid li:first-child a, #section-different .half.attributes-group li:first-child a {
+  .grid.half li:first-child a, .half.grid-group li:first-child a, .tabs .half.tabs__header li:first-child a, .half.modal__grid li:first-child a {
     margin-right: 10px; }
-  .grid.half li:last-child a, .half.grid-group li:last-child a, .tabs .half.tabs__header li:last-child a, .half.modal__grid li:last-child a, #section-different .half.attributes-group li:last-child a {
+  .grid.half li:last-child a, .half.grid-group li:last-child a, .tabs .half.tabs__header li:last-child a, .half.modal__grid li:last-child a {
     margin-left: 10px; } }
 
 @media only screen and (min-width: 481px) and (max-width: 1023px) {
@@ -1199,7 +1058,7 @@ html, body, #mast, .section-home, .container {
   height: 100%; }
 
 body {
-  background: url("../images/front/bg-front.png") no-repeat center center fixed;
+  background: url("../images/front/bg-front.png") no-repeat left center fixed;
   background-size: cover; }
 
 h4, h6, ul, li, p {
@@ -1395,7 +1254,6 @@ a {
     display: block; }
   .no-mobile-inline {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
   h1, h2 {
@@ -1406,7 +1264,6 @@ a {
     display: block; }
   .no-mobile-inline {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
   h1, h2 {
@@ -1417,213 +1274,354 @@ a {
     display: block; }
   .no-mobile-inline {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
   h1, h2 {
     font-size: 45px; } }
 
-.card {
+.parallax {
+  -webkit-perspective: 1px;
+          perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto; }
+
+.parallax__group {
   position: relative;
+  height: 100vh;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d; }
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+.parallax__layer--base {
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0); }
+
+.parallax__layer--back {
+  -webkit-transform: translateZ(-1px) scale(2);
+          transform: translateZ(-1px) scale(2); }
+
+.parallax__layer--deep {
+  -webkit-transform: translateZ(-2px) scale(3);
+          transform: translateZ(-2px) scale(3); }
+
+.parallax__layer--front {
+  -webkit-transform: translateZ(1px) scale(3);
+          transform: translateZ(1px) scale(3); }
+
+.group1 {
+  background: #9d261d; }
+
+.group2 {
+  background: #00BFFF; }
+
+.group3 {
+  background: #555; }
+
+.group4 {
+  background: #ffc40d; }
+
+/**
+ * Toggle Switch Globals
+ *
+ * All switches should take on the class `c-hamburger` as well as their
+ * variant that will give them unique properties. This class is an overview
+ * class that acts as a reset for all versions of the icon.
+ */
+.c-hamburger {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 60px;
+  height: 60px;
+  font-size: 0;
+  text-indent: -9999px;
+  appearance: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: background 0.3s;
+          transition: background 0.3s;
+  float: right; }
+
+.c-hamburger:focus {
+  outline: none; }
+
+.c-hamburger span {
+  display: block;
+  position: absolute;
+  top: 28px;
+  left: 15px;
+  right: 15px;
+  height: 4px;
+  background: white; }
+
+.c-hamburger span::before,
+.c-hamburger span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  content: ""; }
+
+.c-hamburger span::before {
+  top: -12px; }
+
+.c-hamburger span::after {
+  bottom: -12px; }
+
+/**
+ * Style 1
+ *
+ * Rotating hamburger icon (rot), that simply rotates 90 degrees when activated.
+ * Nothing too fancy, simple transition.
+ */
+.c-hamburger--rot span {
+  -webkit-transition: -webkit-transform 0.3s;
+          transition: transform 0.3s; }
+
+/* active state, i.e. menu open */
+.c-hamburger--rot.is-active span {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg); }
+
+/**
+ * Style 2
+ * 
+ * Hamburger to "x" (htx). Takes on a hamburger shape, bars slide
+ * down to center and transform into an "x".
+ */
+.c-hamburger--htx span::before,
+.c-hamburger--htx span::after {
+  -webkit-transition-duration: 0.3s, 0.3s;
+          transition-duration: 0.3s, 0.3s;
+  -webkit-transition-delay: 0.3s, 0s;
+          transition-delay: 0.3s, 0s; }
+
+.c-hamburger--htx span::before {
+  -webkit-transition-property: top, -webkit-transform;
+          transition-property: top, transform; }
+
+.c-hamburger--htx span::after {
+  -webkit-transition-property: bottom, -webkit-transform;
+          transition-property: bottom, transform; }
+
+/* active state, i.e. menu open */
+.c-hamburger--htx.is-active span {
+  background: none; }
+
+.c-hamburger--htx.is-active span::before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg); }
+
+.c-hamburger--htx.is-active span::after {
+  bottom: 0;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
+
+.c-hamburger--htx.is-active span::before,
+.c-hamburger--htx.is-active span::after {
+  -webkit-transition-delay: 0s, 0.3s;
+          transition-delay: 0s, 0.3s; }
+
+/**
+ * Style 3
+ *
+ * Hamburger to left-arrow (htla). Hamburger menu transforms to a left-pointing
+ * arrow. Usually indicates an off canvas menu sliding in from left that
+ * will be close on re-click of the icon.
+ */
+.c-hamburger--htla {
+  background-color: #32dc64; }
+
+.c-hamburger--htla span {
+  -webkit-transition: -webkit-transform 0.3s;
+          transition: transform 0.3s; }
+
+.c-hamburger--htla span::before {
+  -webkit-transform-origin: top right;
+      -ms-transform-origin: top right;
+          transform-origin: top right;
+  -webkit-transition: -webkit-transform 0.3s, width 0.3s, top 0.3s;
+          transition: transform 0.3s, width 0.3s, top 0.3s; }
+
+.c-hamburger--htla span::after {
+  -webkit-transform-origin: bottom right;
+      -ms-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.3s, width 0.3s, bottom 0.3s;
+          transition: transform 0.3s, width 0.3s, bottom 0.3s; }
+
+/* active state, i.e. menu open */
+.c-hamburger--htla.is-active {
+  background-color: #19903c; }
+
+.c-hamburger--htla.is-active span {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+.c-hamburger--htla.is-active span::before,
+.c-hamburger--htla.is-active span::after {
+  width: 50%; }
+
+.c-hamburger--htla.is-active span::before {
+  top: 0;
+  -webkit-transform: translateX(19px) translateY(2px) rotate(45deg);
+      -ms-transform: translateX(19px) translateY(2px) rotate(45deg);
+          transform: translateX(19px) translateY(2px) rotate(45deg); }
+
+.c-hamburger--htla.is-active span::after {
+  bottom: 0;
+  -webkit-transform: translateX(19px) translateY(-2px) rotate(-45deg);
+      -ms-transform: translateX(19px) translateY(-2px) rotate(-45deg);
+          transform: translateX(19px) translateY(-2px) rotate(-45deg); }
+
+/**
+ * Style 4
+ *
+ * Hamburger to right-arrow (htra). Hamburger menu transforms to a
+ * right-pointing arrow. Usually indicates an off canvas menu sliding in from 
+ * right that will be close on re-click of the icon.
+ */
+.c-hamburger--htra {
+  background-color: #ff9650; }
+
+.c-hamburger--htra span {
+  -webkit-transition: -webkit-transform 0.3s;
+          transition: transform 0.3s; }
+
+.c-hamburger--htra span::before {
+  -webkit-transform-origin: top left;
+      -ms-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transition: -webkit-transform 0.3s, width 0.3s, top 0.3s;
+          transition: transform 0.3s, width 0.3s, top 0.3s; }
+
+.c-hamburger--htra span::after {
+  -webkit-transform-origin: bottom left;
+      -ms-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transition: -webkit-transform 0.3s, width 0.3s, bottom 0.3s;
+          transition: transform 0.3s, width 0.3s, bottom 0.3s; }
+
+/* active state, i.e. menu open */
+.c-hamburger--htra.is-active {
+  background-color: #e95d00; }
+
+.c-hamburger--htra.is-active span {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+.c-hamburger--htra.is-active span::before,
+.c-hamburger--htra.is-active span::after {
+  width: 50%; }
+
+.c-hamburger--htra.is-active span::before {
+  top: 0;
+  -webkit-transform: translateX(-4px) translateY(2px) rotate(-45deg);
+      -ms-transform: translateX(-4px) translateY(2px) rotate(-45deg);
+          transform: translateX(-4px) translateY(2px) rotate(-45deg); }
+
+.c-hamburger--htra.is-active span::after {
+  bottom: 0;
+  -webkit-transform: translateX(-4px) translateY(-2px) rotate(45deg);
+      -ms-transform: translateX(-4px) translateY(-2px) rotate(45deg);
+          transform: translateX(-4px) translateY(-2px) rotate(45deg); }
+
+.social-media {
+  list-style-type: none;
+  text-align: left; }
+  .social-media li {
+    list-style-type: none;
+    display: inline-block; }
+    .social-media li a {
+      display: block; }
+      .social-media li a .icon {
+        margin: 0;
+        padding: 0;
+        background: #4A90E2; }
+        .social-media li a .icon svg {
+          width: 50px;
+          height: 50px; }
+          .social-media li a .icon svg polygon,
+          .social-media li a .icon svg circle,
+          .social-media li a .icon svg rect,
+          .social-media li a .icon svg path {
+            fill: #EEEEEE; }
+      .social-media li a:hover .icon {
+        background: #3A5181; }
+
+.card.image {
+  position: relative;
+  width: 98%;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 20px;
   overflow: hidden; }
-  .card .figure {
-    padding: 0;
-    margin: 0;
-    overflow: hidden; }
-    .card .figure .image {
-      width: 100%;
-      height: auto; }
-  .card.lesson-card {
-    padding-bottom: 27px; }
-    .card.lesson-card h3 {
-      margin-bottom: 10px;
-      color: #fff; }
-    .card.lesson-card p {
-      margin: 0;
-      margin-top: 10px;
-      color: #fff; }
-  .card.news {
-    position: relative;
-    width: 99%;
-    margin-bottom: 2px; }
-    .card.news:before {
-      content: "";
-      display: block;
-      padding-top: 120%; }
-    .card.news .background {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background: #555555;
-      overflow: hidden; }
-      .card.news .background img {
-        width: auto;
-        height: 100%; }
-    .card.news .news__body {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0; }
-      .card.news .news__body h4 {
-        background: rgba(0, 0, 0, 0.7);
-        color: #fff;
-        white-space: normal;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        top: 60%;
-        padding: 10px; }
-      .card.news .news__body p {
-        font-size: 1em;
-        padding: 10px;
-        white-space: normal; }
-  .card.video {
-    position: relative;
-    width: 100%; }
-    .card.video:before {
-      content: "";
-      display: block;
-      padding-top: 52%; }
-    .card.video .video-content {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0; }
-      .card.video .video-content .video {
-        width: 100% !important;
-        height: 100% !important; }
-  .card .card__flyout {
+  .card.image:before {
+    content: "";
+    display: block;
+    padding-top: 76.4%; }
+  .card.image .background {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+    padding: 0;
+    margin: 0;
+    z-index: 0;
+    overflow: hidden; }
+    .card.image .background .bg {
+      width: 100%;
+      height: auto;
+      top: 0; }
+  .card.image .card__body {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.7);
+    -webkit-transition: 0.5s;
+            transition: 0.5s; }
+    .card.image .card__body h2 {
+      background: rgba(0, 0, 0, 0.8);
+      margin: 0;
+      padding: 20px;
+      display: block;
+      color: #fff; }
+    .card.image .card__body p {
+      margin: 0;
+      padding: 20px;
+      display: block;
+      font-size: 1em;
+      color: #fff; }
+  .card.image:hover .card__body {
     -webkit-transform: translateY(-100%);
         -ms-transform: translateY(-100%);
             transform: translateY(-100%);
-    background: #000;
-    -webkit-transition: all 0.3s;
-            transition: all 0.3s;
-    -webkit-transition-delay: 0.1s;
-            transition-delay: 0.1s; }
-    .card .card__flyout.on {
-      -webkit-transform: translateY(0%);
-          -ms-transform: translateY(0%);
-              transform: translateY(0%);
-      -webkit-transition: all 0.5s;
-              transition: all 0.5s;
-      -webkit-transition-delay: 0.1s;
-              transition-delay: 0.1s; }
-
-.flex-container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-flex-wrap: nowrap;
-      -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap; }
-  .flex-container .flex-item {
-    display: inline-block;
-    -webkit-flex-basis: auto;
-        -ms-flex-preferred-size: auto;
-            flex-basis: auto;
-    -webkit-box-flex: 100;
-    -webkit-flex-grow: 100;
-        -ms-flex-positive: 100;
-            flex-grow: 100;
-    -webkit-flex-shrink: 0.5;
-        -ms-flex-negative: 0.5;
-            flex-shrink: 0.5;
-    -webkit-flex-wrap: nowrap;
-        -ms-flex-wrap: nowrap;
-            flex-wrap: nowrap;
-    margin: 0.2%; }
-
-.static-card.lesson,
-.hscroller-card.lesson {
-  position: relative;
-  display: inline-block;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
-  .static-card.lesson:before,
-  .hscroller-card.lesson:before {
-    content: "";
-    display: block;
-    padding-top: 100%; }
-  .static-card.lesson .layer,
-  .hscroller-card.lesson .layer {
-    color: #fff !important; }
-    .static-card.lesson .layer.carousel__item,
-    .hscroller-card.lesson .layer.carousel__item {
-      position: absolute;
-      top: 0.5%;
-      right: 0.5%;
-      bottom: 0.5%;
-      left: 0.5%;
-      font-size: 0.75em;
-      border-radius: 100%;
-      -webkit-box-sizing: border-box;
-              box-sizing: border-box; }
-      .static-card.lesson .layer.carousel__item .v-align,
-      .hscroller-card.lesson .layer.carousel__item .v-align {
-        left: 0;
-        right: 0; }
-        .static-card.lesson .layer.carousel__item .v-align .lesson__no,
-        .hscroller-card.lesson .layer.carousel__item .v-align .lesson__no {
-          font-size: 4em;
-          line-height: normal;
-          margin-top: 10px; }
-
-@media only screen and (max-width: 320px) {
-  .static-card.lesson,
-  .hscroller-card.lesson {
-    width: 25%; }
-  .lessons-page .static-card.lesson,
-  .lessons-page .hscroller-card.lesson {
-    width: 32.5%; } }
-
-@media only screen and (min-width: 321px) and (max-width: 480px) {
-  .static-card.lesson,
-  .hscroller-card.lesson {
-    width: 25%; }
-  .lessons-page .static-card.lesson,
-  .lessons-page .hscroller-card.lesson {
-    width: 32.5%; } }
-
-@media only screen and (min-width: 481px) and (max-width: 1023px) {
-  .static-card.lesson,
-  .hscroller-card.lesson {
-    width: 15%; }
-  .lessons-page .static-card.lesson,
-  .lessons-page .hscroller-card.lesson {
-    width: 19.4%; } }
-
-@media only screen and (min-width: 1024px) {
-  .static-card.lesson,
-  .hscroller-card.lesson {
-    width: 20%; }
-  .lessons-page .static-card.lesson,
-  .lessons-page .hscroller-card.lesson {
-    width: 10.7%; } }
-
-@media only screen and (min-width: 1200px) {
-  .static-card.lesson,
-  .hscroller-card.lesson {
-    width: 15%; }
-  .lessons-page .static-card.lesson,
-  .lessons-page .hscroller-card.lesson {
-    width: 9.7%; } }
+    -webkit-transition: 0.5s;
+            transition: 0.5s; }
 
 .card.small a {
   display: block;
@@ -2057,12 +2055,40 @@ a {
   .modal h2 {
     font-size: 1em; } }
 
-.wp-audio-shortcode {
-  width: 90% !important;
-  visibility: visible !important;
-  padding: 0 10px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+.section {
+  width: 100%;
+  position: relative;
+  padding-left: 0;
+  padding-right: 0; }
+  .section h3 {
+    padding: 10px; }
+
+.hscroller {
+  width: 100%;
+  position: relative;
+  white-space: nowrap;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch; }
+
+.hscroller-card {
+  display: inline-block;
+  vertical-align: middle; }
+  .hscroller-card .layer {
+    display: block;
+    width: 100%; }
+  .hscroller-card .hscroller-label,
+  .hscroller-card .hscroller-img {
+    display: none; }
+
+.carousel__item {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  margin: 0 2px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 3px 10px #999999;
+          box-shadow: 0 3px 10px #999999; }
 
 @media only screen and (min-width: 321px) and (max-width: 480px) {
   .container {
@@ -2075,7 +2101,7 @@ a {
   right: 0;
   height: 50px;
   display: block;
-  background: #fff;
+  background: #D0021B;
   z-index: 5; }
   #masthead .container {
     padding: 0;
@@ -2087,14 +2113,15 @@ a {
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
     height: 46px;
-    display: none; }
+    display: none;
+    right: 0; }
   #masthead .nav-main {
     position: absolute;
     top: 50%;
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
-    right: 0; }
+    left: 0; }
     #masthead .nav-main ul {
       margin: 0;
       padding: 0;
@@ -2142,9 +2169,6 @@ a {
   position: relative;
   top: 100%; }
 
-#mast .section {
-  padding: 60px 0; }
-
 @media only screen and (min-width: 321px) and (max-width: 480px) {
   #mast .section {
     padding: 60px 0; } }
@@ -2171,298 +2195,249 @@ a {
   #footend {
     padding: 60px 0; } }
 
-#section-different {
-  background: #DDDDDD;
-  background-size: cover;
-  padding: 0 0 40px 0;
-  color: #818181; }
-  #section-different .section-header h2 {
-    color: #333333;
+#section-about {
+  background: #DDDDDD; }
+  #section-about .section-header h2 {
+    color: #4A90E2;
     margin: 0 0 35px 0;
     line-height: normal; }
-  #section-different .section-header p {
-    color: #999999; }
-  #section-different .icon {
+  #section-about .section-header p {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    color: #777777;
+    line-height: normal;
+    text-align: justify; }
+  #section-about .icon {
     text-align: center;
     border: 2px solid #FF625F;
     border-radius: 100%; }
-  #section-different .attributes-group {
-    margin-top: 60px;
-    text-align: center;
-    color: #D0D0D0; }
-    #section-different .attributes-group .attributes-item {
-      margin-bottom: 20px; }
-      #section-different .attributes-group .attributes-item h4 {
-        text-transform: uppercase; }
-      #section-different .attributes-group .attributes-item span {
-        color: #929497;
-        font-size: 0.85em; }
-  #section-different .figure-teamBottom {
-    background: url(../images/site/staff-footer.png) top center no-repeat;
-    padding: 30px 0;
-    margin: 60px 0 -60px 0; }
+  @media only screen and (max-width: 320px) {
+    #section-about p {
+      width: 90%;
+      font-size: 0.75em; } }
+  @media only screen and (min-width: 321px) and (max-width: 480px) {
+    #section-about p {
+      width: 90%;
+      font-size: 1em;
+      text-align: left; } }
+  @media only screen and (min-width: 481px) and (max-width: 1023px) {
+    #section-about p {
+      width: 90%;
+      font-size: 1em; } }
+  @media only screen and (min-width: 1024px) {
+    #section-about p {
+      width: 80%;
+      font-size: 1em; } }
+  @media only screen and (min-width: 1200px) {
+    #section-about p {
+      width: 60%;
+      font-size: 1em; } }
 
-@media only screen and (max-width: 320px) {
-  #section-different {
-    padding: 0 0 40px 0; }
-    #section-different .container {
-      margin: 0 10px; }
-    #section-different .section-header h2 {
-      margin: 0 0 35px 0; }
-    #section-different .attributes-group {
-      margin: 60px auto 0 auto; }
-      #section-different .attributes-group .attributes-item {
-        margin-bottom: 20px; } }
-
-@media only screen and (min-width: 321px) and (max-width: 480px) {
-  #section-different {
-    padding: 0 0 40px 0; }
-    #section-different .container {
-      margin: 0 10px; }
-    #section-different .section-header h2 {
-      margin: 0 0 35px 0; }
-    #section-different .attributes-group {
-      margin: 60px auto 0 auto; }
-      #section-different .attributes-group .attributes-item {
-        margin-bottom: 20px; } }
-
-@media only screen and (min-width: 481px) and (max-width: 1023px) {
-  #section-different .container {
-    margin: 0 10px; } }
-
-@media only screen and (min-width: 1024px) {
-  #section-different .container {
-    margin: 0 auto; } }
-
-@media only screen and (min-width: 1200px) {
-  #section-different .container {
-    margin: 0 auto; } }
-
-#top-services {
-  padding: 55px 0; }
-
-#section-services {
+#section-stuff {
   background: #000;
   background-size: cover;
-  color: #818181;
-  padding: 0 0 40px; }
-  #section-services .section-header h2 {
-    color: #BBBBBB;
-    margin-bottom: 80px;
-    line-height: normal; }
-  #section-services .section-header p {
-    color: #929497;
-    margin-bottom: 65px; }
-  #section-services .figure-servicesTop {
-    background: url(../images/services/services-top-icon.png) top center no-repeat;
-    margin-top: -60px;
-    padding: 90px 0; }
-  #section-services .services-group {
-    text-align: center; }
-    #section-services .services-group .icon {
-      margin: 0;
-      padding: 0; }
-      #section-services .services-group .icon svg {
-        width: 80px;
-        height: 80px; }
-        #section-services .services-group .icon svg polygon,
-        #section-services .services-group .icon svg circle,
-        #section-services .services-group .icon svg rect,
-        #section-services .services-group .icon svg path {
-          fill: #EEEEEE; }
-      #section-services .services-group .icon .icon {
-        text-align: center;
-        border: 2px solid #FF625F;
-        border-radius: 100%;
-        padding: 20px; }
-    #section-services .services-group .services-item {
-      text-align: center;
-      margin: 20px 0 0 0; }
-      #section-services .services-group .services-item h4 {
-        color: #fff; }
-      #section-services .services-group .services-item span {
-        font-size: 0.85em;
-        color: #929497; }
-
-@media only screen and (max-width: 320px) {
-  #top-services {
-    padding: 55px 0; }
-  #section-services {
-    padding: 0 0 40px; }
-    #section-services .section-header h2 {
-      margin-bottom: 35px; }
-    #section-services .section-header p {
-      margin-bottom: 65px; }
-    #section-services .figure-servicesTop {
-      margin-top: -60px;
-      padding: 90px 0; }
-    #section-services .services-group .services-item {
-      margin: 20px 0 0 0; } }
-
-@media only screen and (min-width: 321px) and (max-width: 480px) {
-  #top-services {
-    padding: 55px 0; }
-  #section-services {
-    padding: 0 0 40px; }
-    #section-services .section-header h2 {
-      margin-bottom: 35px; }
-    #section-services .section-header p {
-      margin-bottom: 65px; }
-    #section-services .figure-servicesTop {
-      margin-top: -60px;
-      padding: 90px 0; }
-    #section-services .services-group .services-item {
-      margin: 20px 0 0 0; } }
-
-#section-casestudies {
-  background: #ecf0f1; }
-  #section-casestudies .section-header {
+  color: #818181; }
+  #section-stuff .section-header {
     margin-bottom: 80px; }
-    #section-casestudies .section-header .icon {
+    #section-stuff .section-header h2 {
+      color: #fff;
+      line-height: normal; }
+  #section-stuff .employees h3 {
+    padding: 0;
+    margin-bottom: 20px; }
+  #section-stuff .employees .career {
+    list-style-type: none;
+    padding: 0; }
+    #section-stuff .employees .career .employee {
+      margin-bottom: 10px; }
+      #section-stuff .employees .career .employee span {
+        display: block; }
+      #section-stuff .employees .career .employee .company {
+        font-size: 1.125em;
+        margin-left: 20px; }
+      #section-stuff .employees .career .employee .role {
+        font-size: 0.75em; }
+      #section-stuff .employees .career .employee .date {
+        font-size: 0.625em;
+        margin-left: 20px; }
+  #section-stuff .history ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+    #section-stuff .history ul li {
+      display: inline-block; }
+      #section-stuff .history ul li a {
+        display: block;
+        text-align: center; }
+        #section-stuff .history ul li a span {
+          color: #BBBBBB; }
+  #section-stuff .history .figure-icon {
+    margin: 0;
+    padding: 0;
+    margin: 0; }
+    #section-stuff .history .figure-icon svg {
+      width: 60px;
+      height: 60px; }
+      #section-stuff .history .figure-icon svg polygon,
+      #section-stuff .history .figure-icon svg circle,
+      #section-stuff .history .figure-icon svg rect,
+      #section-stuff .history .figure-icon svg path {
+        fill: #4A90E2; }
+  #section-stuff .history .education {
+    margin-top: 40px; }
+    #section-stuff .history .education .employee {
+      display: block;
+      margin-bottom: 10px; }
+    #section-stuff .history .education span {
+      display: block; }
+    #section-stuff .history .education .company {
+      font-size: 1.125em;
+      margin-left: 20px; }
+    #section-stuff .history .education .role {
+      font-size: 0.75em; }
+    #section-stuff .history .education .date {
+      font-size: 0.625em;
+      margin-left: 20px; }
+
+#section-work {
+  background: #3A5181; }
+  #section-work .section-header {
+    margin-bottom: 80px; }
+    #section-work .section-header .icon {
       margin: 0;
       padding: 0; }
-      #section-casestudies .section-header .icon svg {
+      #section-work .section-header .icon svg {
         width: 100px;
         height: 100px; }
-        #section-casestudies .section-header .icon svg polygon,
-        #section-casestudies .section-header .icon svg circle,
-        #section-casestudies .section-header .icon svg rect,
-        #section-casestudies .section-header .icon svg path {
-          fill: #333333; }
-    #section-casestudies .section-header span {
+        #section-work .section-header .icon svg polygon,
+        #section-work .section-header .icon svg circle,
+        #section-work .section-header .icon svg rect,
+        #section-work .section-header .icon svg path {
+          fill: #fff; }
+    #section-work .section-header span {
       border-top: 5px dotted #FF625F;
       padding: 0 40px; }
-  #section-casestudies .casestudies-group {
+    #section-work .section-header h2 {
+      color: #fff; }
+  #section-work .card.image .card__body h2 {
+    line-height: normal;
+    height: 50%;
+    vertical-align: middle; }
+  #section-work .button {
+    width: 100px;
+    margin: 0 auto;
+    display: block;
     text-align: center; }
-    #section-casestudies .casestudies-group:before, #section-casestudies .casestudies-group:after {
-      content: "";
-      display: table; }
-    #section-casestudies .casestudies-group:after {
-      clear: both; }
-    #section-casestudies .casestudies-group .casestudies-item {
-      padding: 0;
-      position: relative; }
-
-@media only screen and (max-width: 320px) {
-  #section-casestudies .section-header span {
-    padding: 0 40px; }
-  #section-casestudies .casestudies-group .casestudies-item .bob-caseHover {
-    padding: 20px 0 10px; } }
-
-@media only screen and (min-width: 321px) and (max-width: 480px) {
-  #section-casestudies .section-header span {
-    padding: 0 40px; }
-  #section-casestudies .casestudies-group .casestudies-item .bob-caseHover {
-    padding: 20px 0 10px; } }
-
-@media only screen and (min-width: 481px) and (max-width: 1023px) {
-  #section-casestudies .section-header span {
-    padding: 0 40px; }
-  #section-casestudies .casestudies-group .casestudies-item .bob-caseHover {
-    padding: 20px 0 40px; } }
-
-@media only screen and (min-width: 1024px) {
-  #section-casestudies .section-header span {
-    padding: 0 40px; }
-  #section-casestudies .casestudies-group .casestudies-item .bob-caseHover {
-    padding: 20px 0 40px; } }
-
-@media only screen and (min-width: 1200px) {
-  #section-casestudies .section-header span {
-    padding: 0 40px; }
-  #section-casestudies .casestudies-group .casestudies-item .bob-caseHover {
-    padding: 20px 0 40px; } }
 
 #section-contact {
   background: #000 url(../images/contact/bg-contact.jpg) no-repeat fixed;
   background-size: cover;
-  padding: 0 0 40px;
-  color: #818181; }
+  background-position: top center;
+  color: #999999;
+  padding-bottom: 0 !important;
+  text-align: center; }
   #section-contact .section-header {
     margin-bottom: 80px; }
-  #section-contact .figure-map {
-    padding: 0 0 60px 0;
-    display: none; }
-    #section-contact .figure-map img {
-      max-width: 100%; }
-  #section-contact .contact-group {
-    text-align: center;
-    color: #D0D0D0; }
-    #section-contact .contact-group .contact-item {
-      margin-bottom: 20px; }
-      #section-contact .contact-group .contact-item .icon {
-        margin: 0;
-        padding: 0; }
-        #section-contact .contact-group .contact-item .icon svg {
-          width: 80px;
-          height: 80px; }
-          #section-contact .contact-group .contact-item .icon svg polygon,
-          #section-contact .contact-group .contact-item .icon svg circle,
-          #section-contact .contact-group .contact-item .icon svg rect,
-          #section-contact .contact-group .contact-item .icon svg path {
-            fill: #EEEEEE; }
-        #section-contact .contact-group .contact-item .icon .icon {
-          text-align: center;
-          border: 2px solid #FF625F;
-          border-radius: 100%;
-          padding: 20px; }
-      #section-contact .contact-group .contact-item h4 {
-        text-transform: uppercase; }
-      #section-contact .contact-group .contact-item span {
-        font-size: 0.85em; }
-      #section-contact .contact-group .contact-item .mail-me {
-        display: block;
-        color: #FF625F; }
-
-@media only screen and (max-width: 320px) {
-  #section-contact {
-    padding: 0 0 40px; }
-    #section-contact .figure-map {
-      padding: 0 0 60px 0; }
-    #section-contact .contact-group .contact-item {
-      margin-bottom: 20px; } }
-
-@media only screen and (min-width: 321px) and (max-width: 480px) {
-  #section-contact {
-    padding: 0 0 40px; }
-    #section-contact .figure-map {
-      padding: 0 0 60px 0; }
-    #section-contact .contact-group .contact-item {
-      margin-bottom: 20px; } }
+    #section-contact .section-header .icon {
+      margin: 0;
+      padding: 0; }
+      #section-contact .section-header .icon svg {
+        width: 150px;
+        height: 150px; }
+        #section-contact .section-header .icon svg polygon,
+        #section-contact .section-header .icon svg circle,
+        #section-contact .section-header .icon svg rect,
+        #section-contact .section-header .icon svg path {
+          fill: #fff; }
+  #section-contact p {
+    color: #999999;
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 20px; }
+  #section-contact h3 {
+    color: #999999;
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 80px; }
+  #section-contact .social-media {
+    margin: 0;
+    padding-left: 0;
+    text-align: center !important; }
+  #section-contact .linked-in {
+    background: rgba(51, 51, 51, 0.8);
+    padding: 80px 0;
+    margin-top: 80px; }
+    #section-contact .linked-in .logo {
+      margin: 0;
+      padding: 0;
+      margin-left: 10px;
+      vertical-align: middle; }
+      #section-contact .linked-in .logo svg {
+        width: 180px;
+        height: 50px; }
+        #section-contact .linked-in .logo svg polygon,
+        #section-contact .linked-in .logo svg circle,
+        #section-contact .linked-in .logo svg rect,
+        #section-contact .linked-in .logo svg path {
+          fill: #4A90E2; }
+    #section-contact .linked-in p {
+      vertical-align: middle;
+      margin: 0;
+      line-height: 50px;
+      width: auto; }
+  @media only screen and (max-width: 320px) {
+    #section-contact .linked-in .linkedin.logo {
+      display: block; }
+    #section-contact .linked-in .twitter.logo {
+      display: block; }
+    #section-contact .linked-in a {
+      display: block; }
+    #section-contact .linked-in p {
+      display: block; } }
+  @media only screen and (min-width: 321px) and (max-width: 480px) {
+    #section-contact .linked-in .linkedin.logo {
+      display: block; }
+    #section-contact .linked-in .twitter.logo {
+      display: block; }
+    #section-contact .linked-in a {
+      display: block; }
+    #section-contact .linked-in p {
+      display: block; } }
+  @media only screen and (min-width: 481px) and (max-width: 1023px) {
+    #section-contact .linked-in .linkedin.logo {
+      display: block; }
+    #section-contact .linked-in .twitter.logo {
+      display: block; }
+    #section-contact .linked-in a {
+      display: block; }
+    #section-contact .linked-in p {
+      display: block; } }
+  @media only screen and (min-width: 1024px) {
+    #section-contact .linked-in .linkedin.logo {
+      display: inline-block; }
+    #section-contact .linked-in .twitter.logo {
+      display: inline-block; }
+    #section-contact .linked-in a {
+      display: inline-block; }
+    #section-contact .linked-in p {
+      display: inline-block; } }
+  @media only screen and (min-width: 1200px) {
+    #section-contact .linked-in .linkedin.logo {
+      display: inline-block; }
+    #section-contact .linked-in .twitter.logo {
+      display: inline-block; }
+    #section-contact .linked-in a {
+      display: inline-block; }
+    #section-contact .linked-in p {
+      display: inline-block; } }
 
 .section-home {
-  text-align: center;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0; }
-  .section-home .wrap-content {
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%); }
-  .section-home .section-header {
-    padding: 0 0 20px 0; }
-    .section-home .section-header h2 {
-      line-height: normal; }
-    .section-home .section-header .bob-slogan {
-      text-transform: uppercase;
-      padding: 0;
-      font-size: 1.6em;
-      line-height: normal;
-      margin: 40px 0 10px; }
-  .section-home .front-requestLink {
-    width: 250px;
-    border: 2px solid #FFF;
-    padding: 15px 5px;
-    margin: 50px auto;
-    font-size: 0.85em;
-    color: #FFF; }
-    .section-home .front-requestLink a {
-      color: #000;
-      text-decoration: none; }
+  bottom: 0;
+  padding: 0; }
   .section-home .figure-downArrow {
     clear: both;
     width: 100%;
@@ -2470,8 +2445,10 @@ a {
     .section-home .figure-downArrow img {
       display: inline-block; }
   .section-home .figure-logo {
-    width: 225px;
-    margin: 0 auto; }
+    width: 450px;
+    position: absolute;
+    bottom: 0;
+    left: 0; }
     .section-home .figure-logo img {
       width: 100%; }
 
@@ -2512,3 +2489,231 @@ a {
 @media only screen and (min-width: 321px) and (max-width: 480px) {
   .container {
     padding: 0; } }
+
+.page-work .card__body h2 {
+  line-height: normal;
+  height: 40%; }
+
+.page-work .card__body p {
+  font-size: 0.75em; }
+
+.page-work .project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .page-work .project .column-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto; }
+  .page-work .project .column-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto; }
+  .page-work .project .row-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+  .page-work .project .row-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+  .page-work .project #start {
+    background: #FF625F; }
+  .page-work .project #end {
+    background: #FF625F; }
+  .page-work .project #info {
+    background: #AAAAAA; }
+  .page-work .project .square {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2; }
+  .page-work .project .mobile {
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .page-work .project .mobile img {
+      width: 100%;
+      height: auto; }
+  .page-work .project#tonplaygo #start {
+    background: #FF625F; }
+  .page-work .project#tonplaygo #end {
+    background: #FF625F; }
+  .page-work .project#intelleapp #start {
+    background: #3A5181; }
+  .page-work .project#intelleapp #end {
+    background: #F9BC45; }
+  .page-work .project#stj #start {
+    background: #3A5181; }
+    .page-work .project#stj #start span {
+      color: #fff; }
+  .page-work .project#stj #end {
+    background: #D3AD53; }
+  .page-work .project#colourworks #start {
+    background: #EE3380; }
+  .page-work .project#colourworks #end {
+    background: #87D1D7; }
+  .page-work .project#usb #start {
+    background: #7E6F2C; }
+  .page-work .project#usb #end {
+    background: #AF2048; }
+    .page-work .project#usb #end span {
+      color: #fff; }
+  .page-work .project#usb-ed #start {
+    background: #7E6F2C; }
+  .page-work .project#usb-ed #end {
+    background: #AF2048; }
+    .page-work .project#usb-ed #end span {
+      color: #fff; }
+  .page-work .project#navigator #start {
+    background: #fff; }
+  .page-work .project#navigator #end {
+    background: #333333; }
+    .page-work .project#navigator #end span {
+      color: #fff; }
+  .page-work .project#waterfront #start {
+    background: #F8E43F; }
+  .page-work .project#waterfront #end {
+    background: #1A3A67; }
+    .page-work .project#waterfront #end span {
+      color: #fff; }
+  .page-work .project#om #start {
+    background: #007054; }
+    .page-work .project#om #start span {
+      color: #fff; }
+  .page-work .project#om #end {
+    background: #66A042; }
+  .page-work .project#capitec #start {
+    background: #C12F30; }
+    .page-work .project#capitec #start span {
+      color: #fff; }
+  .page-work .project#capitec #end {
+    background: #1A3A67; }
+    .page-work .project#capitec #end span {
+      color: #fff; }
+  .page-work .project#vlc #start {
+    background: #C12F30; }
+  .page-work .project#vlc #end {
+    background: #C12F30; }
+    .page-work .project#vlc #end span {
+      color: #fff; }
+  .page-work .project#mvbc #start {
+    background: #fff; }
+  .page-work .project#mvbc #end {
+    background: #000; }
+    .page-work .project#mvbc #end span {
+      color: #fff; }
+  .page-work .project #end {
+    text-align: right; }
+  .page-work .project .square {
+    padding: 10px 20px; }
+    .page-work .project .square.big {
+      padding: 20px;
+      background: #AAAAAA; }
+      .page-work .project .square.big h2 {
+        font-size: 1.7em;
+        line-height: normal;
+        padding: 0;
+        margin: 0; }
+      .page-work .project .square.big h3 {
+        font-size: 1em;
+        line-height: normal; }
+      .page-work .project .square.big p {
+        font-size: 0.75em;
+        line-height: normal;
+        margin-top: 10px; }
+      .page-work .project .square.big li {
+        font-size: 0.75em;
+        line-height: normal; }
+
+@media only screen and (max-width: 320px) {
+  .page-work #mast {
+    padding-top: 80px; }
+  .page-work .project {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .page-work .square {
+    width: 100%; } }
+
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  .page-work #mast {
+    padding-top: 60px; }
+  .page-work .project {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  .page-work #mast {
+    padding-top: 60px; }
+  .page-work .project {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+
+@media only screen and (min-width: 1024px) {
+  .page-work #mast {
+    padding-top: 0; }
+  .page-work .project {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    .page-work .project .column-1 {
+      width: 25%; }
+    .page-work .project .column-2 {
+      width: 75%; }
+    .page-work .project .row-1 .mobi {
+      width: 50%; } }
+
+@media only screen and (min-width: 1200px) {
+  .page-work #mast {
+    padding-top: 0; }
+  .page-work .project {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    .page-work .project .column-1 {
+      width: 33.33%; }
+    .page-work .project .column-2 {
+      width: 66.66%; }
+    .page-work .project .row-1 .mobi {
+      width: 33.33%; } }

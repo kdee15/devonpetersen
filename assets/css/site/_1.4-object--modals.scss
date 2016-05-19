@@ -49,10 +49,10 @@
         
         .inner {
             
-            background: $ia-grey20;
+            background: $kd-grey20;
             display: block;
             
-            h5 {margin: 0; text-transform: uppercase; font-weight: bold; color: $ia-red;}
+            h5 {margin: 0; text-transform: uppercase; font-weight: bold; color: $kd-red;}
             
         }
     }
@@ -67,7 +67,7 @@
 
     position: absolute;
     color: $white;
-    background: $ia-red;
+    background: $kd-red;
     top: 20px;
     font-size: $large;
     right: 20px;

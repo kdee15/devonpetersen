@@ -48,20 +48,19 @@
             <header id="masthead">
             
                 <div class="container">
-                
-                    <!-- C.1.1. Logo -->
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/logo.png" alt="" class="logo" id="bob-siteLogo" />
                     
                     <!-- C.1.2. Navigation -->
                     <nav class="nav-main">
                         <ul>
-                            <li><a class="textLink" href="#section-different">About Us</a></li>
-                            <li><a class="textLink" href="#section-services">Our Services</a></li>
-                            <li><a class="textLink" href="#section-casestudies">Our Artists</a></li>
-                            <li><a class="textLink" href="#section-contact">Contact</a></li>
-                            <li><a class="imgLink" href="http://www.facebook.com/bighousevoices" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/icon-facebook.svg" alt="Facebook"></a></li>
+                            <li><a class="textLink" href="#section-different">About Devon</a></li>
+                            <li><a class="textLink" href="#section-services">Calendar</a></li>
+                            <li><a class="textLink" href="#section-casestudies">Merchandise</a></li>
+                            <li><a class="textLink" href="#section-contact">Media</a></li>
                         </ul>
                     </nav>
+                
+                    <!-- C.1.1. Logo -->
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/logo.png" alt="" class="logo" id="bob-siteLogo" />
                 
                 </div>
             

@@ -8,86 +8,47 @@
 
     background: $black url(../images/contact/bg-contact.jpg) no-repeat fixed;
     background-size: cover;
+    background-position: top center;
+    color: $kd-grey60;
 
-    // RESPONSIVE
-    padding: 0 0 40px;
-    // RESPONSIVE
-
-    color: #818181;
-
-    // H.1. Components
-
-    //
-
-    .section-header {
+    .section-header { 
         
         margin-bottom: $baseline-large;
+        
+        .icon { @include icon (150px, 150px, $white); }
+    
     }
+    
+    p { color: $kd-grey60; width: 40%; margin: 0 auto; margin-bottom: $baseline; }
+    h3 { color: $kd-grey60; width: 40%; margin: 0 auto; margin-bottom: $baseline-large; }
 
-    .figure-map {
+    .social-media {
+    
+        margin: 0;
+        padding-left: 0;
+        text-align: center!important;
+    
+    }
+    
+    .linked-in { 
+        
+        background: rgba($kd-grey90,0.8); padding: $baseline-large 0; margin-top: $baseline-large; 
 
-        // RESPONSIVE
-        padding: 0 0 60px 0;
-        display: none;
-        // RESPONSIVE
+        .logo { 
 
-        //
+            @include icon (180px, 50px, $kd-blueLight);
+            margin-left: $baseline-small;
+            vertical-align: middle; 
 
-        img {
-            max-width: 100%;
         }
 
+        p { vertical-align: middle; margin: 0; line-height: 50px; width: auto; }
+        
     }
+    
+    padding-bottom: 0!important;
+    text-align: center;
 
-    .contact-group	{
-
-        text-align: center;
-        color: #D0D0D0;
-
-        .contact-item	{
-            
-            @extend .one-quarter;
-            @extend .mobile--one-whole;
-            @extend .feature--one-whole;
-            
-            // A.1.5. ICON
-
-            .icon {
-
-                @include icon (80px, 80px, $ia-grey10);
-
-                .icon {
-
-                    text-align: center;
-                    border: 2px solid $ia-red;
-                    border-radius: 100%;
-                    padding: $baseline;
-
-                }
-            }
-
-            // A.1.5. END
-
-            margin-bottom: 20px;
-
-            h4 {
-                text-transform: uppercase;
-            }
-
-            span {
-
-                font-size: 0.85em;
-
-            }
-            
-            .mail-me { display: block; color: $ia-red; }
-        }
-
-    }
-
-
-    // H.1. End			
-}
 
 // A.2. END -----------------------------------------------------------------------------------------------------------
 
@@ -97,36 +58,25 @@
 
 @include media-query(feature) {
 
-    // A.1.1 ABOUT US
-	
-		#section-contact {
-			
-			// RESPONSIVE
-			padding: 0 0 40px;
-			// RESPONSIVE
-			
-			.figure-map {
-			    
-			    // RESPONSIVE
-				padding: 0 0 60px 0;
-				// RESPONSIVE
-				
-			}
-			
-			.contact-group	{
-				
-				.contact-item	{
-					
-					margin-bottom: 20px;
-				}
-					
-			}
-			
-    		// H.1. End			
-		}
-	
-    // A.1.1. END
-    
+    .linked-in { 
+        
+        .linkedin { &.logo { 
+
+            display: block;
+
+        }}
+        
+        .twitter { &.logo { 
+
+            display: block;
+
+        }}
+        
+        a { display: block; }
+        p { display: block; }
+        
+    }
+
 }
 
 // B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -135,35 +85,24 @@
 
 @include media-query(mobile) {
 
-    // A.1.1 ABOUT US
+    .linked-in { 
+        
+        .linkedin { &.logo { 
 
-		#section-contact {
-			
-			// RESPONSIVE
-			padding: 0 0 40px;
-			// RESPONSIVE
-			
-			.figure-map {
-			    
-			    // RESPONSIVE
-				padding: 0 0 60px 0;
-				// RESPONSIVE
-				
-			}
-			
-			.contact-group	{
-				
-				.contact-item	{
-					
-					margin-bottom: 20px;
-				}
-					
-			}
-			
-    		// H.1. End			
-		}
-	
-    // A.1.1. END
+            display: block;
+
+        }}
+        
+        .twitter { &.logo { 
+
+            display: block;
+
+        }}
+        
+        a { display: block; }
+        p { display: block; }
+        
+    }
 
 }
 
@@ -173,12 +112,25 @@
 
 @include media-query(tablet) {
 
-    // A.1.1 ABOUT US
+    .linked-in { 
+        
+        .linkedin { &.logo { 
 
+            display: block;
 
+        }}
+        
+        .twitter { &.logo { 
 
-    // A.1.1. END
-    
+            display: block;
+
+        }}
+        
+        a { display: block; }
+        p { display: block; }
+        
+    }
+
 }
 
 // D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -187,12 +139,25 @@
 
 @include media-query(desk) {
 
-    // A.1.1 ABOUT US
+    .linked-in { 
+        
+        .linkedin { &.logo { 
 
+            display: inline-block;
 
+        }}
+        
+        .twitter { &.logo { 
 
-    // A.1.1. END
-    
+            display: inline-block;
+
+        }}
+        
+        a { display: inline-block; }
+        p { display: inline-block; }
+        
+    }
+
 }
 
 // E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -201,14 +166,29 @@
 
 @include media-query(desk-wide) {
 
-    // A.1.1 ABOUT US
+    .linked-in { 
+        
+        .linkedin { &.logo { 
 
+            display: inline-block;
 
+        }}
+        
+        .twitter { &.logo { 
 
-    // A.1.1. END
-    
+            display: inline-block;
+
+        }}
+        
+        a { display: inline-block; }
+        p { display: inline-block; }
+        
+    }
+
 }
 
 // E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    
+}
 
 // END OF FILE ########################################################################################################

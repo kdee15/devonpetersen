@@ -12,7 +12,7 @@
     right: 0;
     height: 50px;
     display: block; // FOR NOW
-    background: $white;
+    background: $kd-redDark;
     z-index: 5;
 
     .container {
@@ -21,17 +21,17 @@
     }
 
     .logo {
-       // display: none;
-       @include vertical-align(absolute);
-       height: 46px;
-       display: none;
+        
+        @include vertical-align(absolute);
+        height: 46px;
+        display: none;
+        right: 0;
     }
 
     .nav-main {
 
         @include vertical-align(absolute);
-        right: 0;
-
+        left: 0;
 
         ul {
 
@@ -54,7 +54,7 @@
                     margin-right: $baseline-small;
 
                     &:hover {
-                        color: $ia-red;
+                        color: $kd-red;
                         text-decoration: none;
                     }
                 }
@@ -65,20 +65,20 @@
                         vertical-align: middle;
                         width: 35px;
                         height: 35px;
-                        border: 2px solid $ia-grey20;
+                        border: 2px solid $kd-grey20;
                         border-radius: 100%;
                     }
                 }
 
                 .imgLink {
 
-                    color: $ia-grey20;
+                    color: $kd-grey20;
 
                     img {
 
                         &:hover, &:active {
-                            color: $ia-grey20;
-                            text-decoration: none;
+                            color: $kd-grey20;
+                            text-decoration: none; 
                         }
                     }
                 }
