@@ -1,0 +1,438 @@
+// 1. OBJECT [ 1.0. GENERAL ]  ########################################################################################
+
+// A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// A.1. STRUCTURE -----------------------------------------------------------------------------------------------------
+
+html { font-weight: 300; }
+
+// A.1. GENERAL SETUP
+
+html, body, #mast, .section-home, .container { height: 100%; }
+
+body {
+    background: url('../images/front/bg-front.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+// A.1. END
+
+// A.2. TYPOGRAPHY SETUP
+
+h4, h6, ul, li, p { @include source-light(); }
+h1, h2 { @include libre-header(); }
+h3.big-title { text-transform: uppercase; }
+p { font-size: $medium; }
+
+// A.2. END
+
+// A.1.1 LINKS
+
+a { cursor: pointer; }
+
+// A.1.1. END
+
+// A.1.2. SECTIONS
+
+.section { padding: 0; margin: 0; }
+
+// A.1.2. END
+
+// A.1.3. DROPDOWNS
+
+.dropdown {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+}
+
+// A.1.3. END
+
+
+// A.1.3. END
+
+.toggle-content {
+
+    display: none;
+
+    &.on {
+
+        display: block;
+    }
+}
+
+// A.1.3. END
+
+// A.1.4. VERTICAL ALIGN
+
+.v-align {
+    
+    @include vertical-align (absolute);
+    left: 0;
+    right: 0;
+    
+}
+
+// A.1.4. END
+
+// A.1.4. END
+
+.button {
+
+//background: $white;
+color: $white;
+padding: 5px 10px;
+border: solid 2px $white;
+position: relative;
+
+    &:hover {
+
+        background: $white;
+        color: $black!important;
+        text-decoration: none;
+
+    }
+}
+
+
+// A. COMMON COMPONENTS ++++++++++++++++++++++++++++++++++++++++++++
+
+// A.2. PAGE HEADERS
+.section-header {
+        text-align: center;
+        //padding: 65px 0 0;
+
+        // A.2.1 Page Header Icons
+
+        .figure-header {
+            //margin: 60px auto 0;	
+        }
+
+        // A.2.2 Page Header Trim
+
+        .figure-headerBottom {
+            background: url(../images/team/header-triangle.png) 0 0 repeat-x;
+            //padding: 0 75px;
+        }			
+    }	    
+
+// A.2. END
+
+// A.3. GRIDS		
+.grid-group {			
+    @extend .grid;
+    .grid-item {
+        @extend .grid__item;
+
+        img {
+                max-width: 100%;
+            }
+    }
+}
+
+// A.3. END
+
+// A.4. SECTIONS
+
+
+.bob-rollover {
+    background: rgba($black, 0.8);
+    span {
+        border:2px solid white;
+    }
+}
+
+// A.4. END
+
+
+// A.5. HELPER CLASSES
+
+    .active {
+
+        display: inline-block!important;
+
+    }
+
+    .not-active {
+
+        display: none!important;
+
+    }
+
+// A.5. END
+
+
+// A.6. XXX
+.hidden {
+    display: none;
+}
+// A.6. END		
+
+
+// A.7. height/aspect ratio constrainer
+
+#bob-fixedSize {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+#bob-fixedHeight {
+    padding-top: 50%;
+}
+
+#fixedSize-inner {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $white;
+}
+
+// A.7. END
+
+
+// A.8. HOVER EFFECT
+
+
+.view {
+   width: 100%;
+   height: 100%;
+   padding: 0;
+   float: none;
+   overflow: hidden;
+   position: relative;
+   text-align: center;
+   cursor: default;
+   //background: url(../images/bgimg.png);
+
+   img {
+       display: block;
+       margin: 0 auto;
+   }
+
+    .card-title,
+    .mainImg {
+
+       transform: translateX(0%);
+
+   }
+
+   .mask {
+
+       background: rgba($black, 0.8);
+       width: 100%;
+       height: 100%;		   
+       text-align: center;
+       position: absolute;
+       overflow: hidden;
+       top: 0;
+       left: 0;
+       transform: translateX(-100%);
+
+       .foil {
+
+           @include vertical-align(absolute);
+           left: 10px;
+           right: 10px;
+
+       }
+
+       img, h2, p, a {
+           opacity: 0;
+           transform: translateX(-100%);
+           color: $white;
+       }
+
+       img {
+           max-width: 75%;
+       }
+
+       h2 {
+           margin: 0;
+       }
+
+       p {
+
+           @include libre-header();
+           font-size: $small;
+
+       }
+
+
+
+   }
+
+   &:hover, &:focus {
+
+        .card-title,
+        .mainImg {
+            transform: translateX(100%);
+            transition: transform 0.3s ease 0.2s;
+
+        }
+
+       .mask {
+          opacity: 1;
+          transform: translateX(0%); 
+          transition: transform 0.3s ease 0.2s;
+
+
+           img, h2, p, a {
+
+               opacity: 1;
+               transform: translateX(0%); 
+               transition: opacity 0.3s ease 0.4s,
+                           transform 0.2s ease 0.3s;
+
+           }
+
+       }
+
+   }
+
+}	
+.reveal {
+    outline: none;
+}
+
+.bob-hoverImg {
+    text-align: center;	
+    margin: 0 auto;			
+}
+
+.card-title { margin-top: 0; }
+
+// A.7. END
+
+
+
+
+
+
+
+// A.1.4. END
+
+
+// A.1. END -----------------------------------------------------------------------------------------------------------
+
+// A.2. CONTENT -------------------------------------------------------------------------------------------------------
+
+// A.2. END -----------------------------------------------------------------------------------------------------------
+
+// A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// B. MOBILE STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(feature) {
+
+    // A.1.5. HIDE ON PHONES
+
+    .no-mobile, .no-mobile-inline { display: none; }
+
+    // A.1.5. END
+    
+    // A.1.6. HEADERS
+
+    h1, h2 { font-size: 33px; }
+
+    h1 { margin: 0 0 0 0; }
+    
+    // A.1.6. END
+}
+
+// B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// C. TABLET STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(mobile) {
+
+    .container {
+        
+        padding: 0;
+        
+    }
+
+    // A.1.5. HIDE ON PHONES
+
+    .no-mobile, .no-mobile-inline { display: none; }
+
+    // A.1.5. END
+    
+    // A.1.6. HEADERS
+
+    h1, h2 { font-size: 33px; }
+
+    h1 { margin: 0 0 0 0; }
+    
+    // A.1.6. END
+
+}
+
+// C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// D. DESKTOP STYLES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(tablet) {
+
+    // A.1.5. HIDE ON PHONES
+
+    .no-mobile { display: block; }
+    .no-mobile-inline { display: flex; }
+
+    // A.1.5. END
+    
+    // A.1.6. HEADERS
+
+    h1, h2 { font-size: 45px; }
+    
+    // A.1.6. END
+}
+
+// D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(desk) {
+
+    // A.1.5. HIDE ON PHONES
+
+    .no-mobile { display: block; }
+    .no-mobile-inline { display: flex; }
+
+    // A.1.5. END
+    
+    // A.1.6. HEADERS
+
+    h1, h2 { font-size: 45px; }
+    
+    // A.1.6. END
+}
+
+// E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(desk-wide) {
+
+    // A.1.5. HIDE ON PHONES
+
+    .no-mobile { display: block; }
+    .no-mobile-inline { display: flex; }
+
+    // A.1.5. END
+    
+    // A.1.6. HEADERS
+
+    h1, h2 { font-size: 45px; }
+    
+    // A.1.6. END
+}
+
+// E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// END OF FILE ########################################################################################################

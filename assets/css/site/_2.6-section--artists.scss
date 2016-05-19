@@ -1,0 +1,258 @@
+// 2. SECTION [ 2.5. SERVICES ]  ######################################################################################
+
+// A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// A.1. HOME ----------------------------------------------------------------------------------------------------------
+	
+#section-casestudies {
+
+    background: #ecf0f1;
+
+    // F.1. Components
+
+    //
+
+    .section-header {
+        
+        margin-bottom: $baseline-large;
+        
+        .icon {
+            
+            @include icon (100px, 100px, $ia-grey90);   
+            
+        }
+
+        //
+
+        span {
+            border-top: 5px dotted $ia-red;
+            padding: 0 40px;
+        }
+    }
+
+    //
+
+    .casestudies-group	{
+
+        @include clearfix();
+        text-align: center; 
+
+        .casestudies-item	{
+            @extend .one-half;
+            @extend .desk--one-quarter;
+            @extend .desk-wide--one-sixth;
+            padding: 0;
+            position: relative;
+
+        }
+    }
+}
+
+// A.2. END -----------------------------------------------------------------------------------------------------------
+
+// A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// B. MOBILE STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(feature) {
+
+    // A.1.1 CASE STUDIES
+
+    #section-casestudies {
+
+        // F.1. Components
+
+        //
+
+        .section-header {
+
+            span {
+                padding: 0 40px;
+            }
+        }
+
+        //
+
+        .casestudies-group	{
+
+            .casestudies-item	{
+
+                .bob-caseHover {
+                    padding: 20px 0 10px;
+                }
+
+            }
+
+        }
+
+    }
+    
+    // A.1.1. END
+    
+}
+
+// B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// C. TABLET STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(mobile) {
+
+    // A.1.1 CASE STUDIES
+
+    #section-casestudies {
+
+        // F.1. Components
+
+        //
+
+        .section-header {
+
+            span {
+                padding: 0 40px;
+            }
+        }
+
+        //
+
+        .casestudies-group	{
+
+            .casestudies-item	{
+
+                .bob-caseHover {
+                    padding: 20px 0 10px;
+                }
+
+            }
+
+        }
+
+    }
+    
+    // A.1.1. END
+    
+
+}
+
+// C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// D. DESKTOP STYLES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(tablet) {
+
+    // A.1.1 CASE STUDIES
+
+    #section-casestudies {
+
+        // F.1. Components
+
+        //
+
+        .section-header {
+
+            span {
+                padding: 0 40px;
+            }
+        }
+
+        //
+
+        .casestudies-group	{
+
+            .casestudies-item	{
+
+                .bob-caseHover {
+                    padding: 20px 0 40px;
+                }
+
+            }
+
+        }
+
+    }
+    
+    // A.1.1. END
+    
+}
+
+// D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(desk) {
+
+    // A.1.1 CASE STUDIES
+
+    #section-casestudies {
+
+        // F.1. Components
+
+        //
+
+        .section-header {
+
+            span {
+                padding: 0 40px;
+            }
+        }
+
+        //
+
+        .casestudies-group	{
+
+            .casestudies-item	{
+
+                .bob-caseHover {
+                    padding: 20px 0 40px;
+                }
+
+            }
+
+        }
+
+    }
+    
+    // A.1.1. END
+    
+}
+
+// E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(desk-wide) {
+
+    // A.1.1 CASE STUDIES
+
+    #section-casestudies {
+
+        // F.1. Components
+
+        //
+
+        .section-header {
+
+            span {
+                padding: 0 40px;
+            }
+        }
+
+        //
+
+        .casestudies-group	{
+
+            .casestudies-item	{
+
+                .bob-caseHover {
+                    padding: 20px 0 40px;
+                }
+            }
+        }
+    }
+    
+    // A.1.1. END
+    
+}
+
+// E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// END OF FILE ########################################################################################################

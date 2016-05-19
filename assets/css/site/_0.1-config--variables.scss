@@ -1,0 +1,74 @@
+// 0. CONFIG [ 0.1. VARIABLES ]  ######################################################################################
+// A. BRAND COLOR VARIABLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+$ia-blue:           #42C2F3;
+$ia-blueDark:       #3A5181;
+$ia-blueLight:      #4A90E2;
+$ia-gold:           #E4D23A;
+$ia-greenLight:     #4CC276;
+$ia-green:          #009688;
+$ia-lime:           #9BC85A;
+$ia-mint:           #50E3C2;
+$ia-mintDark:       #3BBDB3;
+$ia-orange:         #F5A623;
+$ia-purple:         #9013FE;
+$ia-red:            #FF625F;
+$ia-redDark:        #D0021B;
+$ia-yellow:         #F8E43F;
+$ia-yellowDark:     #F6B946;
+
+$ia-grey90:         #333333;
+$ia-grey80:         #555555;
+$ia-grey70:         #777777;
+$ia-grey60:         #999999;
+$ia-grey50:         #AAAAAA;
+$ia-grey40:         #BBBBBB;
+$ia-grey30:         #CCCCCC;
+$ia-grey20:         #DDDDDD;
+$ia-grey10:         #EEEEEE;
+
+	$bob-blue:    	#1B9EE0;
+	$bob-grey:		#E2E2E2;
+
+// A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// B. TYPOGRAPHY WEIGHT VARIABLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// The variables below are based on the default $baseline -
+// which is set in Konstruct/config/config--typography
+
+$book:          400;
+$bold:          700;
+
+// B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// C. MARGIN VARIABLES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// The variables below are based on the default $baseline -
+// which is set in Konstruct/config/config--typography
+
+$baseline-large:    $baseline*4;
+$baseline-medium:   $baseline*2;
+$baseline-small:    $baseline/2;
+$baseline-smaller:    $baseline/4;
+
+// C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// D. FONT STACKS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+$futura:            "futura-pt", "Helvetica";
+
+
+
+		$xxx-large:			4em; 		// 32px
+		$xx-large:			2em; 		// 32px
+		$x-large:			1.7em; 		// 32px
+		$large:				1.5em; 		// 24px
+		$medium:			1.125em; 	// 18px
+		$normal:			1em; 		// 16px
+		$small:				0.75em; 	// 12px
+		$x-small:			0.625em; 	// 10px
+
+// D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// END OF FILE ########################################################################################################

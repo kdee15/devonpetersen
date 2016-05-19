@@ -1,0 +1,293 @@
+// 2. SECTION [ 2.5. SERVICES ]  #######################################################################################
+
+// A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// A.1. HOME -----------------------------------------------------------------------------------------------------
+	
+// E.1. anchor padding to align screen top
+
+#top-services {
+    padding: 55px 0;	
+}
+
+
+// E.2. containing div elements
+
+#section-services {
+
+    .section-header {
+
+        h2 {
+            color: $ia-grey40;
+            // RESPONSIVE
+            margin-bottom: $baseline-large;
+            // RESPONSIVE
+            line-height: normal;
+        }
+
+        p {
+            color: #929497;
+            // RESPONSIVE
+            margin-bottom: 65px;
+            // RESPONSIVE
+        }					
+    }
+
+    //
+
+    background: $black;
+    background-size: cover;
+    color: #818181;
+    
+    // RESPONSIVE
+    padding: 0 0 40px;
+    // RESPONSIVE
+
+    // E.2.1. Components
+
+
+    //
+
+    .figure-servicesTop {
+        background: url(../images/services/services-top-icon.png) top center no-repeat;
+
+        // RESPONSIVE
+        margin-top: -60px;
+        padding: 90px 0;
+        // RESPONSIVE
+    }			
+
+    //
+
+    .services-group	{
+
+        text-align: center;
+        
+        .icon {
+            
+            @include icon (80px, 80px, $ia-grey10);
+            
+            .icon {
+
+                text-align: center;
+                border: 2px solid $ia-red;
+                border-radius: 100%;
+                padding: $baseline;
+                
+            }
+        }
+
+        .services-item	{
+            
+            @extend .one-half;
+            @extend .tablet--one-third;
+            @extend .desk--one-third;
+            text-align: center;
+
+            // RESPONSIVE
+            margin: 20px 0 0 0;
+            // RESPONSIVE
+
+            h4 {
+                color: $white;
+            }
+
+            span {
+                font-size: 0.85em;
+                color: #929497;
+            }
+
+        }
+
+    }
+
+
+    // E.1. End			
+}
+
+// A.2. END -----------------------------------------------------------------------------------------------------------
+
+// A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// B. MOBILE STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(feature) {
+	
+		// E.1. anchor padding to align screen top
+		
+		#top-services {
+			padding: 55px 0;	
+		}
+		
+		
+		// E.2. containing div elements
+		
+		#section-services {
+		
+		    .section-header {
+		    	
+		    	h2 {
+		    	    // RESPONSIVE
+		    	    margin-bottom: 35px;
+		    	    // RESPONSIVE
+		    	}
+		    	
+		    	p {
+		    	    // RESPONSIVE
+		    	    margin-bottom: 65px;
+		    	    // RESPONSIVE
+		    	}					
+		    }
+			
+			// RESPONSIVE
+			padding: 0 0 40px;
+			// RESPONSIVE
+			
+			// E.2.1. Components
+			
+			
+			//
+			
+			.figure-servicesTop {
+			
+				// RESPONSIVE
+				margin-top: -60px;
+    			padding: 90px 0;
+    			// RESPONSIVE
+			}			
+			
+			//
+			
+			.services-group	{
+				
+				.services-item	{
+					// RESPONSIVE
+					margin: 20px 0 0 0;
+					// RESPONSIVE
+					
+				}
+					
+			}
+			
+			
+    		// E.1. End			
+		}
+	
+    
+}
+
+// B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// C. TABLET STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(mobile) {
+
+	
+		// E.1. anchor padding to align screen top
+		
+		#top-services {
+			padding: 55px 0;	
+		}
+		
+		
+		// E.2. containing div elements
+		
+		#section-services {
+		
+		    .section-header {
+		    	
+		    	h2 {
+		    	    // RESPONSIVE
+		    	    margin-bottom: 35px;
+		    	    // RESPONSIVE
+		    	}
+		    	
+		    	p {
+		    	    // RESPONSIVE
+		    	    margin-bottom: 65px;
+		    	    // RESPONSIVE
+		    	}					
+		    }
+			
+			// RESPONSIVE
+			padding: 0 0 40px;
+			// RESPONSIVE
+			
+			// E.2.1. Components
+			
+			
+			//
+			
+			.figure-servicesTop {
+			
+				// RESPONSIVE
+				margin-top: -60px;
+    			padding: 90px 0;
+    			// RESPONSIVE
+			}			
+			
+			//
+			
+			.services-group	{
+				
+				.services-item	{
+					// RESPONSIVE
+					margin: 20px 0 0 0;
+					// RESPONSIVE
+					
+				}
+					
+			}
+			
+			
+    		// E.1. End			
+		}
+	
+
+}
+
+// C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// D. DESKTOP STYLES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(tablet) {
+
+    // A.1.1 ABOUT US
+
+
+
+    // A.1.1. END
+    
+}
+
+// D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(desk) {
+
+    // A.1.1 ABOUT US
+
+
+
+    // A.1.1. END
+    
+}
+
+// E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(desk-wide) {
+
+    // A.1.1 ABOUT US
+
+
+
+    // A.1.1. END
+    
+}
+
+// E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// END OF FILE ########################################################################################################

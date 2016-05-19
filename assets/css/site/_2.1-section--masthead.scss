@@ -1,0 +1,150 @@
+// 2. SECTION [ 2.1. MASTHEAD ]  ######################################################################################
+
+// A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// A.1. MASTHEAD ------------------------------------------------------------------------------------------------------
+
+#masthead {
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    display: block; // FOR NOW
+    background: $white;
+    z-index: 5;
+
+    .container {
+        padding: 0;
+        position: relative;
+    }
+
+    .logo {
+       // display: none;
+       @include vertical-align(absolute);
+       height: 46px;
+       display: none;
+    }
+
+    .nav-main {
+
+        @include vertical-align(absolute);
+        right: 0;
+
+
+        ul {
+
+            margin: 0;
+            padding: 0;
+            vertical-align: middle;	
+
+            li {								
+                text-transform: uppercase;
+                font-size: $small;
+                list-style-type: none;
+                display: inline;
+                vertical-align: middle;	
+
+                a {
+                    color: $black;
+                    outline: none;
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-right: $baseline-small;
+
+                    &:hover {
+                        color: $ia-red;
+                        text-decoration: none;
+                    }
+                }
+
+                a:link {
+
+                    img { 
+                        vertical-align: middle;
+                        width: 35px;
+                        height: 35px;
+                        border: 2px solid $ia-grey20;
+                        border-radius: 100%;
+                    }
+                }
+
+                .imgLink {
+
+                    color: $ia-grey20;
+
+                    img {
+
+                        &:hover, &:active {
+                            color: $ia-grey20;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// A.1. END -----------------------------------------------------------------------------------------------------------
+
+// A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// B. MOBILE STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(feature) { 
+
+	
+    #masthead {
+        
+        display: none;
+
+        nav {
+            
+            display: none;
+
+        }
+    }
+}
+
+// B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// C. TABLET STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(mobile) { 
+
+	
+    #masthead {
+        
+        display: none;
+
+        nav {
+            
+            display: none;
+
+        }
+    }
+}
+
+// C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// D. DESKTOP STYLES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(tablet) { }
+
+// D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(desk) { }
+
+// E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(desk-wide) { }
+
+// E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// END OF FILE ########################################################################################################

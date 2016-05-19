@@ -1,0 +1,228 @@
+// 1. OBJECT [ 1.3. MODALS ]  #########################################################################################
+
+// A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// A.1. STRUCTURE -----------------------------------------------------------------------------------------------------
+
+// A.1.1 LINKS
+
+.modal-open { overflow: hidden; }
+
+.modal_img {
+    
+    height: auto;
+    margin: 0 auto;
+    border-radius: 100%;
+    
+}
+
+// A.1.1. END
+
+// A.1.2. MODAL CONTROLS
+		
+.modal  {
+
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    text-align: center;
+    top: 0;
+    background: rgba($black, 0.9);
+    z-index: 10;
+
+}
+
+// A.1.4. END
+
+.modal__grid {
+    
+    @extend .grid;
+    padding: $baseline-small;
+    box-sizing: border-box;
+    
+    .grid-item {
+        
+        margin-bottom: $baseline-small;
+        @extend .feature--one-whole;
+        @extend .mobile--one-whole;
+        
+        .inner {
+            
+            background: $ia-grey20;
+            display: block;
+            
+            h5 {margin: 0; text-transform: uppercase; font-weight: bold; color: $ia-red;}
+            
+        }
+    }
+}
+
+// A.1.4. END
+
+// A.1.5. END
+
+		
+.modalClose {
+
+    position: absolute;
+    color: $white;
+    background: $ia-red;
+    top: 20px;
+    font-size: $large;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    z-index: 999;
+    border-radius: 100%;
+    border: solid 1px $white;
+    span {
+        display: block;
+        text-align: center;
+        padding-top: 10px;
+    }
+}
+
+// A.1.5. END
+
+// A.1. END -----------------------------------------------------------------------------------------------------------
+
+// A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// B. MOBILE STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(feature) {
+
+.modal {    
+    // A.1.5. audio padding
+
+    .modal__grid {
+        .grid-item {
+            .inner { padding: $baseline-smaller; }
+        }
+    }
+    
+    // A.1.5. END
+    
+    // A.1.6. ARTIST INFO
+
+    .modal_img { width: 30%; }
+    
+    h2 { font-size: $small; }
+    
+    // A.1.6. END
+}
+    
+}
+
+// B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// C. TABLET STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(mobile) {
+
+.modal {
+    // A.1.5. audio padding
+
+    .modal__grid {
+        .grid-item {
+            .inner { padding: $baseline-small; }
+        }
+    }
+    
+    // A.1.5. END
+    
+    // A.1.6. ARTIST INFO
+
+    .modal_img { width: 50%; }
+    
+    h2 { font-size: $small; }
+    
+    // A.1.6. END
+}
+}
+
+// C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// D. DESKTOP STYLES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(tablet) {
+
+.modal {
+    // A.1.5. audio padding
+
+    .modal__grid {
+        .grid-item {
+            .inner { padding: $baseline-small; }
+        }
+    }
+    
+    // A.1.5. END
+    
+    // A.1.6. ARTIST INFO
+
+    .modal_img { width: 30%; }
+    
+    h2 { font-size: $small; }
+    
+    // A.1.6. END
+}
+}
+
+// D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(desk) {
+
+.modal {
+    // A.1.5. audio padding
+
+    .modal__grid {
+        .grid-item {
+            .inner { padding: $baseline-small; }
+        }
+    }
+    
+    // A.1.5. END
+    
+    // A.1.6. ARTIST INFO
+
+    .modal_img { width: 50%; }
+    
+    h2 { font-size: $normal; }
+    
+    // A.1.6. END
+}
+}
+
+// E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(desk-wide) {
+
+.modal {
+    // A.1.5. audio padding
+
+    .modal__grid {
+        .grid-item {
+            .inner { padding: $baseline-small; }
+        }
+    }
+    
+    // A.1.5. END
+    
+    // A.1.6. ARTIST INFO
+
+    .modal_img { width: 50%; }
+    
+    h2 { font-size: $normal; }
+    
+    // A.1.6. END
+}
+}
+
+// E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// END OF FILE ########################################################################################################
