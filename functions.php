@@ -5,45 +5,53 @@
 
 
 
+    // A.1.0.5. Wordpress Menu
+
+
+    register_nav_menus( array(  
+    'primary' => __( 'Primary Navigation', 'spartan' )
+    ) );
+
+
+    // A.1.0.5. Wordpress Menu
+
+
 // A.2 CUSTOM CONTENT TYPES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
     // A.2.1. PROJECTS ---------------------------------------------------------------------------------------------
 
-    function artists() {
+    function fixtures() {
       $labels = array(
-        'Title'              => _x( 'Artists', 'post type general name' ),
-        'singular_name'      => _x( 'Artist', 'post type singular name' ),
-        'add_new'            => _x( 'Add New', 'Artist' ),
-        'add_new_item'       => __( 'Add New Artist' ),
-        'edit_item'          => __( 'Edit Artist' ),
-        'new_item'           => __( 'New Artist' ),
-        'all_items'          => __( 'All Artists' ),
-        'view_item'          => __( 'View Artist' ),
+        'Title'              => _x( 'Fixtures', 'post type general name' ),
+        'singular_name'      => _x( 'Fixture', 'post type singular name' ),
+        'add_new'            => _x( 'Add New', 'Fixture' ),
+        'add_new_item'       => __( 'Add New Fixture' ),
+        'edit_item'          => __( 'Edit Fixture' ),
+        'new_item'           => __( 'New Fixture' ),
+        'all_items'          => __( 'All Fixtures' ),
+        'view_item'          => __( 'View Fixture' ),
         'parent_item_colon'  => '',
-        'menu_name'          => 'Artists'
+        'menu_name'          => 'Fixtures'
       );
 
       $args = array(
         'labels'         => $labels,
-        'description'   => 'A list of Artists',
+        'description'   => 'A list of Fixtures',
         'public'        => true,
-        'menu_position' => 4,
+        'menu_position' => 5,
         'supports'      => array( 'title', 'editor', 'thumbnail', 'taxonomies', 'categories', 'media', 'content' ),
         'has_archive'   => true,
 
       );
         
-      register_post_type( 'artists', $args ); 
+      register_post_type( 'fixtures', $args ); 
     }
 
-    add_action( 'init', 'artists' );
+    add_action( 'init', 'fixtures' );
 
     // A.2.1. End --------------------------------------------------------------------------------------------------
 
 // A.2 END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-
-
 
 
     

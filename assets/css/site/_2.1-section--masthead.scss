@@ -94,17 +94,12 @@
 // B. MOBILE STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 @include media-query(feature) { 
-
 	
-    #masthead {
+    #masthead { display: block;
+
+        nav { display: none; }
         
-        display: none;
-
-        nav {
-            
-            display: none;
-
-        }
+        .logo { display: block; right: auto; left: $baseline-small; height: 36px; }
     }
 }
 
@@ -113,17 +108,12 @@
 // C. TABLET STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 @include media-query(mobile) { 
-
 	
-    #masthead {
+    #masthead { display: block;
+
+        nav { display: none; }
         
-        display: none;
-
-        nav {
-            
-            display: none;
-
-        }
+        .logo { display: block; right: auto; left: $baseline-small; }
     }
 }
 

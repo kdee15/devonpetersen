@@ -36,7 +36,7 @@
 
     </head>
 
-    <body <?php body_class(); ?> class="page-home" id="page-home" >
+    <body <?php body_class(); ?>>
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
@@ -51,12 +51,7 @@
                     
                     <!-- C.1.2. Navigation -->
                     <nav class="nav-main">
-                        <ul>
-                            <li><a class="textLink" href="#section-different">About Devon</a></li>
-                            <li><a class="textLink" href="#section-services">Calendar</a></li>
-                            <li><a class="textLink" href="#section-casestudies">Merchandise</a></li>
-                            <li><a class="textLink" href="#section-contact">Media</a></li>
-                        </ul>
+                        <?php wp_nav_menu( array( 'container' => '', 'menu_id' => 'main-nav', 'menu_class' => 'main-nav' ) ); ?>
                     </nav>
                 
                     <!-- C.1.1. Logo -->

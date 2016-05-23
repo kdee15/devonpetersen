@@ -1,31 +1,49 @@
-<?php get_header(); ?>
+<?php
+/**
+ * The Template for displaying all single posts
+ *
+ * @package WordPress
+ * @subpackage Twenty_Twelve
+ * @since Twenty Twelve 1.0
+ */
 
-	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+get_header(); ?>
 
-		<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
-			
-			<h2><?php the_title(); ?></h2>
-			
-<!-- 			<?php include (TEMPLATEPATH . '/inc/meta.php' ); ?>
- -->
-			<div class="entry">
-				
-				<?php the_content(); ?>
 
-				<?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
-				
-				<?php the_tags( 'Tags: ', ', ', ''); ?>
+    <!-- C.2. MAST -->
 
-			</div>
-			
-			<?php edit_post_link('Edit this entry','','.'); ?>
-			
-		</div>
+        <!-- C.2.3 Page Content -->
 
-	<?php comments_template(); ?>
 
-	<?php endwhile; endif; ?>
-	
-<?php get_sidebar(); ?>
+<h1>BLOOOOGOOOGOOGOGGO SINGLE</h1>
+
+
+
+                        <!-- C.2.4.1.1. Dynanic Content area -->
+
+                        <?php while ( have_posts() ) : the_post(); ?>
+
+                        <h3><?php the_title(); ?></h3>	
+
+                        <?php the_content(); ?>
+
+                        <!-- .nav-single -->
+
+                        <?php endwhile; // end of the loop. ?>
+
+                        <!-- C.1.1 End -->
+
+                        <!-- C.1.2 Back link -->
+
+                        <!-- C.1.2 End -->
+
+
+
+
+
+        <!-- C.2.3 End -->
+
+
+    <!-- C.2. END -->
 
 <?php get_footer(); ?>

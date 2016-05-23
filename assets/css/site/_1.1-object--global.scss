@@ -20,7 +20,7 @@ body {
 // A.2. TYPOGRAPHY SETUP
 
 h4, h6, ul, li, p { @include source-light(); }
-h1, h2 { @include libre-header(); }
+h1, h2 { @include libre-header(); display: block; margin: 0; padding: 0; }
 h3.big-title { text-transform: uppercase; }
 p { font-size: $medium; }
 
