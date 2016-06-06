@@ -4,17 +4,29 @@
 
 // A.1. STRUCTURE -----------------------------------------------------------------------------------------------------
 
+.archive,
+.single,
 .page {
     
     .page {
     
         &#mast {
 
-            .wrapper { top: 40%; }
-
-
+            .wrapper { 
+                
+                top: 50%;
+                background: $kd-grey70;
+                
+                .content {
+                    
+                    padding: $baseline-large;
+                    background: $white;
+                
+                }
+            }
+            
+            .section-midbar { top: 30%; }
         }
-
     }
     
 // A.1. END -----------------------------------------------------------------------------------------------------------

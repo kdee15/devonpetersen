@@ -22,7 +22,8 @@ $kd-mintDark:       #3BBDB3;
 $kd-orange:         #F5A623;
 $kd-purple:         #9013FE;
 $kd-red:            #FF625F;
-$kd-redDark:        #D0021B;
+$kd-redDark:        #E1471B;
+$kd-redDark2:       #D0021B;
 $kd-yellow:         #F8E43F;
 $kd-yellowMid:      #F9BC45;
 $kd-yellowDark:     #F6B946;
@@ -69,17 +70,27 @@ $baseline-smaller:    $baseline/4;
 
 $futura:            "futura-pt", "Helvetica";
 
-
-
-		$xxx-large:			4em; 		// 32px
-		$xx-large:			2em; 		// 32px
-		$x-large:			1.7em; 		// 32px
-		$large:				1.5em; 		// 24px
-		$medium:			1.125em; 	// 18px
-		$normal:			1em; 		// 16px
-		$small:				0.75em; 	// 12px
-		$x-small:			0.625em; 	// 10px
+$xxx-large:			4em; 		// 32px
+$xx-large:			2em; 		// 32px
+$x-large:			1.7em; 		// 32px
+$large:				1.5em; 		// 24px
+$medium:			1.125em; 	// 18px
+$normal:			1em; 		// 16px
+$small:				0.75em; 	// 12px
+$x-small:			0.625em; 	// 10px
 
 // D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// E. FONTS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@font-face {
+    font-family: 'gow';
+    src: url('../fonts/-gow.ttf');
+    src: url('../fonts/-gow.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // END OF FILE ########################################################################################################

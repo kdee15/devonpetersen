@@ -1,79 +1,114 @@
-// 2. SECTION [ 2.1. MASTHEAD ]  ######################################################################################
+// 3. PAGE [ 3.2. WORK ]  #############################################################################################
 
 // A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-// A.1. MASTHEAD ------------------------------------------------------------------------------------------------------
+// A.1. STRUCTURE -----------------------------------------------------------------------------------------------------
 
-#masthead {
+.single-post {
     
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 50px;
-    display: block; // FOR NOW
-    background: $kd-redDark;
-    z-index: 100;
-
-    .container {
-        padding: 0;
-        position: relative;
-    }
-
-    .logo {
+    .page {
         
-        @include vertical-align(absolute);
-        height: 46px;
-        display: none;
-        right: 0;
+        &#mast {
+            
+            .article__figure { 
+            
+                @include position (fixed, 0);
+                margin: 0;
+                padding: 0;
+                bottom: auto;
+                top: 50px;
+                z-index: -1;
+
+                img { width: 100%; height: auto; }
+            }
+            
+            .wrapper {
+                
+                .content {
+
+                    h3 { font-size: $xx-large; margin-bottom: $baseline; color: $kd-redDark; } 
+                }
+            } 
+        }
     }
-
-}
-
+    
 // A.1. END -----------------------------------------------------------------------------------------------------------
 
 // A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // B. MOBILE STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@include media-query(feature) { 
-	
-    #masthead { display: block;
+    @include media-query(feature) {
+    
+        .page {
 
-        .logo { display: block; right: auto; left: $baseline-small; height: 36px; }
+            &#mast {
+            
+            .article__figure { text-align: center; img { width: auto; height: 300px; }}
+
+                .wrapper { top: 260px; } 
+            }
+        }
+
     }
-}
 
 // B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // C. TABLET STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@include media-query(mobile) { 
-	
-    #masthead { display: block;
+    @include media-query(mobile) {
+    
+        .page {
 
-        .logo { display: block; right: auto; left: $baseline-small; }
+            &#mast {
+            
+            .article__figure { text-align: center; img { width: auto; height: 400px; }}
+
+                .wrapper { top: 350px; } 
+            }
+        }
+
     }
-}
 
 // C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // D. DESKTOP STYLES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@include media-query(tablet) {}
+    @include media-query(tablet) {
+    
+        .page {
+
+            &#mast {
+
+                .wrapper { top: 25%; } 
+            }
+        }
+
+    }
 
 // D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@include media-query(desk) {}
+    @include media-query(desk) { }
 
 // E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@include media-query(desk-wide) {}
+    @include media-query(desk-wide) {
+    
+        .page {
+
+            &#mast {
+
+                .wrapper { top: 55%; } 
+            }
+        }
+    }
 
 // E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+}
+    
 // END OF FILE ########################################################################################################

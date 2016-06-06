@@ -39,6 +39,51 @@
 
 // A.1. END -----------------------------------------------------------------------------------------------------------
 
+// A.2. TWEETS STREAM -------------------------------------------------------------------------------------------------
+
+.tweets {
+
+    list-style-type: none;
+    margin: 0;
+    padding: $baseline-smaller 0;
+    background: $kd-grey70;
+    
+    li {
+    
+        list-style-type: none;
+        font-size: $small;
+        margin: $baseline-smaller 0;
+        padding: $baseline-small $baseline-smaller;
+        padding-left: $baseline;
+        line-height: normal;
+        color: $kd-grey80;
+        background: $kd-grey20;
+        position: relative;
+        
+        &:after {
+            
+            @include vertical-align (absolute);
+            width: 25px;
+            height: 25px;
+            content: '';
+            left: -15px;
+            border: 3px solid $kd-grey20;
+            background: url('../images/site/icon-twitter.svg') center center no-repeat $white;
+            background-size: 100% 100%;
+            border-radius: 100%;
+            
+            
+        
+        }
+        
+        a { display: block; color: $kd-redDark; }
+    
+    }
+
+}
+
+// A.2. END -----------------------------------------------------------------------------------------------------------
+
 // A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // B. MOBILE STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

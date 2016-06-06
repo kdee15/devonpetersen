@@ -29,12 +29,38 @@ get_header(); ?>
             
             <section class="content">
             
-                <div class="container">
-                
-                    <?php while ( have_posts() ) : the_post(); ?>
-                        <?php get_template_part( 'content', 'page' ); ?>
-                        <?php comments_template( '', true ); ?>
-                    <?php endwhile; // end of the loop. ?>
+                <div class="section__articles">
+                    
+                    <?php
+                        $args = array(
+                            'post_type' => 'post',
+                            'post_status' => 'publish'
+                        );
+                        $posts = new WP_Query( $args );
+                        if( $posts->have_posts() ) {
+                          while( $posts->have_posts() ) {
+                            $posts->the_post();
+                            ?>
+
+                            <article class="article">
+                                <a class="article__figure" href="<?php the_permalink() ?>">
+                                    <span class="image-wrapper">
+                                        <img class="image" src="<?php the_field('image') ?>" alt="<?php the_title(); ?>" />
+                                    </span>    
+                                </a>
+                                <div class="article__body">
+                                    <h2><?php the_title(); ?></h2>
+                                    <p>
+                                        <?php the_excerpt(); ?>
+                                    </p>
+                                </div>
+
+                            </article>
+
+                            <?php
+                          }
+                        }
+                    ?>
                 
                 </div>
                 

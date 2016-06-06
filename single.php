@@ -1,49 +1,91 @@
 <?php
 /**
- * The Template for displaying all single posts
+ * The main template file
  *
  * @package WordPress
- * @subpackage Twenty_Twelve
- * @since Twenty Twelve 1.0
+ * @subpackage Spartan
+ * @since Spartan 1.0
  */
 
 get_header(); ?>
 
+<!-- C. WORK AREA +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
-    <!-- C.2. MAST -->
+    <!-- C.2. SITE MAST ------------------------------------------------------------------------------------------- -->
 
-        <!-- C.2.3 Page Content -->
+    <section class="page" id="mast">
 
+        <!-- C.2.1. INTRO ----------------------------------------------------------------------------------------- -->
 
-<h1>BLOOOOGOOOGOOGOGGO SINGLE</h1>
+        <?php get_template_part( 'section-front' ); ?>
+        
+        <figure class="article__figure">
+            <span class="image-wrapper">
+                <img class="image" src="<?php the_field('image') ?>" alt="<?php the_title(); ?>" />
+            </span>    
+        </figure>
 
+        <!-- C.2.1. End ------------------------------------------------------------------------------------------- -->
+        
+        <!-- C.2.2. SLIDER AREA ----------------------------------------------------------------------------------- -->
+        
+        <div class="wrapper">
+            
+            <section class="content">
 
+                <!-- C.2.2.1. ABOUT US ---------------------------------------------------------------------------- -->
 
-                        <!-- C.2.4.1.1. Dynanic Content area -->
+                <!-- C.2.4.1.1. Dynanic Content area -->
 
-                        <?php while ( have_posts() ) : the_post(); ?>
+                <?php while ( have_posts() ) : the_post(); ?>
 
-                        <h3><?php the_title(); ?></h3>	
+                <h3><?php the_title(); ?></h3>	
 
-                        <?php the_content(); ?>
+                <?php the_content(); ?>
 
-                        <!-- .nav-single -->
+                <!-- .nav-single -->
 
-                        <?php endwhile; // end of the loop. ?>
+                <?php endwhile; // end of the loop. ?>
 
-                        <!-- C.1.1 End -->
+                <!-- C.1.1 End -->
 
-                        <!-- C.1.2 Back link -->
+                <!-- C.2.2.1. END --------------------------------------------------------------------------------- -->
 
-                        <!-- C.1.2 End -->
+            </section>
+            
+            <!-- C.2.2.1. ABOUT US -------------------------------------------------------------------------------- -->
+            
+            <?php get_template_part( 'section-contact' ); ?>
+            
+            <!-- C.2.2.1. END ------------------------------------------------------------------------------------- -->
+            
+                
+        </div>
+        
+        <aside class="section-midbar no-tab">
+            
+            <?php dynamic_sidebar( 'twitter' ); ?>
 
+        </aside>
+                
+        <aside class="section-sidebar no-mobile">
+            
+            <?php get_template_part( 'section-sidebar' ); ?>
 
+        </aside>
+        
+        <!-- C.2.2. End ------------------------------------------------------------------------------------------- -->
 
-
-
-        <!-- C.2.3 End -->
-
-
-    <!-- C.2. END -->
-
+    </section>
+    
+    <!-- C.2. END ------------------------------------------------------------------------------------------------- -->
 <?php get_footer(); ?>
+<!-- C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+<!-- D. JAVASCRIPT ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+<!-- D.1. FOOTER JS -->
+
+<?php get_template_part( 'inc/footer-scripts' ); ?>
+
+<!-- D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->

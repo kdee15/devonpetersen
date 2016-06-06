@@ -17,15 +17,15 @@ $('.reveal').click(function(e) {
     
     var target = $(this).attr('href');
     
-    if ($(target).hasClass('hidden') ) {
+    if ($(target).hasClass('hide-nav') ) {
         
-        $(target).removeClass('hidden');
-        $('.reveal').addClass('close');
+        $(target).removeClass('hide-nav');
+        $('.reveal').addClass('is-active');
         
     } else {
         
-        $(target).addClass('hidden');
-        $('.reveal').removeClass('close');
+        $(target).addClass('hide-nav');
+        $('.reveal').removeClass('is-active');
         
     }
     
@@ -141,6 +141,20 @@ var currentContent = '';
     var icons = 'assets/includes/icons/';
     
 // A.6. END -----------------------------------------------------------------------------------------------------------
+    
+// A.7. RANDOM IMAGE SELECTOR -----------------------------------------------------------------------------------------
+	
+    var totalImages = 6;
+
+    var RandomNum = Math.floor( Math.random() * totalImages);
+
+    $(document).ready(function(){
+
+        $('body.home').attr("style","background-image:url('wp-content/themes/spartan/assets/images/background/bg-main"+RandomNum+".jpg')");
+
+    }); 
+    
+// A.7. END -----------------------------------------------------------------------------------------------------------
 
 // A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	

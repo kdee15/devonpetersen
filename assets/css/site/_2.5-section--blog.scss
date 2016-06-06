@@ -10,7 +10,7 @@
 
 .section-blog {
 
-    background: $kd-grey20;
+    background: $white;
 
     .section-header {
 
@@ -41,8 +41,41 @@
         border-radius: 100%;
         
     }
-
-
+    
+    .article {
+        
+        .article__figure {
+            
+            @include aspect-ratio (100%, 50%);
+            padding: 0;
+            margin: 0;
+            z-index: 1;
+            display: block;
+            
+            .image-wrapper { 
+                
+                @include position (absolute, 0);
+                overflow: hidden;
+                
+                .image { width: 100%; height: auto; }
+            
+            }
+        }
+        
+        h2 { 
+            
+            width: 80%;
+            padding: $baseline $baseline-medium;
+            margin-top: -$baseline-medium;
+            background: $white; 
+            z-index: 1;
+            box-sizing: border-box;
+        }
+        
+        p { margin: $baseline-medium; }
+        
+    }
+    
 
 // A.2. END -----------------------------------------------------------------------------------------------------------
 
@@ -51,8 +84,6 @@
 // B. MOBILE STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 @include media-query(feature) { 
-
-    p { width: 90%; font-size: $small; }
 
 }
 
@@ -63,7 +94,6 @@
 
 @include media-query(mobile) { 
 
-    p { width: 90%; font-size: $normal; text-align: left; }
 
 }
 
@@ -74,7 +104,6 @@
 
 @include media-query(tablet) { 
 
-    p { width: 90%; font-size: $normal; }
 
 }
 
@@ -85,7 +114,6 @@
 
 @include media-query(desk) { 
 
-    p { width: 80%; font-size: $normal; }
 
 }
 
@@ -95,7 +123,6 @@
 
 @include media-query(desk-wide) { 
 
-    p { width: 60%; font-size: $normal; }
 
 }
 

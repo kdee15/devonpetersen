@@ -10,19 +10,18 @@ html { font-weight: 300; }
 
 html, body, #mast, .section-home, .container { height: 100%; }
 
-body {
-    background: url('../images/front/bg-front.png') no-repeat left center fixed;
-    background-size: cover;
-}
-
 // A.1. END
 
 // A.2. TYPOGRAPHY SETUP
 
-h4, h6, ul, li, p { @include source-light(); }
-h1, h2 { @include libre-header(); display: block; margin: 0; padding: 0; }
-h3.big-title { text-transform: uppercase; }
-p { font-size: $medium; }
+h1, h2, h3, h4, h5, h6 { 
+    
+    line-height: normal; 
+    font-family: 'gow', sans-serif, arial, helvetica; 
+    position: relative; 
+    margin: 0;
+    padding: 0;
+}
 
 // A.2. END
 
@@ -329,10 +328,17 @@ position: relative;
 // B. MOBILE STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 @include media-query(feature) {
+    
+    // Background image position
+
+    body {
+        background: url('../images/front/bg-front1024.jpg') no-repeat left center fixed;
+        background-size: cover;
+    }
 
     // A.1.5. HIDE ON PHONES
 
-    .no-mobile, .no-mobile-inline { display: none; }
+    .no-mobile, .no-mobile-inline, .no-tab, .no-tab-inline { display: none; }
 
     // A.1.5. END
     
@@ -350,6 +356,13 @@ position: relative;
 // C. TABLET STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 @include media-query(mobile) {
+    
+    // Background image position
+
+    body {
+        background: url('../images/front/bg-front1024.jpg') no-repeat left center fixed;
+        background-size: cover;
+    }
 
     .container {
         
@@ -359,7 +372,7 @@ position: relative;
 
     // A.1.5. HIDE ON PHONES
 
-    .no-mobile, .no-mobile-inline { display: none; }
+    .no-mobile, .no-mobile-inline, .no-tab, .no-tab-inline { display: none; }
 
     // A.1.5. END
     
@@ -378,11 +391,24 @@ position: relative;
 // D. DESKTOP STYLES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 @include media-query(tablet) {
+    
+    // Background image position
+
+    body {
+        background: url('../images/front/bg-front1024.jpg') no-repeat left center fixed;
+        background-size: cover;
+    }
 
     // A.1.5. HIDE ON PHONES
 
     .no-mobile { display: block; }
     .no-mobile-inline { display: flex; }
+
+    // A.1.5. END
+    
+    // A.1.5. HIDE ON TABLETS
+
+    .no-tab, .no-tab-inline { display: none; }
 
     // A.1.5. END
     
@@ -398,11 +424,18 @@ position: relative;
 // E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 @include media-query(desk) {
+    
+    // Background image position
 
-    // A.1.5. HIDE ON PHONES
+    body {
+        background: url('../images/front/bg-front1024.jpg') no-repeat left center fixed;
+        background-size: cover;
+    }
 
-    .no-mobile { display: block; }
-    .no-mobile-inline { display: flex; }
+    // A.1.5. HIDE ON PHONES/TABLETS
+
+    .no-tab, .no-mobile { display: block; }
+    .no-tab-inline, .no-mobile-inline { display: flex; }
 
     // A.1.5. END
     
@@ -418,11 +451,18 @@ position: relative;
 // E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 @include media-query(desk-wide) {
+    
+    // Background image position
 
-    // A.1.5. HIDE ON PHONES
+    body {
+        background: url('../images/front/bg-front.jpg') no-repeat left center fixed;
+        background-size: cover;
+    }
 
-    .no-mobile { display: block; }
-    .no-mobile-inline { display: flex; }
+    // A.1.5. HIDE ON PHONES/TABLETS
+
+    .no-tab, .no-mobile { display: block; }
+    .no-tab-inline, .no-mobile-inline { display: flex; }
 
     // A.1.5. END
     

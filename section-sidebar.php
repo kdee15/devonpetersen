@@ -1,38 +1,11 @@
-<!-- C.2.7. CONTACT US -->
+<!-- C.2. SIDEBAR CONTENT -->
 
 <div class="inside">
-    <h2>SCHEDULE</h2>
-    <ul>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-    </ul>    
-    <h2>RESULTS</h2>
-    <ul>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-    </ul>
+    
+    <?php get_template_part( 'section-sidebar-events' ); ?>
+    <?php get_template_part( 'section-sidebar-fixtures' ); ?>
+    <?php get_template_part( 'section-sidebar-results' ); ?>
+    
 </div>
 
 <!-- C.2.7. END -->

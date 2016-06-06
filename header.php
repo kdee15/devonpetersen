@@ -50,15 +50,21 @@
                 <div class="container">
                     
                     <!-- C.1.2. Navigation -->
-                    <nav class="nav-main">
-                        <?php wp_nav_menu( array( 'container' => '', 'menu_id' => 'main-nav', 'menu_class' => 'main-nav' ) ); ?>
-                    </nav>
+                    <?php wp_nav_menu( array( 'container' => '', 'menu_id' => 'main-nav', 'menu_class' => 'main-nav' ) ); ?>
                 
                     <!-- C.1.1. Logo -->
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/logo.png" alt="" class="logo" id="bob-siteLogo" />
+                    <a href="#">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/logo-small.png" alt="" class="logo"/></a>
+                    
+                    <a class="c-hamburger c-hamburger--rot burger reveal" href="#mobi-nav">
+                        <span>toggle menu</span>
+                    </a> 
                 
                 </div>
             
             </header>
+        
+            <!-- C.1.2. MOBI NAV -->
+            <?php wp_nav_menu( array( 'container' => '', 'menu_id' => 'mobi-nav', 'menu_class' => 'mobi-nav hide-nav' ) ); ?>
             
             <!-- C.1. END -->

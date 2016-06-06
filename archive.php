@@ -1,48 +1,88 @@
 <?php
-/* template name: Posts by Category! */
+
+/*
+Template Name: Archive page
+*/
+
 get_header(); ?>
 
-	<!-- C.2. MAST -->
-	<section id="mast">
+<!-- C. WORK AREA +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+    <!-- C.2. SITE MAST ------------------------------------------------------------------------------------------- -->
+
+    <section class="page" id="mast">
+
+        <!-- C.2.1. INTRO ----------------------------------------------------------------------------------------- -->
+
+        <?php get_template_part( 'section-front' ); ?>
+
+        <!-- C.2.1. End ------------------------------------------------------------------------------------------- -->
         
-        <h1>ARCHIVE STANDARD</h1>
+        <!-- C.2.2. SLIDER AREA ----------------------------------------------------------------------------------- -->
+        
+        <div class="wrapper">
+        
+            <!-- C.2.2.1. ABOUT US -------------------------------------------------------------------------------- -->
+            
+            <section class="content">
+            
+                <div class="container">
+                    
+                    <h1>Blog Archive</h1>
+                
+                    <?php
+                        $args=array(
+                          'post_type' => 'post',
+                          'post_status' => 'publish'
+                        );
+                        $my_query = null;
+                        $my_query = new WP_Query($args);
 
-        <?php
+                        if( $my_query->have_posts() ) {
+                          while ($my_query->have_posts()) : $my_query->the_post(); ?>
 
-            // get all the categories from the database
-            $cats = get_categories(); 
+                            <?php the_title() ?>
 
-            // loop through the categries
-            foreach ($cats as $cat) {
+                            <?php
+                          //the_excerpt();
+                          endwhile;
+                        }
 
-                // setup the cateogory ID
-                $cat_id= $cat->term_id;
+                        wp_reset_query();  // Restore global post data stomped by the_post().
+                    ?>
+                
+                </div>
+                
+            </section>
+            
+            <!-- C.2.2.1. END ------------------------------------------------------------------------------------- -->
+        
+        </div>
+        
+        <aside class="section-midbar no-tab">
+            
+            <?php dynamic_sidebar( 'twitter' ); ?>
 
-                // Make a header for the cateogry
-                echo "<h3 class='category-title'>".$cat->name."</h3>";
+        </aside>
+                
+        <aside class="section-sidebar no-mobile">
+            
+            <?php get_template_part( 'section-sidebar' ); ?>
 
-                // create a custom wordpress query
-                query_posts("cat=$cat_id&posts_per_page=100");
+        </aside>
+        
+        <!-- C.2.2. End ------------------------------------------------------------------------------------------- -->
 
-                // start the wordpress loop!
-                if (have_posts()) : while (have_posts()) : the_post(); ?>
-
-                <?php // create our link now that the post is setup ?>
-
-                    <div>
-
-                        <p><?php the_title() ?></p>
-
-                    </div>
-
-                <?php endwhile; endif; // done our wordpress loop. Will start again for each category ?>
-
-            <?php } // done the foreach statement 
-
-        ?>
-
-	</section>
-
-	<!-- C.2. END -->
-
+    </section>
+    
+    <!-- C.2. END ------------------------------------------------------------------------------------------------- -->
 <?php get_footer(); ?>
+<!-- C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+<!-- D. JAVASCRIPT ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+<!-- D.1. FOOTER JS -->
+
+<?php get_template_part( 'inc/footer-scripts' ); ?>
+
+<!-- D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->

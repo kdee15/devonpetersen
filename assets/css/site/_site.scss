@@ -68,6 +68,9 @@
         // 1.1.3. Social Media
         @import	"_1.1.3-object--socialmedia";
 
+        // 1.1.3. Social Media
+        @import	"_1.1.4-object--nav";
+
     // 1.2. CARDS
     @import	"_1.2-object--cards";
 
@@ -139,6 +142,12 @@
 
     // 3.2. Work
     @import	"_3.2-page--page";
+
+    // 3.3. Posts
+    @import	"_3.3-page--posts";
+
+    // 3.4. Posts
+    @import	"_3.4-page--blog";
 
 
 // 3. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

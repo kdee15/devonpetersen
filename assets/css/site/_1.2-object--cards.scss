@@ -56,7 +56,28 @@
         &:hover { .card__body { transform: translateY(-100%); transition: 0.5s; }}
     }
     
-    // A.1.4. END -----------------------------------------------------------------------------------------------------
+    // A.1.1. END -----------------------------------------------------------------------------------------------------
+    
+    // A.1.2. FIXTURE CARD --------------------------------------------------------------------------------------------
+    
+    &.fixture {
+        
+        list-style-type: none;
+        padding: $baseline-small;
+        background: $kd-grey20;
+        margin-bottom: 2px;
+        
+        .fixture-element { display: block; margin-bottom: 0; 
+            
+            &.opponent { font-weight: bold; }
+            &.venue {}
+            &.date { font-style: italic; font-size: $small;}
+        
+        }   
+        
+    }
+    
+    // A.1.2. END -----------------------------------------------------------------------------------------------------
    
 }
 
