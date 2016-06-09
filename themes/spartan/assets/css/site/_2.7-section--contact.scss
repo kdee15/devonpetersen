@@ -1,0 +1,178 @@
+// 2. SECTION [ 2.7. CONTACT ]  #######################################################################################
+
+// A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// A.1. HOME -----------------------------------------------------------------------------------------------------
+
+.section-contact {
+
+    background: $black url(../images/contact/bg-contact.jpg) no-repeat fixed;
+    background-size: cover;
+    background-position: top center;
+    color: $kd-grey60;
+    
+    h2 { padding-top: $baseline-medium; padding-bottom: $baseline; }
+
+    .social-media {
+    
+        margin: 0;
+        padding-left: 0;
+        text-align: center!important;
+        padding-bottom: $baseline-large;
+        
+        .icon {
+            
+            img {
+                width: 200px;
+                height: 80px;
+            }
+        }
+    
+    }
+    
+    padding-bottom: 0!important;
+    text-align: center;
+
+
+// A.2. END -----------------------------------------------------------------------------------------------------------
+
+// A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// B. MOBILE STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(feature) {
+
+    .linked-in { 
+        
+        .linkedin { &.logo { 
+
+            display: block;
+
+        }}
+        
+        .twitter { &.logo { 
+
+            display: block;
+
+        }}
+        
+        a { display: block; }
+        p { display: block; }
+        
+    }
+
+}
+
+// B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// C. TABLET STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(mobile) {
+
+    .linked-in { 
+        
+        .linkedin { &.logo { 
+
+            display: block;
+
+        }}
+        
+        .twitter { &.logo { 
+
+            display: block;
+
+        }}
+        
+        a { display: block; }
+        p { display: block; }
+        
+    }
+
+}
+
+// C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// D. DESKTOP STYLES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(tablet) {
+
+    .linked-in { 
+        
+        .linkedin { &.logo { 
+
+            display: block;
+
+        }}
+        
+        .twitter { &.logo { 
+
+            display: block;
+
+        }}
+        
+        a { display: block; }
+        p { display: block; }
+        
+    }
+
+}
+
+// D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(desk) {
+
+    .linked-in { 
+        
+        .linkedin { &.logo { 
+
+            display: inline-block;
+
+        }}
+        
+        .twitter { &.logo { 
+
+            display: inline-block;
+
+        }}
+        
+        a { display: inline-block; }
+        p { display: inline-block; }
+        
+    }
+
+}
+
+// E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(desk-wide) {
+
+    .linked-in { 
+        
+        .linkedin { &.logo { 
+
+            display: inline-block;
+
+        }}
+        
+        .twitter { &.logo { 
+
+            display: inline-block;
+
+        }}
+        
+        a { display: inline-block; }
+        p { display: inline-block; }
+        
+    }
+
+}
+
+// E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    
+}
+
+// END OF FILE ########################################################################################################
