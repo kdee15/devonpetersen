@@ -48,7 +48,7 @@
             .lesson-detail {
                 
                 @extend .grid__item;
-                @extend .nine-tenths;
+                //@extend .nine-tenths;
                 @extend .mobile--three-quarters;
                 @extend .feature--three-quarters;
                 position: relative;

@@ -49,7 +49,7 @@ $('.showhide').click(function(e) {
     } else {
         
         $(target).addClass('hidden');
-        $('.showhide').removeClass('close');
+        $('.showhide').removeClass('close'); 
         
     }
     

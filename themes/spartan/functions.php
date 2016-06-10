@@ -83,6 +83,39 @@
 
     // A.2.1. End --------------------------------------------------------------------------------------------------
 
+    // A.2.1. RESULTS ---------------------------------------------------------------------------------------------
+
+    function sponsors() {
+      $labels = array(
+        'Title'              => _x( 'Sponsors', 'post type general name' ),
+        'singular_name'      => _x( 'Sponsor', 'post type singular name' ),
+        'add_new'            => _x( 'Add New', 'Sponsor' ),
+        'add_new_item'       => __( 'Add New Sponsor' ),
+        'edit_item'          => __( 'Edit Sponsor' ),
+        'new_item'           => __( 'New Sponsor' ),
+        'all_items'          => __( 'All Sponsors' ),
+        'view_item'          => __( 'View Sponsor' ),
+        'parent_item_colon'  => '',
+        'menu_name'          => 'Sponsors'
+      );
+
+      $args = array(
+        'labels'         => $labels,
+        'description'   => 'A list of Sponsors',
+        'public'        => true,
+        'menu_position' => 8,
+        'supports'      => array( 'title', 'editor', 'thumbnail', 'taxonomies', 'categories', 'media', 'content' ),
+        'has_archive'   => true,
+
+      );
+        
+      register_post_type( 'sponsors', $args ); 
+    }
+
+    add_action( 'init', 'sponsors' );
+
+    // A.2.1. End --------------------------------------------------------------------------------------------------
+
 // A.2 END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // A.3 TEMPLATE CUSTOMISATION +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
