@@ -7,11 +7,7 @@
 
         <!-- C.2.0.2. Company Logo -->
 
-        <figure class="figure-logo">
-
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/logo.png" alt="Spartan">
-
-        </figure>
+        <?php get_template_part( 'section-logo' ); ?>
 
         <!-- C.2.0.4. Scroll Indicator -->
 
