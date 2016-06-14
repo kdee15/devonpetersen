@@ -1270,7 +1270,7 @@ a {
 
 @media only screen and (min-width: 1024px) {
   body {
-    background: url("../images/front/bg-front1024.jpg") no-repeat left center fixed;
+    background: url("../images/background/bg-main0.jpg") no-repeat left center fixed;
     background-size: cover; }
   .no-tab, .no-mobile {
     display: block; }
@@ -1283,7 +1283,7 @@ a {
 
 @media only screen and (min-width: 1200px) {
   body {
-    background: url("../images/front/bg-front.jpg") no-repeat left center fixed;
+    background: url("../images/background/bg-main0.jpg") no-repeat left center fixed;
     background-size: cover; }
   .no-tab, .no-mobile {
     display: block; }
