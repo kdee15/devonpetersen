@@ -33,3 +33,14 @@ _system/_bower.cache
 
 # Optional REPL history
 .node_repl_history
+
+#local
+
+uploads
+/uploads
+
+plugins
+/plugins
+
+/themes/spartan/_system/node_modules
+/themes/spartan/_system/_bower.cache
