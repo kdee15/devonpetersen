@@ -36,3 +36,8 @@ _system/_bower.cache
 
 # Optional REPL history
 .node_repl_history
+
+#local
+
+_system/node_modules
+_system/_bower.cache
