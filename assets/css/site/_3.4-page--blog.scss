@@ -1,0 +1,165 @@
+// 3. PAGE [ 3.2. WORK ]  #############################################################################################
+
+// A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// A.1. STRUCTURE -----------------------------------------------------------------------------------------------------
+
+.page {
+    .page__blog {
+        &#mast {
+            
+            .section__articles { padding-bottom: $baseline-large;
+                .article {
+                    a { margin: $baseline-small; display: block; color: $kd-redDark; }
+                    .article__figure { padding: 0; margin: 0;
+                        .image-wrapper { display: block;
+                            img { width: 100%; height: auto; }
+                        }
+                    }
+                    
+                    &:first-child { 
+                        display: block; 
+                        flex: none; 
+                        width: 80%; 
+                        margin-bottom: $baseline-large;
+                        margin-top: 60px;
+                        .article__figure { 
+                            @include position (fixed, 0);
+                            margin: 0;
+                            padding: 0;
+                            bottom: auto;
+                            top: 50px;
+                            z-index: -1;
+                        }
+                        
+                        .article__body { margin-top: -120px;
+                            h3 { position: relative; font-size: $large;
+                                &:after {
+                                    @include position (absolute, -$baseline);
+                                    left: -200px;
+                                    content: '';
+                                    background: $white;
+                                    z-index: -1;
+                                }
+                            }
+                            
+                            p {
+                                &:blank { display: none; } 
+                                &:empty { display: none; } 
+                            }
+                        }
+                    }
+                }
+
+                .article__figure {
+                    img { width: 100%; height: auto; }
+                }
+                
+                .article__body {
+                    h3 { padding-top: $baseline-small; }
+                }
+            }
+        }
+    }
+    
+// A.1. END -----------------------------------------------------------------------------------------------------------
+
+// A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// B. MOBILE STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    @include media-query(feature) {
+
+        .page__blog {
+            &#mast { overflow-x: hidden;
+                .wrapper { top: 19%; .content{ padding-left: $baseline-small; padding-right: $baseline-small; }}
+            }
+        }
+    }
+
+
+// B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// C. TABLET STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    @include media-query(mobile) {
+
+        .page__blog {
+            &#mast { overflow-x: hidden;
+                .wrapper { top: 20%; .content{ padding-left: $baseline-small; padding-right: $baseline-small; }}
+            }
+        }
+    }
+
+
+// C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// D. DESKTOP STYLES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    @include media-query(tablet) {
+
+        .page__blog {
+            &#mast {
+                .wrapper { top: 35%;
+                    .content { padding: 80px 20px; }
+                    .section__articles {
+                        .article {
+                            &:first-child { width: 100%; margin-bottom: 30px;
+                                .article__body {
+                                    h3 { width: 80%; }
+                                }
+                            }
+                            
+                            .article__body {
+                                p { font-size: $small; }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+// D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    @include media-query(desk) {
+
+        .page__blog {
+            &#mast {
+                .wrapper { top: 80%;
+                    .section__articles {
+                        .article {
+                            &:first-child { width: 100%;
+                                .article__body { width: 60%;
+                                    h3 { width: 100%; }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+// E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    @include media-query(desk-wide) {
+
+        .page__blog {
+            &#mast {
+                .wrapper { top: 80%; }
+            }
+        }
+    }
+
+// E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+}
+    
+// END OF FILE ########################################################################################################

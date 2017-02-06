@@ -1,0 +1,50 @@
+// KONSTRUCT.GLUE [CONFIGURATION] ##################################################################################
+
+// =====================  INDEX  =====================
+// ==
+// == A. MEDIA QUERY CONFIGURATION
+// ==
+// == B. OBJECT CONFIGURATION
+// ==
+// =====================  INDEX  ===================== 
+
+
+// A. CONFIGURE MEDIA QUERIES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+$breakpoint-types: ('feature', 'mobile', 'tablet', 'desk', 'desk-wide','desk-all', 'desk-lg', 'desk-md', 'desk-sm', 'tab-lg', 'tab-md', 'tab-sm', 'mobi-lg', 'mobi-xs',)!default;
+
+$breakpoints: (
+
+    'feature'   '(max-width: 320px)',
+    'mobile'    '(min-width: 321px) and (max-width: 480px)',
+    'tablet'    '(min-width: 481px) and (max-width: 1023px)',
+    'desk'      '(min-width: 1024px)',
+    'desk-wide' '(min-width: 1200px)',
+    'desk-all'  '(min-width: 992px)',
+    'desk-lg'   '(min-width: 1600px)',
+    'desk-wd'   '(min-width: 1200px)',
+    'desk-md'   '(max-width: 1199px)',
+    'desk-sm'   '(max-width: 1024px)',
+    'tab-lg'    '(max-width: 991px)',
+    'tab-md'    '(max-width: 768px)',
+    'tab-sm'    '(max-width: 767px)',
+    'mobi-lg'   '(max-width: 480px)',
+    'mobi-xs'   '(max-width: 320px)'
+
+)!default;
+
+// A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// B. CONFIGURE IMPORTED OBJECTS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+$object--containers:        true;
+$object--flexigrid:         true; // ALPHA VERSION - This is not currently backwards compatible.
+$object--typography:        true;
+$object--forms:             true;
+$object--buttons:           true;
+$object--messages:          true;
+$object--highlighting:      true;
+
+// B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	
+// End of File - Thanks for using Konstruct! Please help make it better!

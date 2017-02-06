@@ -1,0 +1,144 @@
+// 1. OBJECT [ 1.1.3. SOCIAL MEDIA ] ##################################################################################
+
+// ====== INDEX  ======================================================================================================
+// ==
+// == A.1. GENERAL STYLES
+// ==
+// ====== INDEX  ======================================================================================================
+
+// A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// A.1. HOME LIST -----------------------------------------------------------------------------------------------------
+
+.social-media {
+    
+    list-style-type: none;
+    text-align: left;
+    
+    li {
+        
+        list-style-type: none;
+        display: inline-block; 
+        
+        a { display: block;
+        
+            .icon { background: $kd-redDark; border-radius: 100px;
+                img { width: 100%; }
+            }
+            
+            &:hover { .icon { background: $kd-red; }}
+        
+        }
+    }
+}
+
+// A.1. END -----------------------------------------------------------------------------------------------------------
+
+// A.2. TWEETS STREAM -------------------------------------------------------------------------------------------------
+
+.tweets {
+
+    list-style-type: none;
+    margin: 0;
+    padding: $baseline-smaller 0;
+    background: $kd-grey70;
+    
+    li {
+    
+        list-style-type: none;
+        font-size: $small;
+        margin: $baseline-smaller 0;
+        padding: $baseline-small $baseline-smaller;
+        padding-left: $baseline;
+        line-height: normal;
+        color: $kd-grey80;
+        background: $kd-grey20;
+        position: relative;
+        
+        &:after {
+            
+            @include vertical-align (absolute);
+            width: 25px;
+            height: 25px;
+            content: '';
+            left: -15px;
+            border: 3px solid $kd-grey20;
+            background: url('../images/site/icon-twitter.svg') center center no-repeat $white;
+            background-size: 100% 100%;
+            border-radius: 100%;
+            
+            
+        
+        }
+        
+        a { display: block; color: $kd-redDark; }
+    
+    }
+
+}
+
+// A.2. END -----------------------------------------------------------------------------------------------------------
+
+// A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// MEDIA QUERIES : desk-all = min-width:992px | desk-lg = min-width: 1600px | desk-wd = min-width: 1200px | desk = max-width: 1199px | desk-sm = max-width: 1024px | tab-lg = max-width: 991px | tab-md = max-width: 768px | tab-sm = max-width: 767px | mobi-lg = max-width: 480px | mobi-xs = max-width: 320px
+
+// B. MOBILE STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(desk-all) {
+    
+    .social-media {
+        li {
+            a { margin: 50px; }
+        }
+    }
+    
+}
+
+// B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// C. TABLET STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(desk-sm) {
+    
+    .social-media {
+        li {
+            a { margin: $baseline-small;  }
+        }
+    }
+    
+}
+
+// C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// D. DESKTOP STYLES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(tab-md) {
+    
+    .social-media { padding: 0; }
+    
+}
+
+// D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(mobi-lg) {
+    
+    .social-media {
+        li {
+            a { margin: 5px;  }
+        }
+    }
+    
+}
+
+// E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(mobi-xs) { }
+
+// E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// END OF FILE ########################################################################################################

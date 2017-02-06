@@ -36,11 +36,5 @@ _system/_bower.cache
 
 #local
 
-uploads
-/uploads
-
-plugins
-/plugins
-
-/themes/spartan/_system/node_modules
-/themes/spartan/_system/_bower.cache
+_system/node_modules
+_system/_bower.cache
