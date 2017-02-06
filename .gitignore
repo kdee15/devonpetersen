@@ -25,8 +25,11 @@ build/Release
 
 # Dependency directory
 node_modules
-themes/spartan/_system/node_modules
-themes/spartan/_system/_bower.cache
+_system/node_modules
+_system/_bower.cache
+.DS_Store
+*.DS_Store
+*/.DS_Store
 
 # Optional npm cache directory
 .npm
