@@ -1,0 +1,9 @@
+/* Safari 6.1+ (9.0 is the latest version of Safari at this time) */
+
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) 
+{ @media {
+    
+    .casestudies-item { margin-right: -1px; }
+    .casestudies-item .mask { transform: translateX(-110%); }
+    
+}}

@@ -1,0 +1,169 @@
+// 1. OBJECT [ 1.1.3. SOCIAL MEDIA ] ##################################################################################
+
+// ====== INDEX  ======================================================================================================
+// ==
+// == A.1. GENERAL STYLES
+// ==
+// ====== INDEX  ======================================================================================================
+
+// A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+
+// A.1. MOBILE MENU ---------------------------------------------------------------------------------------------------
+
+// A.1.2. MOBI NAV LINK STYLING
+
+#mobi-nav {
+        
+    @include position (fixed, 0);
+    top: 50px;
+    background: $kd-redDark;
+    transform: translateY(0%); 
+    transition: 0.3s; 
+    z-index: 10;
+    
+    ul {
+        
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        padding-top: $baseline;
+        
+        .page_item {
+            
+            list-style-type: none;
+            padding: 0;
+            
+            a { 
+                display: block; 
+                text-align: center; 
+                padding: $baseline-small 0; 
+                font-size: $large; 
+                color: $white;
+                font-family: 'gow', helvetica, 'arial black';
+            
+                &:hover { background: $kd-grey20; }
+            
+            }
+            
+            &.current_page_item { background: $kd-grey20; }
+        }
+    }
+
+}
+
+// A.1.1 SHOW HIDE CLASS
+
+.hide-nav { transform: translateY(-200%)!important; transition: 0.3s; }
+
+// A.1. END -----------------------------------------------------------------------------------------------------------
+
+// A.2. MAIN NAV ------------------------------------------------------------------------------------------------------
+
+.main-nav {
+
+    @include vertical-align(absolute);
+    left: 0;
+
+    ul {
+
+        margin: 0;
+        padding: 0;
+        vertical-align: middle;
+        padding-left: $baseline-small;
+
+        li {								
+            text-transform: uppercase;
+            font-size: $medium;
+            list-style-type: none;
+            display: inline;
+            vertical-align: middle;	
+
+            a {
+                color: $white;
+                outline: none;
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: $baseline-small;
+                font-family: 'gow', helvetica, 'arial black';
+
+                &:hover {
+                    color: $kd-grey50;
+                    text-decoration: none;
+                    text-shadow: 0 1px 3px $black;
+                }
+            }
+
+            a:link {
+
+                img { 
+                    vertical-align: middle;
+                    width: 35px;
+                    height: 35px;
+                    border: 2px solid $kd-grey20;
+                    border-radius: 100%;
+                }
+            }
+            
+            &.current_page_item { a {color: $kd-grey50; text-shadow: 0 1px 3px $black; }}
+        }
+    }
+}
+
+// A.2. END -----------------------------------------------------------------------------------------------------------
+
+// A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// B. MOBILE STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(feature) { 
+	
+    #masthead { .burger { display: block; }}
+    .main-nav { display: none; }
+}
+
+// B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// C. TABLET STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(mobile) { 
+	
+    #masthead { .burger { display: block; }}
+    .main-nav { display: none; }
+}
+
+// C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// D. DESKTOP STYLES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(tablet) { 
+	
+    #masthead { .burger { display: none; }}
+    .mobi-nav { display: none; }
+}
+
+// D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(desk) { 
+	
+    #masthead { .burger { display: none; }}
+    .mobi-nav { display: none; }
+}
+
+// E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(desk-wide) { 
+	
+    #masthead { .burger { display: none; }}
+    .mobi-nav { display: none; }
+}
+
+// E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// END OF FILE ########################################################################################################

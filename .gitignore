@@ -27,6 +27,9 @@ build/Release
 node_modules
 _system/node_modules
 _system/_bower.cache
+.DS_Store
+*.DS_Store
+*/.DS_Store
 
 # Optional npm cache directory
 .npm
