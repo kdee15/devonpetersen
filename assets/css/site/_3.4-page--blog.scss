@@ -66,33 +66,42 @@
 
 // A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-// B. MOBILE STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-    @include media-query(feature) {
+    @include media-query(desk-wide) {
 
         .page__blog {
-            &#mast { overflow-x: hidden;
-                .wrapper { top: 19%; .content{ padding-left: $baseline-small; padding-right: $baseline-small; }}
+            &#mast {
+                .wrapper { top: 80%; }
+            }
+        }
+    }
+
+// E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    @include media-query(desk) {
+
+        .page__blog {
+            &#mast {
+                .wrapper { top: 80%;
+                    .section__articles {
+                        .article {
+                            &:first-child { width: 100%;
+                                .article__body { width: 60%;
+                                    h3 { width: 100%; }
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
 
 
-// B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-// C. TABLET STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-    @include media-query(mobile) {
-
-        .page__blog {
-            &#mast { overflow-x: hidden;
-                .wrapper { top: 20%; .content{ padding-left: $baseline-small; padding-right: $baseline-small; }}
-            }
-        }
-    }
-
-
-// C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // D. DESKTOP STYLES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -123,21 +132,25 @@
 
 // D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-// E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// C. TABLET STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-    @include media-query(desk) {
+    @include media-query(mobile) {
 
         .page__blog {
-            &#mast {
-                .wrapper { top: 80%;
-                    .section__articles {
-                        .article {
-                            &:first-child { width: 100%;
-                                .article__body { width: 60%;
-                                    h3 { width: 100%; }
+            &#mast { overflow-x: hidden;
+                .wrapper { top: 0; 
+                    .container{ padding-left: $baseline-small; padding-right: $baseline-small; 
+                                    
+                        .section__articles { padding-bottom: $baseline-large;
+                            .article {
+                                &:first-child { width: 100%; margin-bottom: 0; 
+                                    .article__figure{ position: relative; display: block; z-index: 1; top: 0; }
+                                    .article__body { margin-top: 0; margin-bottom: 0; }
                                 }
                             }
                         }
+                        
+                    
                     }
                 }
             }
@@ -145,20 +158,35 @@
     }
 
 
-// E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-// E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// B. MOBILE STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-    @include media-query(desk-wide) {
+    @include media-query(feature) {
 
         .page__blog {
-            &#mast {
-                .wrapper { top: 80%; }
+            &#mast { overflow-x: hidden;
+                .wrapper { top: 0; 
+                    .container{ padding-left: $baseline-small; padding-right: $baseline-small; 
+                                    
+                        .section__articles { padding-bottom: $baseline-large;
+                            .article {
+                                &:first-child { width: 100%; margin-bottom: 0; 
+                                    .article__figure{ position: relative; display: block; z-index: 1; top: 0; }
+                                    .article__body { margin-top: 0; margin-bottom: 0; }
+                                }
+                            }
+                        }
+                        
+                    
+                    }
+                }
             }
         }
-    }
+   }
 
-// E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 }
     

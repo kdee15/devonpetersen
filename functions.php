@@ -122,39 +122,22 @@
 
 	// A.1.0.1. REGISTER SIDEBAR
 
-	function social_sidebar_widgets_init() {
+	function youtube_widget_init() {
 
 		register_sidebar( array(
-			'name' => 'social sidebar widget',
-			'id' => 'social_sidebar',
+			'name' => 'youtube widget',
+			'id' => 'youtube_widget',
 			'before_widget' => '<div>',
 			'after_widget' => '</div>',
-			'before_title' => '<h2 class="rounded">',
+			'before_title' => '<h2 class="widget-title">',
 			'after_title' => '</h2>',
 		) );
 	}
 
-	add_action( 'widgets_init', 'social_sidebar_widgets_init' );
+	add_action( 'widgets_init', 'youtube_widget_init' );
 
 	// A.1.0.1. END
 
-	// A.1.0.2. Twitter Widget
-		
-	function arphabet_widgets_init() {
-
-		register_sidebar( array(
-			'name' => 'twitter widget',
-			'id' => 'twitter',
-			'before_widget' => '<div>',
-			'after_widget' => '</div>',
-			'before_title' => '<h2 class="rounded">',
-			'after_title' => '</h2>',
-		) );
-	}
-
-	add_action( 'widgets_init', 'arphabet_widgets_init' );
-
-	// A.1.0.2. Twitter Widget
 
 // A.3 END ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     

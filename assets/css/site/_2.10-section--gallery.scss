@@ -1,0 +1,105 @@
+// 2. SECTION [ 2.9. CAROUSEL ]  ######################################################################################
+
+// A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// A.0. FIXTURES SECTION ----------------------------------------------------------------------------------------------
+
+.gallery-img-content {
+  .element { @include aspect-ratio (24%, 56%); display: inline-block; overflow: hidden;
+    >div { @include position (absolute, 0); margin: 0 auto; } 
+    
+    div[class*=' title-block'],div[class^='title-block'] { top: auto; font-family: 'gow'; color: $kd-redDark; 
+      a { font-family: 'gow'; color: $kd-redDark!important; }
+    }
+  } 
+  
+  .huge_it_gallery { list-style-type: none; padding: 0!important; background-color: transparent; box-shadow: none;
+    .huge_it_big_li { display: inline-block; width: 25%; }
+  }
+}
+
+#post-258 {
+  .entry-header { display: none;
+    h1 { 
+      a { color: $kd-redDark; }
+    }
+  }
+  .entry-content { padding: 20px 10px;
+    h2 { font-size: 30px; margin: 10px 0 20px; }
+    .gallery-img-content {
+      .huge_it_gallery {
+        background-color: transparent;
+        padding: 0!important;
+        box-shadow: none;
+        text-align: left;
+        margin-top: 30px;
+        
+        .huge_it_big_li { border: 0; border-radius: 0; position: relative; 
+          .infoLayer { 
+            ul { list-style-type: none; }
+          }
+        }
+        
+      }
+    }
+  }
+}
+// A.0. END -----------------------------------------------------------------------------------------------------------
+
+// A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// B. MOBILE STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(feature) {
+
+  .gallery-img-content {
+    .element { width: 100%; }
+  }
+  
+
+}
+
+// B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// C. TABLET STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(mobile) {
+
+  .gallery-img-content {
+    .element { width: 48.5%; }
+  }
+  
+}
+
+// C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// D. DESKTOP STYLES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(tablet) {
+
+  .gallery-img-content {
+    .element { width: 32%; }
+  }
+  
+}
+
+// D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(desk) {
+
+    .gallery-img-content {
+      .element { width: 24%; }
+    }
+  }
+
+// E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@include media-query(desk-wide) { }
+
+// E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// END OF FILE ########################################################################################################

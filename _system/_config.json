@@ -26,8 +26,7 @@
                 "angulartics/dist/angulartics-ga.min.js",
                 "angular-scroll/angular-scroll.min.js",
                 "ionic-ion-horizontal-scroll-cards/ionic.hscrollcards.js",
-                "angular-video-bg/angular-video-bg.min.js",
-                "owl.carousel/dist/owl.carousel.min.js"
+                "angular-video-bg/angular-video-bg.min.js"
 
             ],
             
@@ -52,8 +51,7 @@
                 "ionic.hscrollcards.js",
                 "angular-scroll.min.js",
                 "angular.audio.js",
-                "angular-video-bg.min.js",
-                "owl.carousel.min.js"
+                "angular-video-bg.min.js"
                 
 
             ],
@@ -75,11 +73,7 @@
             
             "vendors" : [
 
-                "normalize.css/normalize.css",
-                "owl.carousel/dist/assets/owl.carousel.min.css",
-                "owl.carousel/dist/assets/ajax-loader.gif",
-                "owl.carousel/dist/assets/owl.video.play.png",
-                "owl.carousel/dist/assets/owl.theme.default.css"
+                "normalize.css/normalize.css"
 
             ],
             

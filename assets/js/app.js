@@ -247,6 +247,10 @@ var currentContent = '';
             // SPONSOR CAROUSEL
             equalheight('.owl-stage .item');
             
+            // EVENTS BLOCKS
+            equalheight('.section__events .list__schedule .schedule .title');
+            equalheight('.section__events .list__schedule .schedule p:nth-child(2)');
+            
             // HOMEPAGE BLOG BLOCKS
             equalheight('.section-blog .section__articles .article__body h3');
             equalheight('.section-blog .section__articles .article__body p');
@@ -281,6 +285,10 @@ var currentContent = '';
         
             // SPONSOR CAROUSEL
             equalheight('.owl-stage .item');
+            
+            // EVENTS BLOCKS
+            equalheight('.section__events .list__schedule .schedule .title');
+            equalheight('.section__events .list__schedule .schedule p:nth-child(2)');
             
             // HOMEPAGE BLOG BLOCKS
             equalheight('.section-blog .section__articles .article__body h3');

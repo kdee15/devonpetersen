@@ -4,7 +4,7 @@
 
     <!-- C.2. SITE MAST ------------------------------------------------------------------------------------------- -->
 
-    <section class="page page__fixtures" id="mast">
+    <section class="page archive" id="mast">
 
         <!-- C.2.1. INTRO ----------------------------------------------------------------------------------------- -->
 
@@ -18,43 +18,46 @@
         
             <!-- C.2.2.1. ABOUT US -------------------------------------------------------------------------------- -->
             
-            <div class="container">
-                
-                <h1>Upcoming Fixtures</h1>
+            <section class="content">
             
-                <ul class="section__fixtures grid">
-                
-                <?php
+                <div class="container">
+                    
+                    <h1>Upcoming Events</h1>
 
-                    $fixture1 = current_time('Ymd');
+                    <ul class="list__schedule grid">
 
-                    $args=array(
-                        'post_type' => 'fixtures',
-                        'post_status' => 'publish',
+                    <?php
 
-                        'meta_query' => array(
-                            array(
-                                'key' => 'date',
-                                'compare' => '>=',
-                                'value' => $fixture1,
-                            )
-                        ),
+                        $event1 = current_time('Ymd');
 
-                        'meta_key'	=> 'date',
-                        'orderby'	    => 'meta_value_num',
-                        'order'		=> 'ASC'
-                    );
-                    $my_query = null;
-                    $my_query = new WP_Query($args);
+                        $args=array(
+                            'post_type' => 'events',
+                            'post_status' => 'publish',
 
-                    if( $my_query->have_posts() ) {
-                        while ($my_query->have_posts()) : $my_query->the_post(); ?>
+                            'meta_query' => array(
+                                array(
+                                    'key' => 'date',
+                                    'compare' => '>=',
+                                    'value' => $event1,
+                                )
+                            ),
 
-                            <li class="one-quarter">
-                                <span class="fixture card">
-                                    <p class="fixture-element opponent">vs <?php the_field('opponent') ?></p>
-                                    <p class="fixture-element venue"><?php the_field('venue') ?></p>
-                                    <p class="fixture-element date">
+                            'meta_key'	=> 'date',
+                            'orderby'	    => 'meta_value_num',
+                            'order'		=> 'ASC'
+                        );
+                        $my_query = null;
+                        $my_query = new WP_Query($args);
+
+                        if( $my_query->have_posts() ) {
+                            while ($my_query->have_posts()) : $my_query->the_post(); ?>
+
+                                <li class="one-quarter mobi">
+                                <span class="schedule card">
+                                    <p class="schedule-element title"><?php the_title() ?></p>
+                                    <?php the_excerpt() ?>
+                                    <p class="schedule-element venue"><?php the_field('venue') ?></p>
+                                    <p class="schedule-element date">
 
                                         <?php 
 
@@ -70,27 +73,35 @@
 
                                     </p>
                                 </span>
-                            </li>
+                                </li>
 
-                        <?php
+                            <?php
 
-                        endwhile;
-                    }
-                    wp_reset_query();  // Restore global post data stomped by the_post().
-                ?> 
+                            endwhile;
+                        }
+                        wp_reset_query();  // Restore global post data stomped by the_post().
+                    ?> 
+
+                    </ul>
+                  
+                </div>
                 
-                </ul>
-                
-            </div>
-            
+            </section>
+           
             <!-- C.2.2.1. END ------------------------------------------------------------------------------------- -->
-             
+        
             <!-- C.2.2.1. CONTACT --------------------------------------------------------------------------------- -->
             
             <?php get_template_part( 'section-contact' ); ?>
             
             <!-- C.2.2.1. END ------------------------------------------------------------------------------------- -->
-        
+          
+            <!-- C.2.2.1. FOOTER ---------------------------------------------------------------------------------- -->
+            
+            <?php get_footer(); ?>
+            
+            <!-- C.2.2.1. END ------------------------------------------------------------------------------------- -->
+            
         </div>
         
         <!-- C.2.2. End ------------------------------------------------------------------------------------------- -->
@@ -98,7 +109,7 @@
     </section>
     
     <!-- C.2. END ------------------------------------------------------------------------------------------------- -->
-<?php get_footer(); ?>
+
 <!-- C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
 <!-- D. JAVASCRIPT ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->

@@ -12,11 +12,13 @@
         
         .article__figure {
             
-            @include aspect-ratio (100%, 50%);
+            @include aspect-ratio (100%, 56%);
             padding: 0;
             margin: 0;
             z-index: 1;
             display: block;
+            position: relative;
+            background: $kd-redDark;
             
             .image-wrapper { 
                 
@@ -28,34 +30,23 @@
             }
         }
         
-        .article__body { background: $white; padding-bottom: $baseline-small;
+        .article__body { background: $white; padding-bottom: $baseline-small; position: relative; 
             
             h3 { 
                 position: relative;
-                width: 80%;
-                padding: $baseline $baseline-small;
-                margin-top: -$baseline-medium;
+                width: 100%;
+                padding: $baseline $baseline-small 0;
                 background: $white; 
                 z-index: 1;
                 box-sizing: border-box;
                 font-size: $medium;
+                text-align: center;
                 
-                &:before { 
-                    content: ''; 
-                    position: absolute; 
-                    left: 0; 
-                    width: 100%; 
-                    bottom: -20px; 
-                    height: 100%; 
-                    background: $white;
-                    z-index: -1;
-                }
             }
 
-            p { margin: $baseline-small; font-size: $small; position: relative; z-index: 10;
-            
-                &:blank { display: none; } 
-                &:empty { display: none; } 
+            p { margin: $baseline-small $baseline; font-size: $small; position: relative; z-index: 10;
+                &:blank { display: none; }
+                &:empty { display: none; }
             }
         }
     }
@@ -82,6 +73,11 @@
 
 // D. DESKTOP STYLES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+@include media-query(tab-lg) {
+
+    .article { margin-bottom: $baseline; }
+}
+    
 @include media-query(tab-md) {}
 
 // D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -91,7 +87,14 @@
 @include media-query(mobi-lg) {
 
     .section__articles {
-        .article { margin: 0; margin-bottom: $baseline-small; }
+        .article { margin: 0; margin-bottom: $baseline-small;
+        
+            .article__body {
+
+                h3 { font-size: $large; }
+                p {}
+            }
+        }
     }
     
 }

@@ -1,16 +1,19 @@
 // 2. SECTION [ 2.8.1. ECOM: SHOP ]  ##################################################################################
 
 // A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
+.woocommerce {
+    .page {
+        &.shop {
 .section__shop {
     
     // A.1. HOME -----------------------------------------------------------------------------------------------------
 
+    .woocommerce-result-count,
     .woocommerce-ordering { display: none; }
 
     ul.products {
-        li.product { width: 45%;
-            h3 { color: $kd-red; }
+        li.product { width: 25%;
+            h3 { color: $kd-red; font-size: $medium; margin-bottom: 0; }
             span { color: $kd-grey70;}
             .button { width: 100%; box-sizing: border-box; font-size: 12px; margin-top: 5px; text-align: center; }
         }
@@ -24,36 +27,69 @@
 
     // A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+    // MEDIA QUERIES : desk-all = min-width:992px | desk-lg = min-width: 1600px | desk-wd = min-width: 1200px | desk = max-width: 1199px | desk-sm = max-width: 1024px | tab-lg = max-width: 991px | tab-md = max-width: 768px | tab-sm = max-width: 767px | mobi-lg = max-width: 480px | mobi-xs = max-width: 320px
+
     // B. MOBILE STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-    @include media-query(feature) {}
-    
+    @include media-query(desk-all) { }
+
     // B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
     // C. TABLET STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-    @include media-query(mobile) {}
+    @include media-query(desk-sm) { }
 
     // C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
     // D. DESKTOP STYLES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-    @include media-query(tablet) {}
+    @include media-query(tab-sm) {
+
+        ul.products {
+            li.product { width: 48%; }
+        }
+    
+    }
 
     // D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
     // E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-    @include media-query(desk) {}
+    @include media-query(mobi-lg) {
+    
+        &.content {
+            .container { padding-left: $baseline-small; padding-right: $baseline-small;
+                ul.products {
+                    li.product {
+                        .woocommerce-LoopProduct-link {
+                            h3 { margin: 0; }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
 
     // E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
     // E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-    @include media-query(desk-wide) {}
+    @include media-query(mobi-xs) {
+
+        ul.products {
+            li.product { width: 100%; }
+        }
+    
+    }
 
     // E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 }
+                    
+        }
+    }
+}
+
 
 // END OF FILE ########################################################################################################

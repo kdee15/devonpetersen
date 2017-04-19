@@ -26,7 +26,7 @@ gulp.task('install-css', function() {
     for( vendor in config.assets.css.vendors) {
         
         gulp.src(['_bower.cache/' + config.assets.css.vendors[vendor] ])
-        .pipe(gulp.dest(PATH + '/assets/css/vendors').on('error', gutil.log))
+        .pipe(gulp.dest(PATH + '/assets/css/konstruct/vendor').on('error', gutil.log))
         gutil.log(gutil.colors.cyan('++ Installing ' + config.assets.css.vendors[vendor]));
 
     }

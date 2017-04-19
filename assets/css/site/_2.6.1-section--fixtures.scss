@@ -4,12 +4,30 @@
 
 // A.0. FIXTURES SECTION ----------------------------------------------------------------------------------------------
 
-.section__fixtures { background: $kd-grey50;
+.section__fixtures { position: relative; background-color: $kd-grey50;
+    
+    //&.section { padding: 80px 0 250px; }
+    
+    .container { position: relative; z-index: 10; }
+    
+//    &:before { 
+//        @include position (absolute, 0);
+//        z-index: 1;
+//        background: url('../images/site/bg-grey.png') bottom right no-repeat;
+//        background-size: 100% auto;
+//        opacity: 0.1;
+//        content: '';
+//    }
+//    &:after { 
+//        @include position (absolute, 0); 
+//        z-index: 0; 
+//        background-color: $kd-grey50;
+//        content: '';
+//    }
     
     .fixture {
         &.card { margin: 0 $baseline-small $baseline-small; display: block; }
     }
-
 
 }
 

@@ -10,37 +10,37 @@
 
         <ul class="social-media grid">
         
-            <li class="one-fifth"><a href="http://www.facebook.com/kdee15">
+            <li class="one-fifth all"><a href="http://www.facebook.com/Devon.petersen2" target="_blank">
                 <figure class="facebook icon">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/icon--facebook.svg" alt="fb">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/icon--facebook.svg" alt="facebook">
                 </figure>
                 </a>
             </li>
         
-            <li class="one-fifth"><a href="http://www.twitter.com/kdee15">
+            <li class="one-fifth all"><a href="http://www.twitter.com/devon_petersen" target="_blank">
                 <figure class="twitter icon">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/icon--twitter.svg" alt="fb">
-                </figure>
-                </a>
-            </li>
-        
-            <li class="one-fifth"><a href="https://za.linkedin.com/in/kirk-daniels-6049a61">
-                <figure class="youtube icon">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/icon--youtube.svg" alt="fb">
-                </figure>
-                </a>
-            </li>
- 
-            <li class="one-fifth"><a href="https://za.linkedin.com/in/kirk-daniels-6049a61">
-                <figure class="instagram icon">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/icon--instagram.svg" alt="fb">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/icon--twitter.svg" alt="twitter">
                 </figure>
                 </a>
             </li>
 
-            <li class="one-fifth"><a href="https://za.linkedin.com/in/kirk-daniels-6049a61">
+            <li class="one-fifth all"><a href="https://www.youtube.com/channel/UCIZebKRqpIObmJ_psrsS4sw" target="_blank">
+                <figure class="youtube icon">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/icon--youtube.svg" alt="instagram">
+                </figure>
+                </a>
+            </li>
+          
+            <li class="one-fifth all"><a href="http://www.instagram.com/imthedevonpetersen" target="_blank">
+                <figure class="instagram icon">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/icon--instagram.svg" alt="instagram">
+                </figure>
+                </a>
+            </li>
+
+            <li class="one-fifth all"><a href="mailto:devonthediamond@gmail.com?subject=website email request">
                 <figure class="email icon">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/icon--email.svg" alt="fb">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/icon--email.svg" alt="mail">
                 </figure>
                 </a>
             </li>
